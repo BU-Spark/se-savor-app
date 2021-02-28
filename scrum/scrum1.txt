@@ -1,0 +1,26 @@
+What has the team done towards the project this week?
+    Set up out private git repository
+    Decided on our tech stack
+        Backend: Express(node.js/JavaScript)
+        Database: Firebase
+        Frontend: ReactJS
+
+
+What work does the team plan to do this week?
+    Familiarize ourselves with our tech stack
+    ReactJS tutorial 
+        https://reactjs.org/tutorial/tutorial.html
+    Express tutorial
+        https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
+    Start a demo app
+        Try to connect React to Express to Firebase
+        Package from google to connect Firebase to Express
+            https://www.npmjs.com/package/firebase-tools
+            Use Firebase CLI as a Module ("Using as a Module")
+    
+
+Is the team having any issues? 
+    Unfamiliar with React, and we need to learn how to use it to complete our project.
+    Still not sure which license to use - does not want it to be open source.
+    
+
