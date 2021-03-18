@@ -58,6 +58,9 @@ export const Button = styled.div`
  &.log{
     color:#EE7B22;
  }
+ &. signed{
+    color: #757575;
+ }
  
 `
 

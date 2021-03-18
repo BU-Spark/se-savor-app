@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { actionCreators } from './store';
+import { actionCreators as loginActionCreators } from '../../pages/login/store'
 import {
     HeaderWrapper,
     Logo,
@@ -9,6 +13,7 @@ import {
 } from './style';
 class Header extends Component {
     render() {
+        const { login, logout } = this.props;
         return (<HeaderWrapper>
             <Logo />
             <Nav>
@@ -17,12 +22,35 @@ class Header extends Component {
                 <NavItem className='left'>OUR VISION</NavItem>
             </Nav >
             <Addition>
-                <Button className = "sign">SIGN UP </Button>
-                <Button className = "log">LOG IN</Button>
-                
+                {
+                    login ? <Button className="signed">welcome back </Button> :
+                    <Button className="sign">SIGN UP </Button>
+                }
+               
+                {
+                    login ? 
+                    <Button className="log" onClick={logout}>LOG OUT</Button> : 
+                    <Link to='/login'><Button className="log" >LOG IN</Button></Link>
+                }
+
             </Addition>
         </HeaderWrapper>)
     }
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+    return {
+        login: state.getIn(['login', 'login']),
+    }
+}
+
+const mapDispathToProps = (dispatch) => {
+    return {
+        logout(){
+            dispatch(loginActionCreators.logout())
+        }
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispathToProps)(Header);
