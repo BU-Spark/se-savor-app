@@ -4,7 +4,7 @@ const port = 3000
 const db=require('./db')
 
 app.get('/', (req, res) => {  
-  db.getrecipes()
+  //db.getrecipes()
   res.send('Hello World!')
 })
 
