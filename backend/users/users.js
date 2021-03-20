@@ -1,4 +1,5 @@
 const { Router } = require('express');
+const usersData = require('./usersData');
 
 const router = Router();
 
@@ -11,7 +12,9 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req, res, next) => {
     const { id } = req.params;
-    res.send(`Hello from user ${id}'s dashboard`);
+    res.status(200).send({
+        data: usersData[id],
+    });
 });
 
 module.exports = router;
