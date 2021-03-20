@@ -8,12 +8,11 @@ chai.use(chaiHttp);
 
 describe('GET /users', function() {
 
-    it('return a 400 - Bad Request when no id is provided', (done) => {
+    it('return a 404 - Not Found when no id is provided', (done) => {
         chai.request(app)
             .get('/users/')
             .end((err, res) => {
-                assert.equal(res.status, 400);
-                assert.equal(res.body.error, 'Need a user id');
+                assert.equal(res.status, 404);
                 done();
              });
     });
@@ -29,6 +28,54 @@ describe('GET /users', function() {
                 assert.equal(res.status, 200);
                 assert.typeOf(data, 'object');
                 assert.equal(data.id, id);
+                done();
+             });
+    });
+
+    it('return an error for nonexistent user', (done) => {
+        const id = 1000;
+
+        chai.request(app)
+            .get(`/users/${id}`)
+            .end((err, res) => {
+                assert.equal(res.status, 400);
+                assert.equal(res.body.error, 'User does not exist');
+                done();
+             });
+    });
+});
+
+describe('PUT /users', function() {
+
+    it('return a 404 - Not Found when no id is provided', (done) => {
+        chai.request(app)
+            .put('/users/')
+            .end((err, res) => {
+                assert.equal(res.status, 404);
+                done();
+             });
+    });
+
+    it('update a user\'s dashboard data', (done) => {
+        const id = 1;
+
+        chai.request(app)
+            .put(`/users/${id}`)
+            .end((err, res) => {
+                assert.equal(res.status, 200);
+                assert.equal(res.body.message, 'Updated user data');
+                done();
+             });
+    });
+
+    it('return an error for nonexistent user', (done) => {
+        const id = 1000;
+
+        chai.request(app)
+            .put(`/users/${id}`)
+            .end((err, res) => {
+                assert.equal(res.status, 400);
+                assert.equal(res.body.error, 'User does not exist');
                 done();
              });
     });
