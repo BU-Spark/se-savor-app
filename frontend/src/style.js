@@ -27,9 +27,24 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+	height:100%;
+}
+
 body {
 	line-height: 1;
+	min-heigh: 100vh;
+	display:flex;
+	flex-direction:column;
 }
+
+
+footer{
+	
+	//margin-top: auto;
+	flex-shrink: 0;
+}
+
 ol, ul {
 	list-style: none;
 }

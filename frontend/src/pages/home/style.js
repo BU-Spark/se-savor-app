@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import backgroundPic from '../../statics/homePage.jpeg';
 export const HomeWrapper = styled.div`
-height: 900px;
+min-height:calc(100vh - 368px);
+//height: 900px;
 width: 100%;
 background:url(${backgroundPic});
 background-size: cover;
@@ -20,8 +21,8 @@ color: #FFFFFF;
 `
 
 export const Button = styled.button`
-font-size: 55px;
-border-radius: 19px;
+font-size: 28px;
+border-radius: 10px;
 border: 1px solid #EE7B22;
 color: #fff;
 background:#EE7B22;

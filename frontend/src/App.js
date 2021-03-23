@@ -22,7 +22,10 @@ class App extends Component {
                         <Route path='/detail' exact component={Detail}></Route>
                     </div>
                 </BrowserRouter>
-                <Footer />
+                <footer>
+                   <Footer />
+                    
+                </footer>
                 </Provider>
             </Fragment>
         )
