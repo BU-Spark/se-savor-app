@@ -78,7 +78,7 @@ line-height:20px;
 }
 `;
 
-export const Button = styled.div`
+export const Button2 = styled.div`
 
  width: 380px;
  height: 40px;

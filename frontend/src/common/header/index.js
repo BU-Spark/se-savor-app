@@ -24,7 +24,7 @@ class Header extends Component {
             <Addition>
                 {
                     login ? <Button className="signed">welcome back </Button> :
-                    <Button className="sign">SIGN UP </Button>
+                    <Link to='/signup'><Button className="sign" >SIGN UP </Button></Link>
                 }
                
                 {

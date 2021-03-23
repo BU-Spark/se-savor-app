@@ -1,8 +1,11 @@
-import React, { PureComponent } from 'react';
-import { Redirect } from 'react-router-dom';
+import React, { PureComponent,useCallback,useContext } from 'react';
+import { withRouter,Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { LoginWrapper, LoginBox, Input, Button, Text, Nav, NavItem, NavCheckbox } from './style';
+import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 import { actionCreators} from './store';
+import app from "../../firebase.js";
+
+
 class Login extends PureComponent {
     render() {
         const { loginStatus } = this.props;
@@ -20,7 +23,7 @@ class Login extends PureComponent {
                             
                             <NavItem className='right'>Forgot Passoword?</NavItem>
                         </Nav>
-                        <Button onClick={() => this.props.login(this.account,this.password)}>Log In</Button>
+                        <Button2 onClick={() => this.props.login(this.account,this.password)}>Log In</Button2>
                         <Nav>
                             <NavItem className='or'>-----------------------or-----------------------</NavItem>
                         </Nav>
@@ -34,6 +37,24 @@ class Login extends PureComponent {
     }
 }
 
+const Loginfunc = ({ history }) => {
+    const handleLogin = useCallback(
+      async event => {
+        event.preventDefault();
+        const { email, password } = event.target.elements;
+        try {
+          await app
+            .auth()
+            .signInWithEmailAndPassword(email.value, password.value);
+          history.push("/");
+        } catch (error) {
+          alert(error);
+        }
+      },
+      [history]
+    );};
+
+
 const mapState = (state) =>({
     loginStatus: state.getIn(['login','login']),
 })
@@ -41,7 +62,11 @@ const mapState = (state) =>({
 const mapDispatch = (dispatch) => ({
     login(accountElem,passwordElem){
         dispatch(actionCreators.login(accountElem.value,passwordElem.value));
+    },
+    login2(){
+        dispatch(actionCreators.login2());
     }
+
 })
 
 export default connect(mapState,mapDispatch)(Login);
