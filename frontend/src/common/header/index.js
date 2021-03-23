@@ -11,8 +11,12 @@ import {
     Addition,
     Button
 } from './style';
+
+
 class Header extends Component {
+
     render() {
+        
         const { login, logout } = this.props;
         return (<HeaderWrapper>
             <Logo />
@@ -37,6 +41,8 @@ class Header extends Component {
         </HeaderWrapper>)
     }
 }
+
+
 
 const mapStateToProps = (state) => {
     return {

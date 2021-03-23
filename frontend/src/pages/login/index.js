@@ -3,7 +3,7 @@ import { withRouter,Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 import { actionCreators} from './store';
-import app from "../../firebase.js";
+
 
 
 class Login extends PureComponent {
@@ -12,7 +12,9 @@ class Login extends PureComponent {
         //console.log(loginStatus);
         if(!loginStatus){
             return (
+                
                 <LoginWrapper>
+                    
                     <LoginBox>
                         <Text>Log In</Text>
                         <Input placeholder='Email' ref={(input) => {this.account = input}} />
@@ -37,22 +39,6 @@ class Login extends PureComponent {
     }
 }
 
-const Loginfunc = ({ history }) => {
-    const handleLogin = useCallback(
-      async event => {
-        event.preventDefault();
-        const { email, password } = event.target.elements;
-        try {
-          await app
-            .auth()
-            .signInWithEmailAndPassword(email.value, password.value);
-          history.push("/");
-        } catch (error) {
-          alert(error);
-        }
-      },
-      [history]
-    );};
 
 
 const mapState = (state) =>({

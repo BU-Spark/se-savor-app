@@ -1,14 +1,16 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState,Component } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
+import { connect } from 'react-redux';
 import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 
-export default function Signup() {
+
+    function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
-    const { signup } = useAuth()
+    const { signup,verificationEmail } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -23,7 +25,8 @@ export default function Signup() {
         try {
             setError("")
             setLoading(true)
-            await signup(emailRef.current.value, passwordRef.current.value)
+            await signup(emailRef.current.value, passwordRef.current.value);
+            await verificationEmail();
             history.push("/")
         } catch {
             setError("Failed to create an account")
@@ -34,8 +37,6 @@ export default function Signup() {
 
     return (
         <>
-    
-
             <LoginWrapper>
                 <LoginBox>
                         <Card.Body>
@@ -62,8 +63,16 @@ export default function Signup() {
                     </div>
                 </LoginBox>
             </LoginWrapper>
-
-
         </>
     )
 }
+
+const mapState = (state) =>({
+   
+})
+
+const mapDispatch = (dispatch) => ({
+
+})
+
+export default connect(mapState,mapDispatch)(Signup);
