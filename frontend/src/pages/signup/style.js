@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundPic from '../../statics/loginPage.png';
+import backgroundPic from '../../statics/homePage2.jpeg';
 
 export const LoginWrapper = styled.div`
  z-index:0;

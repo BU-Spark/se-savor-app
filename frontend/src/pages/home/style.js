@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundPic from '../../statics/homePage.jpeg';
+import backgroundPic from '../../statics/homePage.png';
 export const HomeWrapper = styled.div`
 min-height:calc(100vh - 368px);
 //height: 900px;

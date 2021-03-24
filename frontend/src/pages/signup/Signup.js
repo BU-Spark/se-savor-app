@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { connect } from 'react-redux';
+import { actionCreators} from './store';
 import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 
 
@@ -68,11 +69,10 @@ import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox
 }
 
 const mapState = (state) =>({
-   
+    loginStatus: state.getIn(['login','login']),
 })
 
 const mapDispatch = (dispatch) => ({
-
 })
 
 export default connect(mapState,mapDispatch)(Signup);

@@ -49,9 +49,6 @@ const mapDispatch = (dispatch) => ({
     login(accountElem,passwordElem){
         dispatch(actionCreators.login(accountElem.value,passwordElem.value));
     },
-    login2(){
-        dispatch(actionCreators.login2());
-    }
 
 })
 

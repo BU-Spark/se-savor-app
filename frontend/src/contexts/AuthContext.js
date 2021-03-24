@@ -24,6 +24,7 @@ export function AuthProvider({ children }) {
     return auth.signInWithEmailAndPassword(email, password)
   }
 
+
   function logout() {
     return auth.signOut()
   }
@@ -58,7 +59,7 @@ export function AuthProvider({ children }) {
     resetPassword,
     updateEmail,
     updatePassword,
-    verificationEmail
+    verificationEmail,
   }
 
   return (
