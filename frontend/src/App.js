@@ -9,6 +9,7 @@ import Header from './common/header/index.js';
 import Login from './pages/login/login.js';
 import SignUp from "./pages/signup/Signup.js";
 import Footer from './common/footer/index.js';
+import MealPlan from './pages/mealplan/index.js';
 
 class App extends Component {
     render() {
@@ -23,6 +24,7 @@ class App extends Component {
                         <Route path='/login' exact component={Login}></Route>
                         <Route path='/signup' exact component={SignUp}></Route>
                         <Route path='/detail' exact component={Detail}></Route>
+                        <Route path='/mealplan' exact component={MealPlan}></Route>
                     </div>
                 </BrowserRouter>
                 </AuthProvider>

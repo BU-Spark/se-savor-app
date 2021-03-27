@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { HomeWrapper, BodyText, TextWrapper, Button } from './style';
-class Home extends Component {
+import { HomeWrapper, BodyText, TextWrapper,Button } from './style';
+class MealPlan extends Component {
     render() {
         return (
             <HomeWrapper>
@@ -14,4 +14,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default MealPlan;
