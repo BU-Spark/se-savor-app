@@ -9,6 +9,8 @@ import Header from './common/header/index.js';
 import Login from './pages/login/login.js';
 import SignUp from "./pages/signup/Signup.js";
 import Footer from './common/footer/index.js';
+import GetUserProfile from './pages/getUserProfile/index.js';
+import PrivateRoute from './pages/login/PrivateRoute.js'
 
 class App extends Component {
     render() {
@@ -19,10 +21,11 @@ class App extends Component {
                 <BrowserRouter>
                     <div>
                     <Header />
-                        <Route path='/' exact component={Home}></Route>
+                        <PrivateRoute path='/' exact component={Home}></PrivateRoute>
                         <Route path='/login' exact component={Login}></Route>
                         <Route path='/signup' exact component={SignUp}></Route>
                         <Route path='/detail' exact component={Detail}></Route>
+                        <Route path='/getUserProfile' exact component={GetUserProfile}></Route>
                     </div>
                 </BrowserRouter>
                 </AuthProvider>

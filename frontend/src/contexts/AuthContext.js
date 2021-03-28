@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from "react"
-import { auth } from "../firebase"
-
+import { auth,firestoredb } from "../firebase"
+import { reactReduxFirebase, getFirebase,getFirestore } from 'react-redux-firebase';
+import 'firebase/firestore';
+import firebase from 'firebase/app';
 const AuthContext = React.createContext()
 
 export function useAuth() {
@@ -12,7 +14,35 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   function signup(email, password) {
-    return auth.createUserWithEmailAndPassword(email, password)
+      let auth =firebase.auth();
+       return auth.createUserWithEmailAndPassword(email, password).catch(function(error){
+         console.log(error);
+       }).then(userCredential => {
+        let user = userCredential.user;
+        let userID = user.uid;
+        let db = firebase.firestore();
+         db.collection('Users').doc(userID).set({
+           email: email,
+         })
+       })
+  }
+
+  function userProfileRequest(firstname,lastname,brith,phone,budget,size,dietary){
+    const user = auth.currentUser;
+    //user.uid
+    let db = firebase.firestore();
+    let userID = user.uid;
+    db.collection('Users').doc(userID).update({
+      //name: user.name,
+      firstname:firstname,
+      lastname:lastname,
+      birth:brith,
+      phone:phone,
+      budget:budget,
+      size:size,
+      dietary:dietary
+    })
+    return 
   }
 
   function verificationEmail(){
@@ -21,7 +51,8 @@ export function AuthProvider({ children }) {
   }
 
   function login(email, password) {
-    return auth.signInWithEmailAndPassword(email, password)
+   
+    return auth.signInWithEmailAndPassword(email, password);
   }
 
 
@@ -60,6 +91,7 @@ export function AuthProvider({ children }) {
     updateEmail,
     updatePassword,
     verificationEmail,
+    userProfileRequest,
   }
 
   return (

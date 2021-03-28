@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import logoPic from '../../statics/savorLogo.png';
-
+import avatarPic from'../../statics/avatar.png';
 export const HeaderWrapper = styled.div`
  position: relative;
  height: 88px;
  border-bottom: 1px solid #f0f0f0;
 `;
-export const Logo = styled.a.attrs({
-    href: '/'
-})`
+
+export const Logo = styled.div`
  position: absolute;
  top:5px;
  left:20px;
@@ -57,10 +56,26 @@ export const Button = styled.div`
  }
  &.log{
     color:#EE7B22;
+    cursor: pointer;
  }
  &. signed{
     color: #757575;
  }
- 
-`
+`;
+
+export const Ava = styled.img.attrs({
+   src: avatarPic
+})`
+ float: right;
+ margin-top: 20px;
+ margin-right: 25px;
+ line-height:44px;
+ padding: 0 20px;
+
+ vertical-align: middle;
+ width: 80px;
+ height: 40px;
+ border-radius: 50%;
+ }
+`;
 
