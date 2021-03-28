@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
-import { HomeWrapper, BodyText, TextWrapper,Button } from './style';
+import {
+    HomeWrapper,
+    PageInfo,
+    PageNav,
+    DashLogo,
+    MealLogo,
+    RecommendationLogo,
+    BudgetLogo,
+    GroupLogo,
+    DietLogo,
+    PageTitle,
+    MainDiv
+} from './style';
+
 class MealPlan extends Component {
     render() {
         return (
             <HomeWrapper>
-                <TextWrapper>
-                    <BodyText>The meal kit everyone</BodyText>
-                    <BodyText>relies on</BodyText>
-                    <Button>Learn More</Button>
-                </TextWrapper>
+                <PageInfo>
+                    <PageNav>
+                        <DashLogo />
+                        <MealLogo />
+                        <RecommendationLogo />
+                        <BudgetLogo />
+                        <GroupLogo />
+                        <DietLogo />
+                    </PageNav>
+                    <PageTitle>Meal Plan</PageTitle>
+                </PageInfo>
+                <MainDiv />
             </HomeWrapper>
         )
     }
