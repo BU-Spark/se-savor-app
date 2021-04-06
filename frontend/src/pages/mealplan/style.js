@@ -9,7 +9,7 @@ import dietLogo from '../../statics/dashboardlogos/dietaryrestrictions.png';
 
 export const HomeWrapper = styled.div`
 min-height:calc(100vh - 368px);
-//height: 900px;
+// height: 100vh;
 width: 100%;
 background:url(${backgroundPic});
 background-size: cover;
@@ -30,7 +30,7 @@ justify-content:space-around;
 height:35px;
 width:350px;
 padding: 5px;
-background: #EE7B22;
+background: #ED7D21;
 `;
 
 export const DashLogo = styled.a.attrs({
@@ -89,17 +89,50 @@ export const DietLogo = styled.a.attrs({
 `;
 
 export const PageTitle = styled.div`
-font-size: 25px;
+font-size: 2rem;
 color: #FFFFFF;
-flex-grow: 1;
-border: 1px solid red;
+min-width: 100px;
+width: 60%;
+padding-left: 15%;
 `;
 
 export const MainDiv = styled.div`
-height: 500px;
-width: 500px;
-background: #FFFFFF;
+width: 60%;
+min-width: 350px;
+background: #F8F8F8;
 align-self: center;
-font-size: 25px;
 margin: 15px;
+padding: 2rem;
+`;
+
+export const ListTitle = styled.div`
+color: #757575;
+font-size: 1.25rem;
+`;
+
+export const RecipeList = styled.div`
+border: 1px solid black;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 5px 0px 20px;
+padding: 0;
+`;
+
+export const RecipeWrapper = styled.div`
+border: 1px solid blue;
+display: flex;
+margin: 1rem;
+width: 300px;
+`;
+
+export const RecipeImg = styled.img`
+width: 50px;
+height: 50px;
+border: 1px solid black;
+`;
+
+export const RecipeText = styled.div`
+border: 2px solid red;
+margin-left: 10px;
 `;
