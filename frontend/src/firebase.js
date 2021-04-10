@@ -1,8 +1,9 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import * as firebaseui from 'firebaseui'
+import 'firebase/firestore';
 import 'firebaseui/dist/firebaseui.css'
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+
+
 
 const app = firebase.initializeApp({
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -28,14 +29,19 @@ export const uiConfig = {
     
     callbacks: {
       // Avoid redirects after sign-in.
-      signInSuccessWithAuthResult: () => false,
+      signInSuccessWithAuthResult: () =>{
+        //this.props.history.push('/');
+        return false
+      } ,
     },
   };
 
+firebase.firestore().settings({ timestampsInSnapshots: true });
+export const firestoredb = firebase.firestore();
 export const auth = app.auth();
 export default app;
 
-
+//signInWithPopup
 const googleProvider = new firebase.auth.GoogleAuthProvider()
 export const signInWithGoogle = () => {
   auth.signInWithPopup(googleProvider).then((res) => {

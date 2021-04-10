@@ -4,10 +4,11 @@ import firebase from 'firebase';
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
-import { connect } from 'react-redux';
 import { actionCreators} from './store';
 import { LoginWrapper, LoginBox} from './style';
-import { signInWithGoogle, uiConfig} from "../../firebase";
+import { signInWithGoogle, uiConfig,firestore} from "../../firebase";
+import { useDispatch, useSelector } from "react-redux";
+
 
 
     function Login() {
@@ -17,43 +18,38 @@ import { signInWithGoogle, uiConfig} from "../../firebase";
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
-  
+    const loginStatus = useSelector(state => state.getIn(['login','login']));
+    const dispatch = useDispatch();
+
+ 
+
     async function handleSubmit(e) {
       e.preventDefault()
-  
       try {
         setError("")
         setLoading(true)
-        await login(emailRef.current.value, passwordRef.current.value)
-        history.push("/")
+        login(emailRef.current.value, passwordRef.current.value).then((userCredential) => {
+          var user = userCredential.user;
+          if (!user.emailVerified){
+            setError("Please verify!!!!!!!!!!!!!!!!")
+          }
+          if (user.emailVerified){
+            dispatch(actionCreators.changeLogin());
+            //dispatch(actionCreators.getData());
+            history.push("/")
+          }
+        }).catch((error) => {
+          setError(error.message);
+        });
       } catch {
-        setError("Failed to log in")
+         setError('something went wrong');
       }
-  
       setLoading(false)
     }
-
-    async function handleGoogleSignIn(e) {
-        e.preventDefault()
-    
-        try {
-          setError("")
-          setLoading(true)
-          await signInWithGoogle()
-          history.push("/")
-        } catch {
-          setError("Failed to log in")
-        }
-    
-        setLoading(false)
-      }
-
-    
-
-
   
     return (
       <>
+      
        <LoginWrapper>
        <LoginBox>
     
@@ -72,8 +68,8 @@ import { signInWithGoogle, uiConfig} from "../../firebase";
               <Button variant="flat" disabled={loading} className="w-100" type="submit" style={{ backgroundColor :"#EE7B22", color:'white'}}>
                 Log In
               </Button>
-              
               <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+
             </Form>
             <div className="w-100 text-center mt-3">
               <Link to="/forgot-password">Forgot Password?</Link>
@@ -89,11 +85,15 @@ import { signInWithGoogle, uiConfig} from "../../firebase";
     )
   }
 
-const mapState = (state) =>({
+// const mapState = (state) =>({
+//   loginStatus: state.getIn(['login','login']),
+// })
 
-})
+// const mapDispatch = (dispatch) => ({
+//   logined(){
+//     dispatch(actionCreators.logined());
+// }
+// })
 
-const mapDispatch = (dispatch) => ({
-})
-
-export default connect(mapState,mapDispatch)(Login);
+export default Login;
+//export default connect(mapState,mapDispatch)(Login);

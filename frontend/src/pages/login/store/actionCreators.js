@@ -3,12 +3,21 @@ import * as constants from './constants';
 import { useAuth } from "../../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import React, { useRef, useState,Component } from "react"
+import { auth,firestore } from "../../../firebase"
+import 'firebase/firestore';
+import firebase from 'firebase/app';
 
-const changeLogin = () => ({
+export const changeLogin = () => ({
     type: constants.CHANGE_LOGIN,
     value: true
 });
-export const logout = () => ({
+
+export const getData =(name) =>({
+    type: constants.GETDATA,
+    username: name,
+})
+
+export const changeLogout = () => ({
     type: constants.LOGOUT,
     value: false
 })
@@ -27,4 +36,11 @@ export const login = (account,password) => {
     }
 }
 
+
+export const logout = () => {
+    return (dispatch) => {
+        auth.signOut();
+        dispatch(changeLogout);
+    }
+}
 

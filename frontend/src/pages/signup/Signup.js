@@ -28,7 +28,7 @@ import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value);
             await verificationEmail();
-            history.push("/")
+            history.push("/getUserProfile")
         } catch {
             setError("Failed to create an account")
         }

@@ -9,8 +9,11 @@ import {
     Nav,
     NavItem,
     Addition,
-    Button
+    Button,
+    Ava
 } from './style';
+import { Form, Card, Alert,Row,Col,Image } from "react-bootstrap"
+import { auth } from '../../firebase';
 
 
 class Header extends Component {
@@ -19,25 +22,38 @@ class Header extends Component {
         
         const { login, logout } = this.props;
         return (<HeaderWrapper>
-            <Logo />
+             <Link to='/'><Logo /></Link>
             <Nav>
                 <NavItem className='left menu'>OUR MENU</NavItem>
                 <NavItem className='left'>PLANS</NavItem>
                 <NavItem className='left'>OUR VISION</NavItem>
             </Nav >
+            <Row>
+    <Col xs={6} md={4}>
+      <Image  roundedCircle />
+    </Col>
+  </Row>
             <Addition>
                 {
-                    login ? <Button className="signed">welcome back </Button> :
+                    login ?
+                    <span>
+                     <Link to='/detail'><Ava className="signed"></Ava></Link>
+                    <Button className="signed">welcome back! </Button>
+                    </span> 
+                    :
                     <Link to='/signup'><Button className="sign" >SIGN UP </Button></Link>
                 }
                
                 {
                     login ? 
-                    <Button className="log" onClick={logout}>LOG OUT</Button> : 
+                    <Link to='/'><Button className="log" onClick={logout}>LOG OUT</Button></Link> : 
                     <Link to='/login'><Button className="log" >LOG IN</Button></Link>
                 }
 
             </Addition>
+
+
+
         </HeaderWrapper>)
     }
 }

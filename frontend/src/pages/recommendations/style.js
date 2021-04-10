@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundPic from '../../statics/mealPlan.png';
+import backgroundPic from '../../statics/mealplanPage.png';
 import dashLogo from '../../statics/dashboardlogos/dashboard.png';
 import mealLogo from '../../statics/dashboardlogos/mealplan.png';
 import reccommendationLogo from '../../statics/dashboardlogos/recommendations.png';
