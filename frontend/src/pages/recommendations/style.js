@@ -6,6 +6,8 @@ import reccommendationLogo from '../../statics/dashboardlogos/recommendations.pn
 import budgetLogo from '../../statics/dashboardlogos/budget.png';
 import groupLogo from '../../statics/dashboardlogos/groupsize.png';
 import dietLogo from '../../statics/dashboardlogos/dietaryrestrictions.png';
+import thumbsUp from '../../statics/thumbsUp.png'
+import bookmark from '../../statics/bookmark.png'
 
 export const HomeWrapper = styled.div`
 min-height:calc(100vh - 368px);
@@ -100,11 +102,6 @@ color: #ED7D21;
 margin-bottom: 15px;
 `;
 
-export const CurrentDate = styled.div`
-font-size: 1.5rem;
-margin-bottom: 15px;
-`;
-
 export const MainDiv = styled.div`
 width: 60%;
 min-width: 350px;
@@ -113,6 +110,8 @@ align-self: center;
 margin: 15px;
 padding: 3rem;
 border-radius: 5px;
+display: flex;
+flex-direction: column;
 `;
 
 export const ListTitle = styled.div`
@@ -130,13 +129,14 @@ padding: 0 1rem;
 export const RecipeWrapper = styled.div`
 display: flex;
 margin: 1rem;
-height: 50px;
-width: 300px;
+height: 150px;
+width: 250px;
+overflow: hidden;
 `;
 
 export const RecipeImg = styled.img`
-width: 50px;
-min-width: 50px;
+width: 50%;
+min-width: 50%;
 height: 100%;
 border-radius: 10px;
 object-fit: cover;
@@ -144,7 +144,9 @@ object-fit: cover;
 
 export const RecipeText = styled.div`
 margin-left: 10px;
-flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 color: #757575;
 font-size: 0.75rem;
 `;
@@ -155,3 +157,43 @@ font-size: 0.80rem;
 font-weight: bold;
 margin-bottom: 15px;
 `;
+
+export const RecipeActionsBox = styled.div`
+display: flex;
+justify-content: space-between;
+`;
+
+export const Like = styled.a.attrs({
+    href: ''
+})`
+ width: 20px;
+ height: 20px;
+ background:url(${thumbsUp});
+ background-size: contain;
+ background-repeat: no-repeat;
+`;
+
+export const Bookmark = styled.a.attrs({
+    href: ''
+})`
+ width: 20px;
+ height: 20px;
+ background:url(${bookmark});
+ background-size: contain;
+ background-repeat: no-repeat;
+`;
+
+export const DisplayActionsBox = styled.div`
+display: flex;
+`;
+
+export const Button = styled.button`
+font-size: 0.75rem;
+border-radius: 10px;
+border: 1px solid #EE7B22;
+color: #fff;
+background:#EE7B22;
+padding: 5px 5px;
+width: 70px;
+margin: 0 1rem;
+`

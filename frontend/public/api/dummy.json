@@ -4,12 +4,612 @@
         "bill": 100
     },
     "recipes": [
-        "z9uWbbivWiUAyZKkpUmC", 
-        "1mf9YA4fapaEEgDUys1Z", 
-        "pL8tUzjGlEhx6jRoPkPZ", 
-        "i5Re824vtdDtr1MOLwwA",
-        "E3VZ7P0kcJ9QDaTLyT5A",
-        "gAF8As17VDfXFVmzLxBl",
-        "Lma2P64UrbUNkoZI8ESM"
+        {
+        "recipeCategory": "Breakfast",
+        "costPerIngredient": "1 orange ($0.42) 1.25 cups all-purpose flour ($0.13) 3/4 cup powdered sugar ($0.05) 2 tsp baking powder ($0.08) 1/2 tsp salt ($0.02) 1/3 cup dried cranberries ($0.29) 1 cup heavy cream ($0.78) 1/2 tsp vanilla extract ($0.07)",
+        "dietaryRes": "None",
+        "estimatedTime": "25 minutes",
+        "instructions": "1.\tPreheat the oven to 400ºF. Use a zester to zest the orange, then squeeze the juice into a small bowl. Set the zest and juice aside. 2.\tIn a large bowl, stir together the flour, 1/4 cup of the powdered sugar, baking powder, salt, and dried cranberries. 3.\tStir 1/2 tsp of the orange zest and the vanilla extract into the heavy whipping cream. Pour the cream mixture into the bowl of dry ingredients and stir them together until a sticky ball of dough forms. 4.\tGenerously dust a clean work surface with flour, then scrape the dough out of the bowl onto the work surface. Divide the dough into three pieces and shape each piece into a disc, about 3-inches in diameter and about 1/2-inch thick. Cut each disc into six wedges. 5.\tPlace the cut scones onto a baking sheet lined with parchment paper. Bake the scones for 15 minutes, or until they begin to turn slightly golden brown on the edges. Allow the scones to cool completely afterwards. 6.\tWhile the scones are baking or cooling, stir together the remaining powdered sugar with 1 Tbsp of the orange juice (or just enough to make a thick glaze) and add another pinch of orange zest. 7.\tWhen the scones are completely cool, drizzle the orange glaze over top and serve.",
+        "nutritionPerServing": "Calories: 114.51kcal ・ Carbohydrates: 13.92g ・ Protein: 0.88g ・ Fat: 5.34g ・ Sodium: 136.68mg ・ Fiber: 0.35g",
+        "estimatedPricePerServing": "$0.11",
+        "recipeName": "Cranberry Orange Cream Scones",
+        "imageLink": "https://tastesbetterfromscratch.com/wp-content/uploads/2018/11/Cranberry-Orange-Scones-4.jpg",
+        "ingredients": "1 orange 1.25 cups all-purpose flour 3/4 cup powdered sugar 2 tsp baking powder 1/2 tsp salt 1/3 cup dried cranberries 1 cup heavy cream 1/2 tsp vanilla extract ",
+        "estimatedServings": "6",
+        "totalRecipeCost": "$1.94"
+        },
+        {
+        "totalRecipeCost": "$1.07",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 173.02kcal ・ Carbohydrates: 16.7g ・ Protein: 5.57g ・ Fat: 9.55g ・ Sodium: 179.78mg ・ Fiber: 1.35g",
+        "estimatedPricePerServing": "$0.18",
+        "recipeName": "Homemade Crepes",
+        "imageLink": "https://rasamalaysia.com/wp-content/uploads/2018/09/homemade-crepes4.jpg",
+        "recipeCategory": "Breakfast",
+        "costPerIngredients": "1 cup all-purpose flour ($0.08) 1/4 tsp salt ($0.02) 2 eggs ($0.32) 3/4 cup whole milk ($0.33) 1/2 cup water ($0.00) 3 Tbsp butter ($0.30) 1 tsp cooking oil ($0.02)",
+        "estimatedServings": "6",
+        "ingredients ": "1 cup all-purpose flour  1/4 tsp salt 2 eggs  3/4 cup whole milk 1/2 cup water 3 Tbsp butter 1 tsp cooking oil",
+        "instructions": "* \t\tFirst, in a mixing bowl, mix together the all-purpose flour and salt. Then in a different bowl, whisk together the milk, water, and eggs until everything is smooth. Add the flour mixture and melted butter to the whisked milk and eggs from the other bowl and combine everything.   * \t\tThen, make sure to cover the batter and refrigerate for 30 minutes.  * \t\tNext, very lightly oil an 8\" to 10\" non-stick pan. Pre-heat the pan over medium heat. Then, scoop 1/3 cup of the batter into the middle of the pan. Quickly lift the pan and tilt it in a circular motion in order to allow the batter to spread evenly.   * \t\tOnce the batter is evenly spread,  place the pan back on heat and cook until golden brown on the bottom. Flip and cook until the crepe is the same color. Remove the cooked crepe to a plate and start on the next one. Then serve. ",
+        "estimatedTime": "1 hour",
+        "dietaryRes": "Vegetarian"
+        },
+        {
+        "costPerIngredient": "8 oz. country sausage ($1.45) 6 eggs ($1.40) 1/4 tsp salt ($0.02) 1/4 tsp cracked black pepper ($0.02) 6 oz. shredded cheddar cheese ($1.27) 6 tortillas ($0.86)",
+        "estimatedTime": "25 minutes",
+        "nutritionPerServing": "Calories: 325.15kcal ・ Carbohydrates: 23.37g ・ Protein: 16.5g ・ Fat: 17.55g ・ Sodium: 1273.23mg ・ Fiber: 2.33g",
+        "estimatedServings": "6 quesadillas",
+        "totalRecipeCost": "$5.02",
+        "recipeCategory": "Breakfast",
+        "imageLink": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2016%2F04%2F201408-xl-breakfast-quesadillas.jpg&q=85",
+        "estimatedPricePerServing": "$0.84",
+        "ingredients": "8 oz. country sausage 6 eggs 1/4 tsp salt 1/4 tsp cracked black pepper 6 oz. shredded cheddar cheese 6 tortillas ",
+        "instructions": "1.\tAdd the sausage to a skillet and cook over medium heat until the sausage is browned and crispy on the edges. When the sausage is cooked, remove it from the skillet using a slotted spoon so they grease stays behind in the skillet. 2.\tWhile the sausage is cooking, crack six eggs into a bowl and season with salt and pepper (about ¼ tsp each). Whisk the eggs. Shred the cheddar cheese. 3.\tAdd the whisked eggs to the skillet with the sausage grease, and continue to cook them over medium heat, gently folding them as the eggs set. Cook until the eggs are set, but still moist. Remove the skillet from the heat. 4.\tWith the skillet off the heat, add the cooked sausage and shredded cheddar to the skillet with the scrambled eggs. Fold the ingredients together until they are evenly combined. 5.\tPlace about ½ cup of the sausage, egg, and cheese mixture into each tortilla, spreading it out to cover half of the tortilla. Fold the tortilla closed. You can either toast or freeze the quesadillas at this point. 6.\tTo cook the quesadillas, add them back to the skillet (preferably a dry skillet) and cook over medium heat on each side until the tortilla is browned and crispy and the cheese on the inside is melted. Slice the quesadilla into three pieces, then serve.",
+        "dietaryRes": "None",
+        "recipeName": "Sausage and Egg Breakfast Quesadilla"
+        },
+        {
+        "recipeCategory": "Breakfast",
+        "nutritionPerServing": "Serving: 0.5 Recipe ・ Calories: 320.55kcal ・ Carbohydrates: 15.55g ・ Protein: 18.6g ・ Fat: 20.35g ・ Sodium: 618.95mg ・ Fiber: 2.45g",
+        "estimatedTime": "30 minutes",
+        "dietaryRes": "Vegetarian",
+        "instructions": "* \tFirst, start by preheating the oven to 350ºF. Brush olive oil on the inside of a round, 7-inch diameter oven safe dish. Push the tortilla down into the dish so that the edges of the tortilla are folded up along the sides of the dish.  * \t\tThen chop the spinach and add it to the bottom of the tortilla. Crack the four eggs into the tortilla on top of the spinach. Add a pinch of salt and pepper on top.  * \t\tNow, slice the grape tomatoes in half, then sprinkle them over the eggs. Finally, put the shredded cheese on top.   * \t\tThen, bake the egg filled tortilla in the oven for 20-25 minutes.   * \t\tFinally, remove the tortilla baked eggs from the oven and slide them out of the dish. Slice into four pieces, then serve.",
+        "imageLink": "https://www.budgetbytes.com/wp-content/uploads/2021/01/4-Add-Eggs-800x600.jpg",
+        "totalRecipeCost": "$1.22",
+        "recipeName": "Tortilla Baked Eggs",
+        "costPerIngredients": "1/2 Tbsp olive oil ($0.18) 1 8\" tortilla ($0.14) 1 cup spinach ($0.16) 4 eggs ($0.23) 1/8 tsp salt ($0.01) 1/8 tsp cracked black pepper ($0.01) 1/2 cup grape tomatoes ($0.37) 1/4 cup shredded cheddar cheese ($0.21) 1/8 tsp crushed red pepper (optional) ($0.01)",
+        "ingredients ": "1/2 Tbsp olive oil 1 8\" tortilla 1 cup spinach 4 eggs 1/8 tsp salt 1/8 tsp cracked black pepper 1/2 cup grape tomatoes 1/4 cup shredded cheddar cheese 1/8 tsp crushed red pepper (optional)",
+        "estimatedServings": "2",
+        "estimatedPricePerServing": "$0.61"
+        },
+        {
+        "recipeName": "Pumpkin Pie Oats (Overnight)",
+        "estimatedServings": "1",
+        "instructions": "First, add the rolled oats (uncooked), pumpkin pie spice, salt, and chopped pecans all into a container or jar. Then, top with the pumpkin purée, brown sugar, and milk. Close the container and refrigerate overnight. Before eating, stir the contents in the jar until everything is fully mixed. Enjoy the meal both cold or microwaved. ",
+        "nutritionPerServing": "Serving: 1 Bowl | Calories: 293.86kcal | Carbohydrates: 42.24g | Protein: 9.85g | Fat: 11.88g | Sodium: 350.34mg | Fiber: 6.38g",
+        "ingredients": "1/3 cup old-fashioned rolled oats 1/2 tsp pumpkin pie spice  1 Tbsp pecans 1/8 tsp salt 1/4 cup pumpkin purée 1/2 Tbsp brown sugar 1/2 cup whole milk",
+        "costPerIngredients": " 1/3 cup rolled oats $0.44 1/2 tsp pumpkin pie spice $0.05 1 Tbsp pecans $0.13 1/8 tsp salt $0.01 1/4 cup pumpkin purée $0.12 1/2 Tbsp brown sugar $0.02 1/2 cup whole milk $0.18",
+        "estimatedPricePerServing": "$0.95",
+        "imageLink": "https://lemonsandzest.com/wp-content/uploads/2018/09/Pumpkin-Pie-Overnight-Oats-2.13.jpg",
+        "totalRecipeCost": "$0.95",
+        "estimatedTime": "8 hours 5 minutes",
+        "dietaryRes": "Vegetarian ",
+        "recipeCategory": "Breakfast"
+        },
+        {
+        "estimatedTime": "30 minutes",
+        "estimatedServings": "4",
+        "recipeName": "Homemade BBQ Chicken Pizza",
+        "dietaryRes": "None",
+        "totalRecipeCost": "$5.43",
+        "nutritionPerServing": "Serving: 2 Slices ・ Calories: 532.88kcal ・ Carbohydrates: 54.03g ・ Protein: 30.83g ・ Fat: 20g ・ Sodium: 2640.13mg ・ Fiber: 2.28g",
+        "instructions": "* First, in a small bowl, mix together the smoked paprika, garlic powder, salt, and pepper. Make sure to season both sides of the chicken with the spices.   * \t\tThen, heat up a skillet over medium heat. Add the cooking oil and swirl to coat the surface the pan. Add the seasoned chicken breast and cook for about 5-7 minutes on each side. Transfer the chicken to a cutting board.   * \t\tNow, let the chicken rest for about 5 minutes, then chop into small pieces. Coat the chicken with a ¼ cup of BBQ sauce. Stir to coat the chicken in the sauce.   * \t\tThen, make sure to preheat the oven to 450ºF. Place the prepared pizza dough on a pizza pan, then spread out about ½ cup BBQ sauce over the surface.   * \t\tAdd the shredded cheese, BBQ chicken, sliced jalapeños, and sliced onion to the pizza.   * \t\tLastly, bake the pizza for 10-12 minutes, or until the crust and cheese are golden brown. Then serve.",
+        "recipeCategory": "Lunch",
+        "ingredients ": "1 boneless chicken breast ½ tsp smoked paprika ¼ tsp garlic powder ⅛ tsp salt ⅛ tsp cracked black pepper ½ Tbsp cooking oil ¼ cup BBQ sauce 1 pizza dough ½ cup BBQ sauce 4 oz. Monterey jack cheese 1 jalapeño (optional) ¼ cup red onion ",
+        "estimatedPricePerServing": "$1.36",
+        "imageLink": "https://www.asweetpeachef.com/wp-content/uploads/2018/04/best-bbq-chicken-pizza-2.jpg",
+        "costPerIngredients": "1 boneless chicken breast (about ⅔ lb.) ($3.22) ½ tsp smoked paprika ($0.05) ¼ tsp garlic powder ($0.02) ⅛ tsp salt ($0.02) ⅛ tsp cracked black pepper ($0.02) ½ Tbsp cooking oil ($0.04) ¼ cup BBQ sauce ($0.11) 1 pizza dough ($0.62) ½ cup BBQ sauce ($0.22) 4 oz. Monterey jack cheese ($0.85) 1 jalapeño (optional) ($0.15) ¼ cup red onion ($0.11)"
+        },
+        {
+        "recipeCategory": "Lunch",
+        "instructions": "1.\tWash the mushrooms to remove any dirt or debris. Slice half of the mushrooms and roughly chop the other half. 2.\tAdd the olive oil, mushrooms, garlic, and a pinch of salt and pepper to a soup pot. Sauté the mushrooms over medium heat until they have released all of their moisture. Once all the liquid has evaporated from the bottom of the pot, and the mushrooms become very dark brown. 3.\tAdd the butter and flour to the pot. Stir and cook for two more minutes. The flour and butter will form a thick paste and coat the mushrooms and the bottom of the pot.  4.\tFinally, add the vegetable broth, water, and dried thyme. Stir to dissolve all of the flour from the bottom of the pot. Allow the liquid to come up to a simmer, at which point the flour will slightly thicken the broth. 5.\tStir the cream into the soup. Finally, add the soy sauce, taste the soup, and add an additional pinch of salt if needed (depending on the salt content of the broth). Serve hot.",
+        "estimatedServing": "4",
+        "estimatedTime": "35 minutes",
+        "nutritionPerServing": "1 Serving ・ Calories: 242.08kcal ・ Carbohydrates: 12.48g ・ Protein: 5.18g ・ Fat: 20.1g ・ Sodium: 681.05mg ・ Fiber: 1.4g",
+        "estimatedPricePerServing": "$1.19",
+        "imageLink": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Creamy-Garlic---Mushroom-Soup_exps47782_THCA1917912D10_02_1bC_RMS.jpg",
+        "totalRecipeCost": "$4.75",
+        "ingredients": "1 lb. baby bella mushrooms 1 Tbsp olive oil 3 cloves garlic Pinch salt & pepper 2 Tbsp butter 1/4 cup all-purpose flour 2 cups vegetable broth  2 cups water 1/8 tsp dried thyme 1/2 cup heavy cream 1 tsp soy sauce ",
+        "recipeName": "Creamy Garlic Mushroom Soup",
+        "dietaryRes": "None",
+        "costPerIngredient": "1 lb. baby bella mushrooms ($3.38) 1 Tbsp olive oil ($0.13) 3 cloves garlic ($0.24) Pinch salt & pepper ($0.05) 2 Tbsp butter ($0.26) 1/4 cup all-purpose flour ($0.04) 2 cups vegetable broth ($0.18) 2 cups water ($0.00) 1/8 tsp dried thyme ($0.02) 1/2 cup heavy cream ($0.42) 1 tsp soy sauce ($0.03)"
+        },
+        {
+        "dietaryRes": "Vegetarian",
+        "estimatedPricePerServing": "$0.52",
+        "nutritionPerServing": "Serving: 1.5 Cups ・ Calories: 168.16kcal ・ Carbohydrates: 17.6g ・ Protein: 2.86g ・ Fat: 11.44g ・ Sodium: 731.8mg ・ Fiber: 4.68g",
+        "estimatedTime": "25 minutes",
+        "instructions": "* First, mince the garlic and add to a sauce pot with olive oil as well. Also add oregano, basil, thyme, rosemary, red pepper flakes, and pepper. Then, turn the heat to medium-low and sauté for 2 minutes. * \t\tThen, add the brown sugar along with the tomato paste. Then stir until everything is mixed. Then cook the mixture while stirring for 3-5 minutes.  * \t\tFinally, add the crushed tomatoes and vegetable broth. Turn the heat up to medium and stir everything together. Then serve. (Serve preferably hot)",
+        "costPerIngredients": "2 cloves garlic ($0.16) 1/4 cup olive oil ($0.64) 1/2 tsp dried oregano ($0.05) 1/2 tsp dried basil ($0.05) 1/2 tsp dried thyme ($0.05) 1/4 tsp dried rosemary ($0.03) 1 pinch crushed red pepper ($0.02) 1/4 tsp cracked black pepper ($0.03) 1 6oz. can tomato paste ($0.39) 1 Tbsp brown sugar ($0.02) 1 28oz. can crushed tomatoes ($0.79) 3 cups vegetable broth ($0.39)",
+        "estimatedServings": "5",
+        "recipeName": "Tomato Herb Soup",
+        "imageLink": "https://www.diabetesfoodhub.org/system/thumbs/system/images/recipes/428-diabetic-quick-herb-tomato-soup_shutterstock613482653_012919_2959761669.jpg",
+        "totalRecipeCost": "$2.62",
+        "ingredients ": "2 cloves garlic  1/4 cup olive oil  1/2 tsp dried oregano  1/2 tsp dried basil  1/2 tsp dried thyme  1/4 tsp dried rosemary 1 pinch crushed red pepper  1/4 tsp cracked black pepper  1 6oz. can tomato paste  1 Tbsp brown sugar  1 28oz. can crushed tomatoes  3 cups vegetable broth ",
+        "recipeCategory": "Lunch"
+        },
+        {
+        "ingredients ": "1/2 lb. spinach 2 cloves garlic 2 Tbsp butter 1.5 cups white rice 3/4 tsp salt 2.5 cups water 1 Tbsp lemon juice 2 oz. feta ",
+        "recipeName": "Spinach Rice with Feta",
+        "nutritionPerServing": "Serving: 1 Cup ・ Calories: 240.97kcal ・ Carbohydrates: 39.48g ・ Protein: 6.13g ・ Fat: 6.4g ・ Sodium: 464.14mg ・ Fiber: 1.73g",
+        "estimatedTime": "30 minutes",
+        "costPerIngredients": "1/2 lb. spinach ($0.65) 2 cloves garlic ($0.16) 2 Tbsp butter ($0.14) 1.5 cups white rice ($0.93) 3/4 tsp salt ($0.03) 2.5 cups water ($0.16) 1 Tbsp lemon juice ($0.05) 2 oz. feta ($1.10)",
+        "totalRecipeCost": "$3.06",
+        "imageLink": "https://cooktoria.com/wp-content/uploads/2018/09/Spanakorizo-Greek-Spinach-Rice-1-5.jpg",
+        "instructions": "* \t\tFirst make sure to have removed the excess moisture from the spinach after washing it.  * \t\tNow, add in the minced garlic and butter to a medium sauce pot. Make sure to sauté the garlic in the butter over medium heat for about 1-2 minutes.   * \t\tThen, add in the spinach, rice, salt, lemon juice, and 2.5 cups water to the sauce pot. Stir it briefly.  * \t\tNow, put a lid on the pot, turn the heat up to medium-high, and let the water boil. Once it fully boils, turn the heat down to low. Let the rice simmer for 15 minutes. After, turn the heat off and let the pot rest, with lid still on top. Do this for an additional five minutes.   * \t\tLastly, fluff the rice with a fork, gently folding the spinach back into the rice. Then sprinkle the feta on top and fold to combine again. ",
+        "estimatedPricePerServing": "$0.51",
+        "estimatedServings": "6",
+        "recipeCategory": "Lunch",
+        "dietaryRes": "Vegetarian "
+        },
+        {
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 644.3kcal ・ Carbohydrates: 64g ・ Protein: 20.93g ・ Fat: 31.88g ・ Sodium: 1790.08mg ・ Fiber: 7.3g",
+        "estimatedServings": "4",
+        "imageLink": "https://thecookreport.co.uk/wp-content/uploads/2020/04/Spiced-Beef-Hummus-Bowls-6.jpg",
+        "costPerIngredients": "1/2 lb. ground beef ($2.65) 1/2 tsp dried oregano ($0.05) 1/2 tsp ground cumin ($0.05) 1/4 tsp garlic powder ($0.02) 1/4 tsp salt ($0.02) 4 cups white rice ($0.70) 1 cup hummus ($1.48) 1 pint grape tomatoes ($1.89) 1/2 cucumber ($0.75) 1/4 red onion ($0.07) 1 cup kalamata olives ($0.90) 2 oz. feta ($1.10) handful  parsley ($0.25)",
+        "recipeCategory": "Lunch",
+        "totalRecipeCost": "$9.93",
+        "estimatedTime": "25 minutes",
+        "dietaryRes": "None",
+        "recipeName": "Ground Beef Hummus Bowl",
+        "ingredients ": "1/2 lb. ground beef 1/2 tsp dried oregano 1/2 tsp ground cumin 1/4 tsp garlic powder 1/4 tsp salt 4 cups white rice 1 cup hummus 1 pint grape tomatoes 1/2 cucumber 1/4 red onion 1 cup kalamata olives 2 oz. feta handful  parsley",
+        "estimatedPricePerServing": "$2.48",
+        "instructions": "* \tFirst, add the ground beef to a skillet, while adding oregano, cumin, garlic powder, and salt. Cook on medium heat and make sure to stir. Make sure the beef has browned fully.  * \t\tThen add 1 cup rice and 1/4 cup hummus in each bowl. Finally, split up the ingredients left among the four bowls, or in any amount that you desire. Then serve. (Refrigerate as well if desired)"
+        },
+        {
+        "totalRecipeCost": "$11.29",
+        "estimatedTime": "30 minutes",
+        "recipeName": "Turkey Taco Salad",
+        "dietaryRes": "None",
+        "costPerIngredients": "1 avocado ($0.89) 1/2 cup sour cream ($0.24) 1 clove garlic ($0.08) 1/4 tsp salt ($0.02) 2 Tbsp lime juice ($0.50) 1/4 cilantro ($0.20) 1/4 cup water ($0.00) 1/2 Tbsp olive oil ($0.08) 1 lb. ground turkey ($3.49) 2 Tbsp taco seasoning ($0.67) 1 head romaine lettuce ($0.86) 1 cup frozen corn ($0.35) 1 15oz. black beans ($0.89) 1 pint grape tomatoes ($1.99) 1 jalapeño (optional) ($0.18) 2 oz. shredded cheddar cheese ($0.85)",
+        "nutritionPerServing": "Serving: 0.25 Recipe ・ Calories: 476.45kcal ・ Carbohydrates: 37.55g ・ Protein: 32.93g ・ Fat: 23.2g ・ Sodium: 1044.28mg ・ Fiber: 11.95g",
+        "estimatedServings": "4",
+        "recipeCategory": "Dinner",
+        "imageLink": "https://www.aberdeenskitchen.com/wp-content/uploads/2019/02/Turkey-Taco-Salad-with-Cilantro-Avocado-Dressing-5.jpg",
+        "estimatedPricePerServing": "$2.82",
+        "instructions": "* \t\tFirst, remove the pit from the avocado and peel it. Add it to a food processor, along with salt, lime juice, water, cilantro, garlic, and sour cream. Purée until everything is fully smooth. Refrigerate it.    * \t\tThen, add the olive oil to a large pan and heat over medium heat. Once the pan is fully heated, add the ground turkey and cook. While you cook, break up the turkey into pieces. When it's about half-way cooked, add the taco seasoning and continue to mix everything together. Cook the Turkey all the way through.  * \t\tNext, thaw up the frozen corn in the microwave. Wash the romaine lettuce fully and chop it up.  Next, rinse and drain the black beans, dice up the grape tomatoes, cut up the jalapeño, and fully shred the cheddar cheese.   * \t\tLastly, to build out the salad properly, lay a bed of the cut up romaine lettuce in each bowl and top each of the bowls with cheese, tomatoes, corn, seasoned turkey, and a few slices of jalapeño. Drizzle the creamy avocado dressing on top. Then serve.  ",
+        "ingredients": "1 avocado 1/2 cup sour cream 1 clove garlic 1/4 tsp salt 2 Tbsp lime juice 1/4 cilantro 1/4 cup water 1/2 Tbsp olive oil 1 lb. ground turkey 2 Tbsp taco seasoning 1 head romaine lettuce 1 cup frozen corn 1 15oz. black beans 1 pint grape tomatoes 1 jalapeño (optional)  2 oz. shredded cheddar cheese"
+        },
+        {
+        "dietaryRes": "None",
+        "estimatedServings": "6",
+        "estimatedPricePerServing": "$1.65",
+        "ingredients ": "2 lbs. russet potatoes 1/2 lb. carrots 1 yellow onion 2 cloves garlic ½ tsp dried rosemary  ½ tsp dried thyme 1/4 tsp cracked black pepper 1 lb. ground beef 1 15oz. can stewed tomatoes 2 cups beef broth 2 Tbsp Worcestershire sauce 1 Tbsp soy sauce 1 cup frozen peas ",
+        "totalRecipeCost": "$9.88",
+        "instructions": "* First, peel and dice the potatoes into 1-inch cubes. Also, peel and slice the carrots. Slice up the onion and mince the garlic. Add in the potatoes, carrots, onion, garlic, rosemary, thyme, and pepper to a medium sized slow cooker.   * \t\tThen, brown the ground beef in a skillet, then drain off the extra fat. Add the beef and the can of stewed tomatoes to the slow cooker. Then, add the beef broth, Worcestershire sauce, and soy sauce to the slow cooker.   * \t\tNow, briefly stir what is in the slow cooker, making sure everything is combined. Place the lid on the slow cooker and cook on high for four hours.  * \t\tThen, take off the lid and stir the stew. To help thicken the stew, use the back of a spoon to slightly mash some of the potatoes.   * \t\tFinally, add the frozen peas and stir to combine into the stew. Serve hot!",
+        "estimatedTime": "4 hours 30 minutes",
+        "recipeCategory": "Dinner",
+        "imageLink": "https://www.dinneratthezoo.com/wp-content/uploads/2017/12/hamburger-soup-4.jpg",
+        "recipeName": "Slow Cooker Hamburger Stew",
+        "costPerIngredients": "2 lbs. russet potatoes ($1.20) 1/2 lb. carrots ($0.45)1 yellow onion (0.32) 2 cloves garlic ($0.16) ½ tsp dried rosemary ($0.05) ½ tsp dried thyme ($0.05) 1/4 tsp cracked black pepper ($0.02) 1 lb. ground beef ($5.69) 1 15oz. can stewed tomatoes ($1.00) 2 cups beef broth ($0.26) 2 Tbsp Worcestershire sauce ($0.02) 1 Tbsp soy sauce ($0.06) 1 cup frozen peas ($0.60)",
+        "nutritionPerServing": "Serving: 1.5 Cups ・ Calories: 348.27kcal ・ Carbohydrates: 41.42g ・ Protein: 20.15g ・ Fat: 11.83g ・ Sodium: 751.72mg ・ Fiber: 5.07g"
+        },
+
+  
+        {
+        "instructions": "* \tBegin with seasoning the chicken thighs with a pinch of salt and pepper on both sides.   * \t\tThen, heat up a large skillet over medium heat. Once hot, add the olive oil and spread it around to fully coat the surface of the pan. Add the chicken thighs and cook for 5-7 minutes on each side. Remove the thighs to a clean plate.    * \t\tNow, add the minced garlic and Italian seasoning blend to the pan. Sauté the garlic and herbs in the leftover oil from the chicken. Sauté for 1-2 minutes.  * \t\tThen, pour in the chicken broth and stir. Let the broth simmer on medium heat for about 5 minutes.  * \t\tOnce the broth has fully reduced, add the butter and stir until melted. It should fully melt into the sauce. Add the chicken pieces back to the skillet with the sauce and pour the sauce over each piece. Garnish with a sprinkle of chopped parsley, then serve. ",
+        "dietaryRes": "None",
+        "costPerIngredients": "5 boneless chicken thighs ($5.08) pinch salt and cracked black pepper ($0.05) 1 Tbsp olive oil ($0.13) 2 cloves garlic ($0.16) 1/2 Tbsp Italian seasoning blend ($0.15) 1/2 cup chicken broth ($0.07) 1 Tbsp butter ($0.13) handful parsley ($0.11)",
+        "imageLink": "https://i.pinimg.com/originals/57/84/0e/57840e515ddab805d7df0edec70f98b7.jpg",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 264.5kcal ・ Carbohydrates: 0.7g ・ Protein: 26.06g ・ Fat: 18.5g ・ Sodium: 340.02mg ・ Fiber: 0.12g",
+        "recipeCategory": "Dinner",
+        "totalRecipeCost": "$5.88",
+        "estimatedTime": "30 minutes",
+        "estimatedServings": "5",
+        "ingredients ": "5 boneless chicken thighs pinch salt and cracked black pepper 1 Tbsp olive oil  2 cloves garlic 1/2 Tbsp Italian seasoning blend 1/2 cup chicken broth 1 Tbsp butter handful parsley ",
+        "recipeName": "Herb Butter Chicken Thighs",
+        "estimatedPricePerServing": "$1.18"
+        },
+        {
+        "instructions": " * \t\tFirst place the Italian sausage into a deep pot and cook over medium heat. Make sure the sausage breaks up into pieces as it cooks. Then, mince two cloves of garlic and add it to the sausage. Sauté for 1 minute more.   * \t\tNext, add in the tomato paste, Italian seasoning, crushed tomatoes, and water. Stir and let the sauce to come to a simmer. Once simmering, place a lid on top and turn down the heat, bringing it to medium-low. Let the sauce simmer while you cook the pasta.   * \t\tNow, bring a large pot of water to a boil for the pasta to cook. Once the water is boiling, add in the pasta and cook for about 7-10 minutes. Drain the pasta in a colander.   * \t\tNext, stir the heavy cream into the pasta sauce. Add in the spinach and stir it into the sauce.  * \t\tLastly, add the cooked and drained pasta to the sauce and mix everything together. Then serve. ",
+        "nutritionPerServing": "Serving: 1 serving ・ Calories: 542.08kcal ・ Carbohydrates: 61.88g ・ Protein: 23g ・ Fat: 23.78g ・ Sodium: 843.95mg ・ Fiber: 6.55g",
+        "estimatedPricePerServing": "$1.44",
+        "costPerIngredients": "1/2 lb. Italian sausage ($2.25) 2 cloves garlic ($0.16) 2 Tbsp tomato paste ($0.10) 1 28oz. can crushed tomatoes ($0.85) 1 tsp Italian seasoning blend ($0.10) 1/2 cup water ($0.00) 1/2 lb. penne pasta ($1.25) 1/3 cup heavy cream ($0.19) 4 oz. spinach ($0.85)",
+        "recipeName": "Creamy Tomato Pasta with Sausage ",
+        "estimatedTime": "35 minutes",
+        "totalRecipeCost": "$5.75",
+        "recipeCategory": "Dinner",
+        "estimatedServings": "4",
+        "dietaryRes": "None",
+        "ingredients ": "1/2 lb. Italian sausage 2 cloves garlic 2 Tbsp tomato paste 1 28oz. can crushed tomatoes 1 tsp Italian seasoning blend 1/2 cup water 1/2 lb. penne pasta  1/3 cup heavy cream 4 oz. spinach ",
+        "imageLink": "https://www.lecremedelacrumb.com/wp-content/uploads/2020/05/creamy-tomato-sausage-penne-4sm-4.jpg"
+        },
+        {
+        "imageLink": "https://i0.wp.com/refashionedroots.com/wp-content/uploads/2019/02/IMG_8731-7-1.jpg?fit=800%2C1200&ssl=1",
+        "ingredients": "1/2 lb. ground beef 1/2 lb. Italian sausage 1 egg 1/2 cup  bread crumbs 1/4 cup grated Parmesan 1/4 tsp onion powder 1/4 tsp garlic powder 1/4 tsp salt 1 26oz. jar marinara sauce 12 oz. spaghetti ",
+        "recipeCategory": "Dinner",
+        "costPerIngredient": "1/2 lb. ground beef ($2.65) 1/2 lb. Italian sausage ($1.16) 1 egg ($0.26) 1/2 cup  bread crumbs ($0.12) 1/4 cup grated Parmesan ($0.44) 1/4 tsp onion powder ($0.02) 1/4 tsp garlic powder ($0.02) 1/4 tsp salt ($0.01) 1 26oz. jar marinara sauce ($2.19) 12 oz. spaghetti ($1.13)",
+        "estimatedServings": "4",
+        "instructions": "1.\tAdd the ground beef, Italian sausage, beaten egg, breadcrumbs, Parmesan, onion powder, garlic powder, and salt to a bowl. Use your hands to combine the ingredients until they are evenly mixed. Divide the mixture into four equal portions, then shape each portion into a ball. 2.\tPlace the meatballs in the slow cooker and pour the marinara over top, making sure to coat the top of each meatball. The sauce will only come up about halfway to the top of the meatballs. The slow cooker will fill with steam, which will help cook the meatballs evenly. 3.\tPlace the lid on the slow cooker and cook on high for 3 hours, or low for 6-7 hours. Use an instant read thermometer to make sure the meatballs have reached at least 160ºF on the inside.  4.\tNear the end of the cook time, cook the spaghetti according to the package directions, and then drain in a colander. 5.\tRemove the cooked meatballs from the slow cooker, then add the cooked and drained spaghetti, and toss it to coat in the sauce. Divide the sauced spaghetti between four plates, add one giant meatball to each, then enjoy.",
+        "dietaryRes": "None",
+        "estimatedPricePerServing": "$2.00",
+        "recipeName": "Giant Slow Cooker Meatballs",
+        "estimated Time": "3 hours 10 minutes",
+        "totalRecipeCost": "$8.00",
+        "nutritionPerServing": "Calories: 824.28kcal ・ Carbohydrates: 93.95g ・ Protein: 32.7g ・ Fat: 32.08g ・ Sodium: 1349.48mg ・ Fiber: 5.58g"
+        },
+        {
+        "recipeCategory": "Dessert",
+        "estimatedTime": "45 minutes",
+        "recipeName": "Fudge Brownie Pots",
+        "imageLink": "https://i1.wp.com/thedessertedgirl.com/wp-content/uploads/2020/06/BrowniePots6.jpg?resize=1037%2C692&ssl=1",
+        "instructions": "* \t\tFirst preheat the oven to 350 degrees. Then, cut the butter into small chunks and put them into a large bowl. Microwave on high for 30 seconds and then stir until the butter is melted. Then, add the sugar and microwave for another 15 seconds. Mix everything again and repeat the 15 second intervals until the butter and sugar are no longer separate. Stir for 45 seconds total. * \t\tThen, add the vanilla extract and egg to the melted butter and sugar. Mix everything together.  * \t\tIn a separate bowl, mix together the flour, cocoa powder, baking powder, and salt until well combined. * \t\tThen, pour the bowl of dry ingredients into the bowl of wet ingredients and mix everything until a smooth, chocolatey batter is formed. Pour the batter into two small ramekins. * \t\tFinally, bake the brownies in the preheated oven for 25-30 minutes. Let the brownies cool slightly then serve. ",
+        "totalRecipeCost": "$1.04",
+        "estimatedPricePerServing": "$0.52",
+        "costPerIngredients": "4 Tbsp butter ($0.40) 1/2 cup granulated sugar ($0.08) 1/4 tsp vanilla ($0.07) 1 egg ($0.19) 1/3 cup all-purpose flour ($0.05) 1/3 cup unsweetened cocoa powder ($0.21) 1/4 tsp baking powder ($0.02) 1/8 tsp salt ($0.02)",
+        "ingredients": "4 Tbsp butter 1/2 cup granulated sugar 1/4 tsp vanilla 1 egg 1/3 cup all-purpose flour 1/3 cup unsweetened cocoa powder 1/4 tsp baking powder 1/8 tsp salt ",
+        "estimatedServings": "2",
+        "dietaryRes": "Vegetarian",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 532.5kcal ・ Carbohydrates: 71.4g ・ Protein: 8.3g ・ Fat: 27.8g ・ Sodium: 411.95mg ・ Fiber: 5.85g"
+        },
+        {
+        "ingredients ": "1/4 cup orange juice concentrate 1/2 cup frozen pineapple chunks  1/2 tsp vanilla extract  1 Tbsp granulated sugar  1 cup whole milk ",
+        "imageLink": "https://barefeetinthekitchen.com/wp-content/uploads/2016/08/Pineapple-Orange-Julius-3.jpg",
+        "instructions": " * \tFirst, put all of the ingredients in a blender and blend until everything is fully smooth and frothy.  * \t\tFor a thicker drink, add some ice cubes or more frozen pineapple. For a thinner drink, add more milk. Then serve.",
+        "recipeName": "Pineapple Orange Julius",
+        "totalRecipeCost": "$1.37",
+        "estimatedTime": "5 minutes",
+        "estimatedServings": "12",
+        "dietaryRes": "Vegetarian",
+        "estimatedPricePerServing": "$0.11",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 340.3kcal ・ Carbohydrates: 58.3g ・ Protein: 10.1g ・ Fat: 8.3g ・ Sodium: 125.7mg ・ Fiber: 1.9g",
+        "recipeCategory": "Dessert",
+        "costPerIngredients": "1/4 cup orange juice concentrate ($0.33) 1/2 cup frozen pineapple chunks ($0.58) 1/2 tsp vanilla extract ($0.14) 1 Tbsp granulated sugar ($0.01) 1 cup whole milk ($0.31)"
+        },
+        {
+        "estimatedPricePerServing": "$1.30",
+        "totalRecipeCost": "$5.20",
+        "recipeName": "Tuna Salad",
+        "recipeCategory": "Lunch",
+        "ingredients ": "2 12oz. canned tuna 1 cup celery 1/4 cup walnuts 2 green onions 1/2 cup mayonnaise 1 Tbsp lemon juice 1/4 tsp cracked black pepper 1/4 tsp salt ",
+        "instructions": "* \tFirst drain the canned tuna then dice up the celery, chop up the walnuts, and slice the green onions.  * \t\tThen put together the tuna, celery, walnuts, green onions, mayonnaise, lemon juice, pepper, and salt in a large bowl. Stir when everything is in the bowl.   * \t\tThen serve in any form you’d like. (Refrigerate up to four days) ",
+        "estimatedTime": "10 minutes",
+        "estimatedServings": "4",
+        "dietaryRes": "None",
+        "imageLink": "https://www.cookingclassy.com/wp-content/uploads/2020/03/tuna-salad-32.jpg",
+        "costPerIngredients": "2 12oz. canned tuna ($3.98) 1 cup celery ($0.35) 1/4 cup walnuts ($0.30) 2 green onions ($0.12) 1/2 cup mayonnaise ($0.40) 1 Tbsp lemon juice ($0.04) 1/4 tsp cracked black pepper ($0.02) 1/4 tsp salt ($0.02)",
+        "nutritionPerServing": "Serving: 1 Cup ・ Calories: 462.38kcal ・ Carbohydrates: 2.85g ・ Protein: 41.98g ・ Fat: 31g ・ Sodium: 1215.78mg ・ Fiber: 4.55g"
+        },
+        {
+        "ingredients ": "3 Tbsp soy sauce 2 Tbsp brown sugar 2 Tbsp water 1 tsp sesame oil 2 cloves garlic 1 tsp ginger 2 Tbsp cooking oil  14 oz. tofu 1/4 cup peanuts ½ lb. coleslaw 2 green onions 1 Tbsp sriracha ",
+        "instructions": "* \tFirst in a bowl, combine the soy sauce, brown sugar, water, toasted sesame oil, minced garlic, and grated ginger. Place to the side.  * \t\tThen slice the green onion and chop up the peanuts.  * \t\tThen take the tofu out of the package by draining the liquid away.  Crumble up the tofu and place it into a bowl.  * \t\tThen heat up the cooking oil in a skillet on medium-high heat. Once heated up, add the tofu and fry everything for about 5 minutes,   * \t\tThen add the sauce from before into the skillet and cook and stir for 2-3 minutes. Finally, add the slaw mix and chopped peanuts and fry everything for 1-2 minutes. Top everything off with sliced green onions and a some sriracha sauce. Then serve.",
+        "imageLink": "https://www.wellplated.com/wp-content/uploads/2019/03/How-to-Make-Tofu-Stir-Fry.jpg",
+        "estimatedServings": "4",
+        "estimatedPricePerServing": "$0.96",
+        "estimatedTime": "20 minutes",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 272.43kcal ・ Carbohydrates: 16.98g ・ Protein: 14.53g ・ Fat: 17.73g ・ Sodium: 815.75mg ・ Fiber: 3.33g",
+        "dietaryRes": "Vegetarian ",
+        "totalRecipeCost": "$3.82",
+        "recipeCategory": "Dinner",
+        "recipeName": "Tofu Stir Fry",
+        "costPerIngredients": "3 Tbsp soy sauce ($0.18) 2 Tbsp brown sugar ($0.08) 2 Tbsp water ($0.00) 1 tsp sesame oil ($0.10) 2 cloves garlic ($0.16) 1 tsp ginger ($0.10) 2 Tbsp cooking oil ($0.08) 14 oz. tofu ($1.79) 1/4 cup peanuts ($0.12) ½ lb. coleslaw ($0.90) 2 green onions ($0.20) 1 Tbsp sriracha ($0.11)"
+        },
+        {
+        "recipeName": "Garlic Butter Shrimp",
+        "instructions": "* If using frozen shrimp, place it in a colander and run cool water over the shrimp for a couple of minutes. Then, if needed, remove the shell and tail. Then make sure to dry the shrimp with a paper towel.  * \t\tThen squeeze two tablespoons of lemon juice and mince the garlic.  * \t\tThen add olive oil and butter to a large skillet. Heat up both over medium until the butter is melted and foaming.  * \t\tThen add the shrimp to the skillet and cook the shrimp on each side until pink and no longer see through. Cooking should take 1-3 minutes on each side. (Depends on size of shrimp)  * \t\tFinally, add garlic and about 1 Tbsp of lemon juice. Continue to sauté the shrimp in the garlic butter for about one minute more.   * \t\tSeason the shrimp with salt, black pepper, and chopped parsley. Toss and then serve.",
+        "totalRecipeCost": "$4.37",
+        "ingredients ": "0.5 lb. shrimp  2 cloves garlic  1 fresh lemon  2 Tbsp butter  1 Tbsp olive oil  0.13 tsp salt  0.13 tsp cracked black pepper 1 tsp parsley (optional) ",
+        "estimatedTime": "17 minutes",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 289.55kcal ・ Carbohydrates: 3.1g ・ Protein: 23.35g ・ Fat: 20.3g ・ Sodium: 849.95mg ・ Fiber: 0.1g",
+        "dietaryRes": "None",
+        "estimatedServings": "2",
+        "estimatedPricePerServing": "$2.19",
+        "imageLink": "https://www.eatwell101.com/wp-content/uploads/2019/07/healthy-Shrimp-Recipe-1.jpg",
+        "costPerIngredients": "0.5 lb. shrimp ($3.33) 2 cloves garlic ($0.16) 1 fresh lemon ($0.43) 2 Tbsp butter ($0.26) 1 Tbsp olive oil ($0.12) 0.13 tsp salt ($0.01) 0.13 tsp cracked black pepper ($0.01) 1 tsp parsley (optional) ($0.05)",
+        "recipeCategory": "Dinner"
+        },
+        {
+        "dietaryRes": "None",
+        "ingredients": "8 oz. bow tie pasta 8 oz. frozen broccoli florets 1 Tbsp olive oil 1 lb. boneless chicken breast 1/3 cup basil pesto 1/2 cup chicken broth 4 oz. cream cheese ",
+        "recipeName": "Creamy Pesto Pasta with Chicken",
+        "estimatedTime": "25 minutes",
+        "nutritionPerServing": "Calories: 606.33kcal ・ Carbohydrates: 53.58g ・ Protein: 37.18g ・ Fat: 28.33g ・ Sodium: 725.78mg ・ Fiber: 7.15g",
+        "recipeCategory": "Dinner",
+        "totalRecipeCost": "$5.48",
+        "imageLink": "https://www.yellowblissroad.com/wp-content/uploads/2020/03/chicken-pesto-pasta-social.jpg",
+        "estimatedPricePerServing": "$1.37",
+        "instructions": "1.\tBring a large pot of water to boil. Once it reaches a full boil, add the pasta and continue to boil just until the pasta is still slightly firm in the center (7-8 minutes). Once the pasta is tender, add the frozen broccoli florets to the water with the pasta and continue to cook for 2-3 more minutes, or until the broccoli is tender. Drain the pasta and broccoli into a colander. 2.\tWhile the pasta is cooking, cut the chicken breast into ½-inch pieces. Heat one tablespoon of olive oil in a large skillet over medium heat. Once hot, add the chicken and continue to cook until the outside of the chicken pieces are white, but they're still tender in the center (they will continue to cook as more ingredients are added). 3.\tAdd chicken broth to the skillet with the chicken and allow it to heat through. Once hot, add the cream cheese (cut into small pieces) and pesto. Continue to stir and cook until the cream cheese has melted and created a smooth, creamy sauce with the pesto and chicken broth. 4.\tFinally, add the cooked and drained pasta and broccoli to the skillet and stir to coat it in the cream sauce. If the sauce becomes too dry or thick, add another splash of chicken broth to loosen it up. Serve hot.",
+        "estimatedServings": "4",
+        "costPerIngredient": "8 oz. bow tie pasta ($0.67) 8 oz. frozen broccoli florets ($1.00) 1 Tbsp olive oil ($0.12) 1 lb. boneless chicken breast ($2.49) 1/3 cup basil pesto ($0.73) 1/2 cup chicken broth ($0.07) 4 oz. cream cheese ($0.40)"
+        },
+        {
+        "estimatedServings": "8",
+        "nutritionPerServing": "Calories: 341.18kcal ・ Carbohydrates: 5.5g ・ Protein: 30.19g ・ Fat: 21.36g ・ Sodium: 284.7mg ・ Fiber: 1.08g",
+        "imageLink": "http://www.gimmesomeoven.com/wp-content/uploads/2016/03/Slow-Cooker-Pork-Carnitas-Recipe-8.jpg",
+        "estimatedTime": "30 minutes",
+        "costPerIngredient": "1 yellow onion ($0.32) 4 cloves garlic ($0.32) 2 small cinnamon sticks ($0.95) 1/2 Tbsp dried oregano ($0.08) 1/2 Tbsp ground cumin ($0.08) 1/2 tsp salt ($0.02) cracked black pepper ($0.05) 1/2 tsp chipotle pepper powder ($0.05) 3 lb pork butt roast ($5.26) 2 oranges ($0.67)",
+        "totalRecipeCost": "$7.80",
+        "dietaryRes": "None",
+        "recipeName": "Slow Cooker Carnitas",
+        "instructions": "1.\tDice the onion and peel the garlic cloves. Place the onion, garlic, and cinnamon sticks in the slow cooker. 2.\tIn a small bowl, combine the oregano, cumin, salt, pepper, and chipotle powder. Cut the pork roast into 2-inch cubes. Place the cubes in a bowl and sprinkle the spice mix over top. Toss the meat in the spices until evenly coated. Place the seasoned meat in the slow cooker on top of the onion, garlic, and cinnamon. 3.\tUse a vegetable peeler to remove the thin layer of orange zest from one of the oranges. Squeeze about 1/2 cup juice from the oranges. Pour the orange juice over the meat in the slow cooker, then sprinkle the pieces of orange zest over top. 4.\tPlace a lid on the slow cooker, turn it on to high, and cook for 5 hours, or until the meat is tender and falls apart. 5.\tUse tongs to stir and shred the meat and remove the cinnamon sticks. Either divide the meat and liquid into smaller containers to refrigerate for later or transfer the meat and some of the liquid to a skillet (preferably non-stick or cast iron). Cook the meat over medium flame until browned and crispy on the edges. Avoid stirring the meat too much as it will break down into tiny pieces. Use the crispy meat as a filling for tacos, burritos, nachos, or burrito bowls.",
+        "estimatedPricePerServing": "$0.98",
+        "recipeCategory": "Dinner",
+        "ingredients": "1 yellow onion 4 cloves garlic 2 small cinnamon sticks 1/2 Tbsp dried oregano 1/2 Tbsp ground cumin 1/2 tsp salt cracked black pepper 1/2 tsp chipotle pepper powder 3 lb pork butt roast 2 oranges "
+        },
+        {
+        "recipeCategory": "Lunch",
+        "instructions": "1.\tIf using frozen shrimp, place them in a colander and run cool water over top to thaw (this should only take a few minutes). Peel the shrimp and remove the tails. Pat the shrimp dry with a paper towel. 2.\tBring a large pot of water to a boil for the pasta. Once boiling, add the pasta and continue to boil until the pasta is tender (about seven minutes). Reserve about ½ cup of the pasta water, then drain the pasta in a colander. 3.\tWhile the pasta is cooking, prepare the rest of the dish. Heat 1 Tbsp olive oil in a large skillet or pan. Once hot, add the prepared shrimp and sauté just until the shrimp turns pink (2-3 minutes). Remove the cooked shrimp to a clean bowl. 4.\tAdd another tablespoon olive oil to the skillet and add the grape tomatoes and minced garlic. Continue to sauté over medium until the tomatoes begin to burst and release their juices. If the garlic begins to brown before the tomatoes have burst, add a couple tablespoons of water to the skillet to slow the browning. 5.\tOnce the tomatoes have broken down in the skillet, add the cooked and drained pasta, ¼ cup pesto, and about half of the reserved pasta water. Stir to coat everything in the pesto, adding more of the pasta water if needed to loosen the pasta and spread the pesto over everything. 6.\tFinally, return the cooked shrimp to the skillet and stir to combine with the pasta. Top with grated Parmesan, then serve!",
+        "estimatedTime": "25 minutes",
+        "dietaryRes": "None",
+        "ingredients": "12 oz. shrimp 8 oz. angel hair pasta 2 Tbsp olive oil 2 cloves garlic 1 pint grape tomatoes 1/4 cup basil pesto 1 Tbsp Parmesan",
+        "imageLink": "https://www.acouplecooks.com/wp-content/uploads/2020/08/Shrimp-Pesto-Pasta-004.jpg",
+        "nutritionPerServing": "Calories: 446.23kcal ・ Carbohydrates: 49.3g ・ Protein: 26.4g ・ Fat: 15.58g ・ Sodium: 602.68mg ・ Fiber: 3.78g",
+        "recipeName": "Pesto Shrimp Pasta",
+        "estimatedServings": "4",
+        "estimatedPricePerServing": "$2.02",
+        "totalRecipeCost": "$8.07",
+        "costPerIngredient": "12 oz. shrimp ($4.99) 8 oz. angel hair pasta ($0.53) 2 Tbsp olive oil ($0.24) 2 cloves garlic ($0.16) 1 pint grape tomatoes ($1.49) 1/4 cup basil pesto ($0.55) 1 Tbsp Parmesan ($0.11)"
+        },
+        {
+        "estimatedServings": "1",
+        "instructions": "* First, put the butter in a large mug and microwave it for 20 seconds. Then add milk, maple syrup, cinnamon, vanilla, nutmeg, and an egg to the mug and whisk until mixed. * \t\tThen, put in the the bread pieces in mug and stir carefully until all the pieces are absorbed  with the mixture. Then let the bread sit and absorb the liquid for 1 minute. * \t\tThen, microwave the mug for 75 seconds. Make sure the mixture is solid. Then serve.",
+        "recipeName": "French Toast Mug",
+        "estimatedPricePerServing": "$0.84",
+        "totalRecipeCost": "$0.84",
+        "costPerIngredients": "1 tsp butter ($0.04) 3 Tbsp whole milk ($0.07) 1 tsp maple syrup ($0.11) 1/4 tsp cinnamon ($0.02) 1/4 tsp vanilla extract ($0.21) 1 pinch ground nutmeg ($0.02) 1 egg ($0.27) 1 cup bread crumbs ($0.10)",
+        "recipeCategory": "Dessert",
+        "ingredients ": "1 tsp butter 3 Tbsp whole milk 1 tsp maple syrup 1/4 tsp cinnamon 1/4 tsp vanilla extract 1 pinch ground nutmeg  1 egg 1 cup bread crumbs",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 238.3kcal ・ Carbohydrates: 22.1g ・ Protein: 10.3g ・ Fat: 10.9g ・ Sodium: 255.2mg ・ Fiber: 1.4g",
+        "dietaryRes": "Vegetarian",
+        "imageLink": "http://3.bp.blogspot.com/-uaSCFeNXQco/VRsgfFC1RcI/AAAAAAAAJfA/TW84IfPKPZI/s1600/French%2BToast%2Bin%2Ba%2BMug%2B8.JPG",
+        "estimatedTime": "5 minutes"
+        },
+        {
+        "nutritionPerServing": "Serving: 1.5 Cups ・ Calories: 531.98kcal ・ Carbohydrates: 48.4g ・ Protein: 30.05g ・ Fat: 24.38g ・ Sodium: 1166.88mg ・ Fiber: 2.7g",
+        "costPerIngredients": "1 yellow onion ($0.32) 2 Tbsp butter ($0.26) 1 boneless chicken breast (about 2/3 lb.) ($3.62) 1 cup white rice ($0.62) 1/2 tsp dried thyme ($0.05) 1/4 tsp dried sage ($0.03) 1/4 tsp salt ($0.02) cracked black pepper ($0.03) 3 cups chicken broth ($0.39) 1/2 lb. frozen peas and carrots ($0.67) 1/3 cup heavy cream ($0.26) 4 oz. shredded cheddar cheese ($0.85)",
+        "estimatedPricePerServing": "$1.78",
+        "estimatedServings": "4",
+        "dietaryRes": "None",
+        "totalRecipeCost": "$7.12",
+        "recipeCategory": "Dinner",
+        "estimatedTime": "50 minutes",
+        "ingredients": "1 yellow onion 2 Tbsp butter 1 boneless chicken breast (about 2/3 lb.) 1 cup white rice 1/2 tsp dried thyme 1/4 tsp dried sage 1/4 tsp salt cracked black pepper 3 cups chicken broth 1/2 lb. frozen peas and carrots 1/3 cup heavy cream 4 oz. shredded cheddar cheese ",
+        "recipeName": "Creamy Chicken and Rice Skillet",
+        "imageLink": "https://www.tastesoflizzyt.com/wp-content/uploads/2020/04/creamy-chicken-and-rice-14-640x949.jpg",
+        "instructions": "1.\tDice one onion and add it to an oven safe skillet (3 qt. capacity) along with the butter. Sauté over medium heat until the onions are soft and translucent. 2.\tWhile the onions are cooking, dice the chicken breast into 1/2-inch pieces. Add the chicken to the skillet and continue to sauté for around 3 minutes, or until the outside of the chicken pieces has color (the chicken will finish cooking through as it simmers with the rice). 3.\tAdd the rice, thyme, sage, salt, some freshly cracked, and the chicken broth to the skillet and stir to combine. 4.\tPlace a lid on the skillet, turn the heat up to medium-high, and allow the broth to come to a boil. Once it reaches a full boil, turn the heat to low and let the skillet simmer for 15 minutes, stirring occasionally, replacing the lid each time. Cooking the rice in an excess of broth and stirring occasionally as it cooks will produce a saucy rice mixture. 5.\tAfter 15 minutes, the rice should be tender and saucy (if not yet tender, let it continue to cook for 5 more minutes). Stir in the frozen vegetables (no need to thaw), replace the lid, and let it sit over medium-low heat for another 5 minutes to heat the vegetables through. Finally, add the heavy cream, stir to combine, taste, and add extra salt if needed (this will depend on the salt content of the broth you used). 6.\tTurn on the oven's broiler, top the skillet with the shredded cheese, and place the skillet in the oven under the broiler for a few minutes to melt the cheese. Serve hot."
+        },
+        {
+        "ingredients": "4 Tbsp butter 4 cloves garlic, minced 1/4 tsp smoked paprika 1/4 tsp salt cracked black pepper 1 fresh lemon 2 Tbsp chopped fresh parsley (optional) 5 boneless chicken thighs (about 1.25 lbs.) ",
+        "totalRecipeCost": "$6.03",
+        "imageLink": "https://recipetineats.com/wp-content/uploads/2018/06/Garlic-Chicken-Thighs_5a.jpg",
+        "estimatedPricePerServing": "$1.21",
+        "costPerIngredients": "4 Tbsp butter ($0.40) 4 cloves garlic, minced ($0.32) 1/4 tsp smoked paprika ($0.02) 1/4 tsp salt ($0.02) cracked black pepper ($0.02) 1 fresh lemon ($0.79) 2 Tbsp chopped fresh parsley (optional) ($0.10) 5 boneless chicken thighs (about 1.25 lbs.) ($4.36)",
+        "instructions": "1.\tPreheat the oven to 400ºF. Place the butter in a bowl and microwave for 30 seconds, or until the butter is melted. Stir in the minced garlic, paprika, salt, some freshly cracked pepper (about 1/8 tsp), and about a tablespoon of chopped fresh parsley. Stir to combine. 2.\tPlace the chicken thighs in an 8x8\" baking dish. Spoon the garlic butter mixture over the chicken thighs, using the back of the spoon to spread it over the surface of the chicken. 3.\tSlice the lemon into halves. Place the lemon pieces around the chicken in the dish. 4.\tTransfer the baking dish to the oven and bake the chicken for 30-35 minutes, or until the internal temperature of the chicken thighs reaches 165ºF. 5.\tUse a spoon to drizzle the baking juices over top of the chicken, then sprinkle the remaining tablespoon of chopped fresh parsley over top just before serving.",
+        "estimatedTime": "40 minutes",
+        "estimatedServings": "5",
+        "recipeName": "Garlic Butter Baked Chicken Thighs",
+        "dietaryRes": "None",
+        "recipeCategory": "Dinner",
+        "nutritionPerServing": " 1 Serving ・ Calories: 247.8kcal ・ Carbohydrates: 2.04g ・ Protein: 21.34g ・ Fat: 17.9g ・ Sodium: 329.18mg ・ Fiber: 0.48g"
+        },
+        {
+        "imageLink": "https://www.goya.com/media/3143/mango-pudding-parfaits.jpg?quality=80",
+        "estimatedTime": "8 hours",
+        "costPerIngredients": "1/2 lb. frozen mango chunks ($1.65) 13 oz. coconut milk ($2.19) 1 tsp granulated sugar ($0.02) 6 Tbsp chia seeds ($0.93)",
+        "estimatedPricePerServing": "$1.20",
+        "totalRecipeCost": "$4.79",
+        "dietaryRes": "Vegetarian",
+        "estimatedServings": "4",
+        "recipeCategory": "Dessert",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 203.05kcal ・ Carbohydrates: 21.05g ・ Protein: 4.6g ・ Fat: 12.18g ・ Sodium: 21.35mg ・ Fiber: 9.13g",
+        "ingredients": "1/2 lb. frozen mango chunks 13 oz. coconut milk  1 tsp granulated sugar  6 Tbsp chia seeds ",
+        "instructions": "* \tFirst, chop up mango chunks and place half of them, the coconut milk, and sugar in a blender and process until everything is smooth. * \t\tThen divide the remaining mango chunks into 4 small containers. Add 1.5 Tbsp of chia seeds to each container. Then, pour the mango coconut milk mixture into the containers. Make sure it is divided evenly. \t\t * Finally, mix the contents of each container to make sure all the chia seeds are clearly exposed in the liquid. Cover the containers and refrigerate over them night.",
+        "recipeName": "Mango Coconut Pudding"
+        },
+        {
+        "imageLink": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Broccoli-Cheddar-Soup_EXPS_CF219_78_B12_13_1b.jpg",
+        "estimatedTime": "50 minutes",
+        "dietaryRes": "Vegetarian",
+        "costPerIngredient": "1 yellow onion ($0.52) 1 lb. broccoli ($1.49) 2 carrots ($0.23) 4 Tbsp butter ($0.52) 4 Tbsp all-purpose flour ($0.04) 2 cups chicken broth ($0.24) 2 cups whole milk ($0.75) 1/2 tsp smoked paprika ($0.05) 1/4 tsp garlic powder ($0.02) 1/4 tsp cracked black pepper ($0.02) 1/8 tsp cayenne pepper ($0.02) 6 oz. shredded cheddar cheese ($1.27)",
+        "nutritionPerServing": "2 Cups・Calories: 426.2kcal ・ Carbohydrates: 22.43g ・ Protein: 16.65g ・ Fat: 30g ・ Sodium: 949.73mg ・ Fiber: 2.55g",
+        "instructions": "1.\tDice one onion. Chop the broccoli into very small pieces. Peel and slice the carrots. 2.\tAdd butter and the onion to a large soup pot and sauté over medium heat until the onions are soft and translucent. Add the flour and continue to sauté for about 2 minutes more, or until the flour coats the bottom of the pot and is a light golden-brown color. 3.\tAdd the chicken broth and whisk to dissolve all the flour off the bottom of the pot. Turn the heat up to medium-high and, stirring often, allow the broth to come up to a simmer. When it reaches a simmer, it will thicken to a gravy consistency. 4.\tTurn the heat back down to medium and whisk in the milk, smoked paprika, garlic powder, black pepper, and cayenne pepper. Allow the broth to come back up to a simmer. 5.\tAdd the chopped broccoli and carrots, allow the broth to come back up to a simmer, and continue to simmer the vegetables, stirring often, for 15 minutes, or until the carrots are tender. 6.\tFinally, turn the heat down to medium-low and stir the shredded cheese into the soup, one handful at a time, until it is fully melted. Taste the soup and add salt if needed (this will depend on the salt content of your broth).",
+        "ingredients": "1 yellow onion 1 lb. broccoli 2 carrots 4 Tbsp butter 4 Tbsp all-purpose flour 2 cups chicken broth 2 cups whole milk  1/2 tsp smoked paprika 1/4 tsp garlic powder 1/4 tsp cracked black pepper  1/8 tsp cayenne pepper 6 oz. shredded cheddar cheese ",
+        "recipeCategory": "Lunch",
+        "estimatedServings": "3 ",
+        "totalRecipeCost": "$4.97",
+        "recipeName": "Easy Broccoli Cheddar Soup",
+        "estimatedPricePerServing": "$1.24"
+        },
+        {
+        "estimatedPricePerServing": "$0.46",
+        "recipeName": "Yogurt Banana Bread",
+        "estimatedTime": "1 hour 15 minutes",
+        "ingredients ": "1 cup bananas 1 cup plain yogurt 2 eggs  1/2 cup granulated sugar 4 Tbsp butter  1 tsp vanilla extract 1.5 cups all-purpose flour 1 tsp baking powder 1/2 tsp baking soda 1/2 tsp salt 1/4 tsp nutmeg 1/2 cup walnuts",
+        "dietaryRes": "Vegetarian",
+        "estimatedServings": "4",
+        "recipeCategory": "Dessert",
+        "instructions": "* First begin with preheating the oven to 350ºF. Rub butter on the inside of a loaf pan to fully cover the sides and bottom.    * \t\tThen, mash up banana and add it to a large bowl with the eggs, sugar, yogurt, vanilla, and melted butter. Whisk everything together.   * \t\tNow in a different bowl, mix together the baking powder and soda, flour, salt, and nutmeg until everything is mixed.    * \t\tThen, mix together the dry ingredients into the bowl of wet ingredients and stir everything together. Gently put in the chopped walnuts.   * \t\tNext, pour the batter into the prepared loaf pan and bake in the  oven for 60 minutes.   * \t\tAfter baking, let the bread cool in the pan for about 15 minutes. Once it's slightly cooled, divided the bread in slices then serve!",
+        "totalRecipeCost": "$3.68",
+        "imageLink": "https://www.lecremedelacrumb.com/wp-content/uploads/2016/01/greek-yogurt-banana-bread-5w.jpg",
+        "nutritionPerServing": "Serving: 1 Slice ・ Calories: 294.93kcal ・ Carbohydrates: 38.83g ・ Protein: 6.56g ・ Fat: 13.28g ・ Sodium: 348.49mg ・ Fiber: 1.89g",
+        "costPerIngredients": "1 cup bananas ($0.42) 1 cup plain yogurt ($0.67) 2 eggs ($0.46) 1/2 cup granulated sugar ($0.40) 4 Tbsp butter ($0.52) 1 tsp vanilla extract ($0.30) 1.5 cups all-purpose flour ($0.23) 1 tsp baking powder ($0.02) 1/2 tsp baking soda ($0.02) 1/2 tsp salt ($0.02) 1/4 tsp nutmeg ($0.02) 1/2 cup walnuts ($0.60)"
+        },
+        {
+        "recipeCategory": "Dinner",
+        "ingredients ": "1 Tbsp chili powder 1 tsp smoked paprika 1 tsp ground cumin 1/2 tsp dried oregano 1/4 tsp cayenne pepper 1/2 tsp salt 1/2 tsp cracked black pepper 1 Tbsp cooking oil 1 yellow onion 2 cloves garlic 1/2 lb. ground beef 1 15oz. black beans 1 box hard taco shells (10 shells) 1 cup shredded cheddar cheese (4oz.) 1 tomato 1 jalapeño 1 handful cilantro 1/4 cup sour cream",
+        "estimatedPricePerServing": "$1.78",
+        "imageLink": "https://i.pinimg.com/originals/bc/0f/cc/bc0fcc133f03d92e4e84604f704eee12.jpg",
+        "totalRecipeCost": "$8.88",
+        "dietaryRes": "None",
+        "estimatedTime": "35 minutes",
+        "instructions": "* \t\tFirst, mix together the ingredients for the taco seasoning in a small sized bowl. Then place the bowl to the side and preheat the oven to 400ºF.   * \t\tThen slice up the onion and mince the garlic. Add both the garlic and onion, along with cooking oil, into a large skillet. Sauté the onion and garlic over medium heat. Then , add in the ground beef and taco seasoning. Keep sautéing until the beef is cooked all the way.  * \t\tNow, place the taco shells in a casserole dish and make sure they are standing upright.   * \t\tThen, drain out the can of black beans but don’t rinse. Stir the beans into the  beef and allow them to heat up.   * \t\tFill up the the tacos with both the beef and bean mixture. Sprinkle the shredded cheese on top. Bake the tacos in the oven for 7-10 minutes  * \t\tThen, while the tacos are in the oven, cut up the tomato, the jalapeño, and roughly cut up the cilantro leaves. Sprinkle them all over the tacos. Lastly, scoop a bit of sour cream and add it. Then serve. ",
+        "costPerIngredients": " 1 Tbsp chili powder ($0.30) 1 tsp smoked paprika ($0.10) 1 tsp ground cumin ($0.10) 1/2 tsp dried oregano ($0.05) 1/4 tsp cayenne pepper ($0.03) 1/2 tsp salt ($0.02) 1/2 tsp cracked black pepper ($0.03) 1 Tbsp cooking oil ($0.04) 1 yellow onion ($0.37) 2 cloves garlic ($0.16) 1/2 lb. ground beef ($3.90) 1 15oz. black beans ($0.79) 1 box hard taco shells (10 shells) ($1.00) 1 cup shredded cheddar cheese (4oz.) ($1.20) 1 tomato ($0.49) 1 jalapeño ($0.06) 1 handful cilantro ($0.13) 1/4 cup sour cream ($0.11)",
+        "recipeName": "Baked Beef and Black Bean Tacos",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 430.3kcal ・ Carbohydrates: 36.84g ・ Protein: 22.52g ・ Fat: 21.42g ・ Sodium: 854.74mg ・ Fiber: 6.66g",
+        "estimatedServings": "5"
+        },
+        {
+        "imageLink": "https://i2.wp.com/fountainavenuekitchen.com/wp-content/uploads/2018/04/cumin-lime-coleslaw3.jpg?resize=1000%2C1500&ssl=1",
+        "estimatedTime": "30 minutes",
+        "estimatedServings": "6",
+        "costPerIngredients": "1/2 cup mayonnaise ($0.80) 2 Tbsp lime juice ($0.50) 1 tsp ground cumin ($0.10) 1/2 tsp salt ($0.02) 1/8 tsp cayenne pepper ($0.01) 1 tsp granulated sugar ($0.02) 1/2 green cabbage ($0.68) 2 carrots ($0.16) 4 green onions ($0.22)",
+        "ingredients ": "1/2 cup mayonnaise 2 Tbsp lime juice  1 tsp ground cumin 1/2 tsp salt  1/8 tsp cayenne pepper 1 tsp granulated sugar 1/2 green cabbage 2 carrots 4 green onions ",
+        "estimatedPricePerServing": "$0.42",
+        "instructions": "* First, prepare the dressing by mixing together the mayonnaise, lime juice, cumin, salt, sugar, and a pinch of cayenne pepper. Put the dressing in the refrigerator until ready to use.  * \t\tThen, take out the core from the cabbage and shred it. Peel the carrots and use a holed cheese grater to shred the carrots. Lastly, thinly cut up the green onions.   * \t\tMix together the shredded cabbage, carrots, and green onions in a bowl. Pour the dressing on top and mix everything together. Serve immediately or refrigerate then serve. ",
+        "totalRecipeCost": "$2.51",
+        "recipeName": "Cumin Lime Coleslaw",
+        "recipeCategory": "Lunch",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 170.48kcal ・ Carbohydrates: 10.65g ・ Protein: 2g ・ Fat: 13.97g ・ Sodium: 349.73mg ・ Fiber: 3.72g",
+        "dietaryRes": "Vegetarian"
+        },
+        {
+        "estimatedPricePerServing": "$1.89",
+        "estimatedTime": "35 minutes",
+        "estimatedServings": "4",
+        "recipeCategory": "Dinner",
+        "ingredients": "½ cup bread crumbs ⅓ cup Parmesan ¼ tsp garlic powder ½ tsp dried basil  ½ tsp dried oregano ¼ tsp salt ¼ tsp cracked black pepper 1 lb. ground chicken 1 egg 2 Tbsp cooking oil 12 oz. angel hair pasta 24oz. tomato and basil pasta sauce ",
+        "imageLink": "https://www.the-girl-who-ate-everything.com/wp-content/uploads/2018/04/chicken-parmesan-meatballs-11.jpg",
+        "recipeName": "Simple Chicken Parmesan Meatballs",
+        "nutritionPerServing": "Calories: 728.83kcal ・ Carbohydrates: 88.25g ・ Protein: 38.75g ・ Fat: 23.63g ・ Sodium: 1259.88mg ・ Fiber: 6.48g",
+        "totalRecipeCost": "$7.57",
+        "costPerIngredient": "½ cup bread crumbs ($0.13) ⅓ cup Parmesan ($0.59) ¼ tsp garlic powder ($0.02) ½ tsp dried basil ($0.05) ½ tsp dried oregano ($0.05) ¼ tsp salt ($0.02) ¼ tsp cracked black pepper ($0.02) 1 lb. ground chicken ($3.29) 1 egg ($0.23) 2 Tbsp cooking oil ($0.08) 12 oz. angel hair pasta ($1.00) 24oz. tomato and basil pasta sauce ($2.09)",
+        "instructions": "1.\tFirst, combine the breadcrumbs and seasoning. In a small bowl, stir together the breadcrumbs, grated parmesan, garlic powder, basil, oregano, salt, and pepper. 2.\tAdd the ground chicken to a large bowl, then add the seasoned breadcrumb mixture and the egg. Use your hands to combine the ingredients until evenly mixed. 3.\tShape the meat mixture into meatballs, about 1-1.5 Tbsp each. You should get around 20 meatballs. 4.\tHeat 1 Tbsp cooking oil in a large skillet over medium heat. Once the skillet is hot, add half of the meatballs. Cook the meatballs about one minute on each side, until all six sides are browned and the meatballs are cooked through. Transfer the cooked meatballs to a clean plate. Add the second tablespoon of cooking oil to the skillet and cook the second batch of meatballs in the same manner. 5.\tWhile the meatballs are cooking, begin the pasta and sauce. Bring a large pot of water to boil for the pasta. Once boiling, add the pasta and cook until tender (7-10 minutes). Drain the pasta in a colander. Add the sauce to a medium sauce pot and heat over medium-low, stirring occasionally, until heated through. 6.\tOnce all the meatballs are finished cooking, add them to the pot of heated pasta sauce and stir to coat. If needed, allow them to heat for a few minutes in the sauce. 7.\tServe the cooked and drained pasta topped with sauce and meatballs.",
+        "dietaryRes": "None"
+        },
+
+        {
+        "instructions": "* \t\tFirst, prep the dressing by combining the olive oil, lemon juice, minced garlic, salt, and pepper. Once combined, place it to the side.   * \t\tThen, rinse and drain the canned beans. Allow them to fully drain.   * \t\tThen, chop up 1 cup of fresh parsley (about ½ bunch) and cut the tomatoes in half.   * \t\tFinally, add the drained beans, chopped parsley, tomatoes, and feta cheese to a bowl. Pour dressing from before all over the top and then stir everything together. Then serve. (Refrigerate up to four days)",
+        "nutritionPerServing": "Serving: 1 Cup ・ Calories: 210.8kcal ・ Carbohydrates: 22.58g ・ Protein: 8.48g ・ Fat: 9.08g ・ Sodium: 552.4mg ・ Fiber: 7.28g",
+        "recipeCategory": "Lunch",
+        "totalRecipeCost": "$4.87",
+        "ingredients ": "2 Tbsp olive oil 2 Tbsp lemon juice 2 cloves garlic 1/4 tsp salt 1/4 tsp cracked black pepper 2 15oz. butter beans ½ bunch parsley 1 pint grape tomatoes 2 oz. feta",
+        "estimatedPricePerServing": "$1.22",
+        "imageLink": "https://i0.wp.com/www.crowdedkitchen.com/wp-content/uploads/2020/08/white-bean-salad.jpg",
+        "estimatedTime": "15 minutes",
+        "dietaryRes": "Vegetarian",
+        "costPerIngredients": "2 Tbsp olive oil ($0.24) 2 Tbsp lemon juice ($0.06) 2 cloves garlic ($0.16) 1/4 tsp salt ($0.02) 1/4 tsp cracked black pepper ($0.02) 2 15oz. butter beans ($1.38) ½ bunch parsley ($0.40) 1 pint grape tomatoes ($1.49) 2 oz. feta ($1.10) ",
+        "estimatedServings": "4",
+        "recipeName": "White Bean Salad"
+        },
+        {
+        "costPerIngredients": "½ cup sun dried tomatoes ($1.66) 2 Tbsp butter ($0.26) 2 cloves garlic ($0.16) 8 oz. fettuccine ($0.67) 1/2 tsp dried basil ($0.05) cracked black pepper ($0.05) 2 cups chicken broth ($0.26) 2 oz. cream cheese ($0.30) 1 cups whole milk ($0.37) 1/4 cup grated parmesan ($0.44)",
+        "totalRecipeCost": "$4.22",
+        "estimatedServings": "4",
+        "imageLink": "https://www.eatwell101.com/wp-content/uploads/2017/07/Tomato-Pasta-recipe.jpg",
+        "recipeCategory": "Dinner",
+        "instructions": "*  First cut up the sun dried tomatoes into small pieces.  * \t\tThen add the garlic and butter into a skillet. Then sauté over medium heat for one minute  * \t\tThen add the fettuccine, sun dried tomatoes, dried basil, some pepper, and the chicken broth to the skillet.  * \t\tThen place a lid over the skillet, turn the heat up to high, and let the broth boil. Once it boils, stir the pasta and turn the heat down to low.   * \t\tThen allow the pasta to simmer in the broth for 7-10 minutes while stirring every couple of minutes   * \t\tWhile the heat is low, cut the cream cheese into chunks and stir it into the pasta. Once melted, add the milk and stir until a sauce forms. Then add the grated Parmesan over top and stir until it has melted into the sauce. Then serve (Add pepper if necessary)",
+        "dietaryRes": "Vegetarian",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 387.6kcal ・ Carbohydrates: 51.9g ・ Protein: 13.5g ・ Fat: 14.68g ・ Sodium: 651.33mg ・ Fiber: 2.75g",
+        "estimatedPricePerServing": "$1.06",
+        "estimatedTime": "30 minutes",
+        "ingredients ": "½ cup sun dried tomatoes 2 Tbsp butter 2 cloves garlic 8 oz. fettuccine  1/2 tsp dried basil cracked black pepper 2 cups chicken broth 2 oz. cream cheese 1 cups whole milk 1/4 cup grated Parmesan",
+        "recipeName": "Creamy Sun Dried Tomato Pasta"
+        },
+      
+        {
+        "totalRecipeCost": "$6.93",
+        "recipeCategory": "Breakfast",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 250.75kcal ・ Carbohydrates: 3.6g ・ Protein: 16.2g ・ Fat: 19g ・ Sodium: 589.3mg ・ Fiber: 1.3g",
+        "estimatedServings": "3",
+        "dietaryRes": "Vegetarian",
+        "estimatedPricePerServing": "$2.31",
+        "estimatedTime": "10 minutes",
+        "ingredients": "6 oz. spinach 6 eggs 1.5 Tbsp butter 1.5 oz. feta 1.5 pinch crushed red pepper 1.5 pinch cracked black pepper 1.5 pinch salt ",
+        "costPerIngredients": "6 oz. spinach ($1.95) 6 eggs ($2.76) 1.5 Tbsp butter ($0.39) 1.5 oz. feta ($1.65) 1.5 pinch crushed red pepper ($0.06) 1.5 pinch cracked black pepper ($0.06) 1.5 pinch salt ($0.06)",
+        "recipeName": "Eggs with Spinach and Feta Cheese",
+        "imageLink": "https://images.eatthismuch.com/site_media/img/905630_elm333_5bceb318-0dc9-4d99-8a82-a92b3fa9e088.jpg",
+        "instructions": "* \t Begin by chopping up the spinach into smaller pieces (roughly 1-inch pieces).   * \t\tThen crack the eggs into a large bowl, add a pinch of salt, and whisk.   * \t\tThen add the butter to a large skillet and melt over medium heat. Add the chopped spinach and sauté until the spinach has fully softened (2-3 minutes)  * \t\tThen push the sautéed spinach to the outside edges of the skillet and pour the eggs into the center. Carefully fold the eggs as the bottom layer becomes solid, until the eggs are about 75% finished. Fold the eggs into the sautéed spinach, then turn off the heat.   * \t\tTop the eggs with the feta, a little freshly cracked pepper, and a pinch of crushed red pepper, then serve."
+        },
+
+        {
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 201.6kcal ・ Carbohydrates: 18.7g ・ Protein: 6.9g ・ Fat: 10.1g ・ Sodium: 63.5mg ・ Fiber: 3.5g",
+        "dietaryRes": "Vegetarian",
+        "estimatedTime": "5 minutes",
+        "imageLink": "https://www.budgetbytes.com/wp-content/uploads/2019/06/Lemon-Berry-Yogurt-Breakfast-Bowls-front.jpg",
+        "ingredients": "2 cup plain yogurt  8 Tbsp rolled oats 2 Tbsp chia seeds  4 Tbsp lemon curd  8 strawberries ",
+        "instructions": "First, put the yogurt in a large bowl and top it with the rolled oats, chia seeds, lemon curd, and sliced strawberries. Serve immediately. (Stirring is optional)",
+        "recipeCategory": "Breakfast",
+        "estimatedServings": "4",
+        "estimatedPricePerServing": "$1.04",
+        "totalRecipeCost": "$4.16",
+        "recipeName": "Lemon Berry Yogurt Bowl",
+        "costPerIngredients": "2 cup plain yogurt ($2.00) 8 Tbsp rolled oats ($0.08) 2 Tbsp chia seeds ($0.32) 4 Tbsp lemon curd ($0.28) 8 strawberries ($1.48)"
+        },
+        {
+        "ingredients ": "2 tsp smoked paprika 1 tsp dried thyme 1 tsp dried oregano 1/2 tsp ground cumin 1/4 tsp cayenne pepper  1/2 tsp garlic powder 1/2 tsp onion powder 1/4 tsp cracked black pepper  1/4 tsp salt 1.3 lbs. salmon 2 Tbsp butter 1 Tbsp cooking oil  1.3 lbs. zucchini ",
+        "estimatedPricePerServing": "$3.33",
+        "estimatedServings": "4",
+        "totalRecipeCost": "$13.30",
+        "recipeName": "Salmon with Zucchini ",
+        "costPerIngredients": "2 tsp smoked paprika ($0.20) 1 tsp dried thyme ($0.10) 1 tsp dried oregano ($0.10) 1/2 tsp ground cumin ($0.05) 1/4 tsp cayenne pepper ($0.02) 1/2 tsp garlic powder ($0.05) 1/2 tsp onion powder ($0.02) 1/4 tsp cracked black pepper ($0.02) 1/4 tsp salt ($0.02) 1.3 lbs. salmon ($10.65) 2 Tbsp butter ($0.26) 1 Tbsp cooking oil ($0.04) 1.3 lbs. zucchini ($1.79)",
+        "dietaryRes": "None",
+        "recipeCategory": "Dinner",
+        "estimatedTime": "30 minutes",
+        "nutritionPerServing": "Serving: 1 G ・ Calories: 323.63kcal ・ Carbohydrates: 6.35g ・ Protein: 31.48g ・ Fat: 19.3g ・ Sodium: 405.18mg ・ Fiber: 2.3g",
+        "instructions": "* \tFirst, combine the spices for the seasoning in a bowl. In the bowl combine, smoked paprika, thyme, oregano, cumin, cayenne, garlic powder, onion powder, salt, and pepper.  * \t\tThen remove the skin from the salmon and cut it into four equal-sized portions. Once cut, make sure to strongly season all sides.  * \t\tThen cut up the zucchini into half-rounds and place them to the side.  * \t\tThen, add the butter and cooking oil to a skillet and heat up on medium-high. Once the butter has melted and the skillet is hot, add the salmon pieces. Cook the salmon for 5-7 minutes on each side.  * \t\tFinally, take the cooked fish out of the pan and into a clean plate. Place the cut up zucchini to the skillet in its place. Sauté the zucchini very quickly in the butter and spices that are left over. Cook it until it is tender. Then serve.",
+        "imageLink": "https://s23209.pcdn.co/wp-content/uploads/2015/06/IMG_0084edit.jpg"
+        },
+        {
+        "recipeCategory": "Dinner",
+        "recipeName": "Turkey and Rice Skillet",
+        "ingredients ": "1 Tbsp olive oil 2 cloves garlic 19 oz. Ground turkey 1 tsp dried oregano 1/4 tsp salt cracked black pepper 1 cup white rice 1/4 lb spinach 1/3 cup sun dried tomato 1/2 cup kalamata olives 1.5 cups chicken broth handful parsley 1 lemon 1 oz feta ",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 600.1kcal ・ Carbohydrates: 43g ・ Protein: 27.9g ・ Fat: 34.83g ・ Sodium: 1012.08mg ・ Fiber: 3.35g",
+        "estimatedPricePerServing": "$2.49",
+        "instructions": "* \tFirst, add the garlic and olive oil to a big skillet and sauté on medium heat for 1-2 minutes. Then add the ground turkey, oregano, salt, and pepper to the skillet. Sauté  for 5 minutes.  * \t\tThen, while the turkey is cooking, dice up the olives and sun dried tomatoes. Once the turkey is cooked all the way, add the rice, spinach, olives, and sun dried tomatoes to the skillet.   * \t\tThen add the chicken broth and stir until everything is mixed. Turn the heat up to medium high, and let it boil. Once boiling, turn the heat down to low and let it simmer for 15 minutes.  * \t\tAfter 15 minutes, stir the pan and when finished, turn off the heat, and allow it to sit for another 10 minutes.  * \t\tFinally, zest half of the lemon and slice it into wedges and chop up the parsley. After stirring,  top everything with lemon zest, parsley, and crumbled feta. Then serve.",
+        "estimatedTime": "35 minutes",
+        "totalRecipeCost": "$9.96",
+        "dietaryRes": "None",
+        "estimatedServings": "4",
+        "costPerIngredients": "1 Tbsp olive oil ($0.13) 2 cloves garlic ($0.16) 19 oz. Ground turkey ($4.59) 1 tsp dried oregano ($0.10) 1/4 tsp salt ($0.02)  cracked black pepper ($0.03) 1 cup  white rice ($0.66) 1/4 lb spinach ($0.42) 1/3 cup sun dried tomato ($1.00) 1/2 cup kalamata olives ($1.08) 1.5 cups chicken broth ($0.21) handful parsley ($0.25) 1  lemon ($0.75) 1 oz feta ($0.56) ",
+        "imageLink": "https://cdn.greatlifepublishing.net/wp-content/uploads/sites/2/2020/12/01103010/Greek-Turkey-Rice-Skillet-Vertical-12-of-13.jpg"
+        },
+        {
+        "estimatedTime": "5 minutes",
+        "ingredients ": "1.5 cup cottage cheese  1.5 frozen banana  1.5 cup frozen pineapple chunks  1.5 tsp brown sugar (optional) 0.75 tsp vanilla extract  3 Tbsp ground flaxseeds (optional)  3 cup whole milk ",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 270.1kcal ・ Carbohydrates: 37g ・ Protein: 17.5g ・ Fat: 5.7g ・ Sodium: 661.8mg ・ Fiber: 4.9g",
+        "estimatedServings": "5",
+        "imageLink": "https://joyfoodsunshine.com/wp-content/uploads/2020/01/pineapple-smoothie-recipe-3.jpg",
+        "dietaryRes": "Vegetarian ",
+        "totalRecipeCost": "$4.90",
+        "recipeCategory": "Breakfast",
+        "costPerIngredients": "1.5 cup cottage cheese ($1.35) 1.5 frozen bananas ($0.50) 1.5 cup frozen pineapple chunks ($0.95) 1.5 tsp brown sugar (optional) ($0.05) 0.75 tsp vanilla extract ($0.35) 3 Tbsp ground flaxseeds (optional) ($0.15) 3 cup whole milk ($1.55)",
+        "instructions": "Put all of the ingredients into a blender, then blend until everything becomes smooth. Then serve.",
+        "recipeName": "Protein Pineapple Smoothie",
+        "estimatedPricePerServing": "$0.98"
+        },
+        {
+        "estimatedTime": "50 minutes",
+        "totalRecipeCost": "$3.97",
+        "recipeCategory": "Dessert ",
+        "dietaryRes": "Vegetarian",
+        "ingredients ": "1 cup mashed bananas  1 cup plain yogurt 2 large eggs  1/2 cup granulated sugar  4 Tbsp melted butter  1 tsp vanilla extract 1.5 cups all-purpose flour  1/3 cup unsweetened cocoa powder 1 tsp baking powder  1/2 tsp baking soda 1/2 tsp salt  1/2 cup chocolate chips ",
+        "imageLink": "https://www.evolvingtable.com/wp-content/uploads/2017/08/Coconut-Flour-Chocolate-Banana-Muffins-2.jpg",
+        "estimatedServings": "6",
+        "estimatedPricePerServing": "$0.33",
+        "nutritionPerServing": "Serving: 1 Muffin ・ Calories: 232.86kcal ・ Carbohydrates: 38.8g ・ Protein: 4.37g ・ Fat: 8.02g ・ Sodium: 233.58mg ・ Fiber: 2.22g",
+        "instructions": "* \t\tBegin with preheating the oven to 350ºF. Make sure to line a muffin tin with paper liners.   * \t\tThen, mash up 1 cup of the bananas well. Add the mashed bananas to a mixing bowl, along with the yogurt, eggs, sugar, melted butter, and vanilla. Whisk all of the ingredients together.    * \t\tIn a different mixing bowl, mix together the coca powder, flour, baking powder, baking soda, and salt.   * \t\tPour the dry ingredients into the bowl with the wet ingredients and mix them together. Then pour the chocolate chips into the batter.   * \t\tDivide up the batter between the 12 wells of the muffin tin. Place the tin in the oven and bake for 35 minutes.   * \t\tAfter baking is finished, take the muffins out of the tin and let them cool. Then serve.",
+        "costPerIngredients": "1 cup bananas ($0.42) 1 cup plain yogurt ($0.67) 2 large eggs ($0.46) 1/2 cup granulated sugar ($0.40) 4 Tbsp butter ($0.52) 1 tsp vanilla extract ($0.30) 1.5 cups all-purpose flour ($0.23) 1/3 cup unsweetened cocoa powder ($0.21) 1 tsp baking powder ($0.02) 1/2 tsp baking soda ($0.02) 1/2 tsp salt ($0.01) 1/2 cup chocolate chips ($0.70)",
+        "recipeName": "Chocolate Banana Muffins"
+        },
+        {
+        "estimatedTime": "10 minutes",
+        "totalRecipeCost": "$6.57",
+        "nutritionPerServing": "Serving: 1 Serving ・ Calories: 434kcal ・ Carbohydrates: 26.3g ・ Protein: 18.8g ・ Fat: 28.7g ・ Sodium: 1356.1mg ・ Fiber: 9.8g",
+        "estimatedServings": "3",
+        "costPerIngredients": "1.5 Tbsp butter ($0.09) 1.5 bell pepper ($0.75) 6 cups spinach ($1.50) 6 eggs ($1.50) 18 grape tomatoes ($1.02) 3/4 avocado ($0.39) 3/4 cup hummus ($1.11) pinch salt and cracked black pepper ($0.06)",
+        "imageLink": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Vegetable-Scrambled-Eggs_EXPS_FT20_5557_F_0310_1.jpg",
+        "ingredients ": "1.5 Tbsp butter 1.5 bell pepper 6 cups spinach 6 eggs 18 grape tomatoes 3/4 avocado 3/4 cup hummus pinch salt and cracked black pepper ",
+        "dietaryRes": "Vegetarian",
+        "recipeName": "Scrambled Eggs with Vegetables",
+        "estimatedPricePerServing": "$2.19",
+        "recipeCategory": "Breakfast",
+        "instructions": "* \tFirst, place the butter to a large non-stick skillet and place the heat to medium. Once the butter is melted, then add the diced bell pepper and sauté for 1-2 minutes. Add the spinach and sauté just until wilted (around one minute).  * \t\tThen crack the eggs in the center and move the vegetable to the sides. Add seasoning of your choice on top. Then, begin to scramble the eggs, mixing them with the vegetables. When the eggs are mostly set, turn off the heat. * \t\tLastly, place the cooked eggs and vegetables to a bowl and add sliced tomatoes, avocado, hummus, and a pinch of salt and pepper. Then serve."
+        },
+        {
+            "dietaryRes": "Vegetarian",
+            "nutritionPerServing": "Serving: 0.25 Cup ・ Calories: 76.2kcal ・ Carbohydrates: 11.33g ・ Protein: 5.5g ・ Fat: 1.2g ・ Sodium: 162.25mg ・ Fiber: 0.03g",
+            "ingredients ": "1 cup cottage cheese (4% fat)  2 Tbsp honey ½ tsp vanilla  1 tsp lemon juice (optional) 1 Tbsp water",
+            "estimatedPricePerServing": "$0.24",
+            "estimatedServings": "4",
+            "recipeName": "Honey Vanilla Cottage Cheese Fruit Dip",
+            "recipeCategory": "Dessert ",
+            "estimatedTime": "5 minutes",
+            "totalRecipeCost": "$0.94",
+            "instructions": "* \tFirst, place all of ingredients to a blender and purée until everything is smooth.   * \t\tThen serve with fresh cut fruit for dipping. (Also can refrigerate until ready to eat)",
+            "costPerIngredients": "1 cup cottage cheese (4% fat) ($0.53) 2 Tbsp honey ($0.25) ½ tsp vanilla ($0.15) 1 tsp lemon juice (optional) ($0.01) 1 Tbsp water ($0.00)",
+            "imageLink": "https://www.mustlovehome.com/wp-content/uploads/2020/03/Honey-Cream-Cheese-Fruit-Dip-6.jpg"
+        },
+        {
+            "estimatedServings": "2",
+            "dietaryRes": "Vegetarian",
+            "nutritionPerServing": "Serving: 1 Serving ・ Calories: 626.75kcal ・ Carbohydrates: 58.5g ・ Protein: 14.1g ・ Fat: 40.1g ・ Sodium: 619.5mg ・ Fiber: 12.1g",
+            "estimatedTime": "40 minutes",
+            "ingredients": "1.5 Tbsp peanut butter 1/2 Tbsp brown sugar 1 clove garlic, minced 1/4 tsp grated ginger 1 lime 1 tsp soy sauce 2 Tbsp cooking oil 1 sweet potato (about 1 lb.) 1 Tbsp cooking oil 1 pinch salt 1 handful cilantro 1/4 cup peanuts 1 pinch crushed red pepper",
+            "costPerIngredients": "1.5 Tbsp peanut butter ($0.11) 1/2 Tbsp brown sugar ($0.02) 1 clove garlic, minced ($0.08) 1/4 tsp grated ginger ($0.05) 1 lime ($0.50) 1 tsp soy sauce ($0.04) 2 Tbsp cooking oil ($0.41) 1 sweet potato (about 1 lb.) ($1.29) 1 Tbsp cooking oil ($0.20) 1 pinch salt ($0.01) 1 handful cilantro ($0.38) 1/4 cup peanuts ($0.12) 1 pinch crushed red pepper ($0.02)",
+            "estimatedPricePerServing": "$1.59",
+            "recipeName": "Baked Sweet Potato Fries with Peanut Dressing",
+            "instructions": "* \tFirst preheat the oven to 425ºF. Then peel the sweet potato and cut it into 1/2-inch wide fries.  * \t\tPour a small amount of cooking oil onto the surface of a large baking sheet, then spread it around fully. Add the sweet potato fries, then drizzle of the oil on top. Toss the sweet potatoes until they are fully covered in oil. Top with a bit of salt.   * \t\tThen put the sweet potatoes into the oven and let them bake for 20 minutes. Once finished, take the sweet potatoes out from the oven and mix them well. Then put them back in the oven and bake them for another 10 minutes.  * \t\tWhile the potatoes are baking, prep the peanut lime dressing. Mix the peanut butter, brown sugar, minced garlic, grated ginger, 1 Tbsp juice from the lime, soy sauce, and oil all in a bowl. Mix everything until the dressing is smooth.  * \t\tThen chop up the fresh cilantro and peanuts.  * \t\tFinally, once the sweet potatoes are done baking, split them up between two plates. Pour the peanut lime dressing over everything and then finish with a bit of the chopped cilantro, a bit of chopped peanuts, and a pinch of red pepper flakes. Then serve.",
+            "imageLink": "https://naturallyella.com/wp-content/uploads/2017/11/sweet-potato-wedges-1.jpg",
+            "totalRecipeCost": "$3.17",
+            "recipeCategory": "Lunch"
+        }
     ]
 }

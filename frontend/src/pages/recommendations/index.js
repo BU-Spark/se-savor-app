@@ -11,19 +11,20 @@ import {
     DietLogo,
     PageTitle,
     MainDiv,
-    ListTitle,
     RecipeList,
     RecipeWrapper,
     RecipeImg,
     RecipeText,
     RecipeTitle,
-    CurrentDate,
+    Like,
+    Bookmark,
+    RecipeActionsBox,
+    DisplayActionsBox,
+    Button,
 } from './style';
 
-function MealPlan() {
+function Recommendations() {
     const [recipesList, setRecipesList] = useState();
-    let date = Date();
-    date = date.split(' ');
 
     const getData = async () => {
         // Get our dummy data from the public/api folder
@@ -58,9 +59,11 @@ function MealPlan() {
                 </PageNav>
             </PageInfo>
             <MainDiv>
-                <PageTitle>Meal Plan</PageTitle>
-                <CurrentDate>{date[0]}, {date[2]} {date[1]}</CurrentDate>
-                <ListTitle>Breakfast</ListTitle>
+                <PageTitle>Recommendations</PageTitle>
+                <DisplayActionsBox>
+                    <Button>Filter</Button>
+                    <Button>Sort</Button>
+                </DisplayActionsBox>
                 <RecipeList>
                     {recipesList && recipesList.length > 0 &&
                     recipesList.slice(0,5).map((recipe) =>
@@ -68,33 +71,11 @@ function MealPlan() {
                         <RecipeImg src={recipe.imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
-
-                <ListTitle>Lunch</ListTitle>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(5,10).map((recipe) =>
-                    <RecipeWrapper>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
-                
-                <ListTitle>Dinner</ListTitle>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(10,15).map((recipe) =>
-                    <RecipeWrapper>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
+                            {recipe.instructions.slice(0,50)}
+                            <RecipeActionsBox>
+                                <Like/>
+                                <Bookmark/>
+                            </RecipeActionsBox>
                         </RecipeText>
                     </RecipeWrapper>)}
                 </RecipeList>
@@ -103,4 +84,4 @@ function MealPlan() {
     )
 }
 
-export default MealPlan;
+export default Recommendations;
