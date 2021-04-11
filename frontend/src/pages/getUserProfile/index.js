@@ -1,12 +1,12 @@
 import React, { useRef, useState, Component } from "react"
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
-import { Form, Button, Card, Alert, Col } from "react-bootstrap"
+import { Form, Button, Card, Alert, Col,InputGroup } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext.js"
 import { Link, useHistory } from "react-router-dom"
 import { LoginWrapper, LoginBox } from './style';
 import { signInWithGoogle, uiConfig, firestore } from "../../firebase";
-
+import CurrencyInput from 'react-currency-input';
 
 
 
@@ -72,11 +72,14 @@ function GetUserProfile() {
               </Form.Group>
               <Form.Group >
                 <Form.Label>Budget</Form.Label>
-                <Form.Control ref={BudgetRef} required />
+                <InputGroup.Prepend>
+                <InputGroup.Text>$</InputGroup.Text>
+                <Form.Control type="number" min="0" step="any" placeholder='0.00' ref={BudgetRef} required />
+                </InputGroup.Prepend>
               </Form.Group>
               <Form.Group >
                 <Form.Label>Group Size</Form.Label>
-                <Form.Control ref={sizeRef} required />
+                <Form.Control type="number" min="1"  ref={sizeRef} required />
               </Form.Group>
 
               <Form.Group >
