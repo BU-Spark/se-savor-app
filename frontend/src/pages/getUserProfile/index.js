@@ -6,7 +6,6 @@ import { useAuth } from "../../contexts/AuthContext.js"
 import { Link, useHistory } from "react-router-dom"
 import { LoginWrapper, LoginBox } from './style';
 import { signInWithGoogle, uiConfig, firestore } from "../../firebase";
-import CurrencyInput from 'react-currency-input';
 
 
 
