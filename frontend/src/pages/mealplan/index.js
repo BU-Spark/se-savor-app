@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     HomeWrapper,
     PageInfo,
@@ -49,12 +50,12 @@ function MealPlan() {
         <HomeWrapper>
             <PageInfo>
                 <PageNav>
-                    <DashLogo />
-                    <MealLogo />
-                    <RecommendationLogo />
-                    <BudgetLogo />
-                    <GroupLogo />
-                    <DietLogo />
+                    <Link to="/dashboard"><DashLogo /></Link>
+                    <Link to="/mealplan"><MealLogo /></Link>
+                    <Link to="/recommendations"><RecommendationLogo /></Link>
+                    <Link to=""><BudgetLogo /></Link>
+                    <Link to=""><GroupLogo /></Link>
+                    <Link to=""><DietLogo /></Link>
                 </PageNav>
             </PageInfo>
             <MainDiv>

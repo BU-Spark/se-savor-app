@@ -3,7 +3,7 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
-import { Link, useHistory } from "react-router-dom"
+import { Link, Redirect, useHistory } from "react-router-dom"
 import { actionCreators} from './store';
 import { LoginWrapper, LoginBox} from './style';
 import { signInWithGoogle, uiConfig,firestore} from "../../firebase";
@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 
 
-    function Login() {
+function Login() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const { login } = useAuth()
@@ -35,8 +35,6 @@ import { useDispatch, useSelector } from "react-redux";
           }
           if (user.emailVerified){
             dispatch(actionCreators.changeLogin());
-            //dispatch(actionCreators.getData());
-            history.push("/")
           }
         }).catch((error) => {
           setError(error.message);
@@ -51,6 +49,7 @@ import { useDispatch, useSelector } from "react-redux";
       <>
       
        <LoginWrapper>
+           {loginStatus ? <Redirect to="/dashboard" /> :
        <LoginBox>
     
           <Card.Body>
@@ -80,6 +79,7 @@ import { useDispatch, useSelector } from "react-redux";
         </div>
 
         </LoginBox>
+    }
         </LoginWrapper>
       </>
     )

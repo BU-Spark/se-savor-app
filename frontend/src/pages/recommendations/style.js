@@ -35,9 +35,7 @@ padding: 5px;
 background: #ED7D21;
 `;
 
-export const DashLogo = styled.a.attrs({
-    href: '/dashboard'
-})`
+export const DashLogo = styled.div`
  width: 25px;
  height: 25px;
  margin-left: 35px;
@@ -46,9 +44,7 @@ export const DashLogo = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const MealLogo = styled.a.attrs({
-    href: '/mealplan'
-})`
+export const MealLogo = styled.div`
  width: 25px;
  height: 25px;
  background:url(${mealLogo});
@@ -56,9 +52,7 @@ export const MealLogo = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const RecommendationLogo = styled.a.attrs({
-    href: '/recommendations'
-})`
+export const RecommendationLogo = styled.div`
  width: 25px;
  height: 25px;
  background:url(${reccommendationLogo});
@@ -66,9 +60,7 @@ export const RecommendationLogo = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const BudgetLogo = styled.a.attrs({
-    href: '/budget'
-})`
+export const BudgetLogo = styled.div`
  width: 25px;
  height: 25px;
  background:url(${budgetLogo});
@@ -76,9 +68,7 @@ export const BudgetLogo = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const GroupLogo = styled.a.attrs({
-    href: '/groupsize'
-})`
+export const GroupLogo = styled.div`
  width: 25px;
  height: 25px;
  background:url(${groupLogo});
@@ -86,9 +76,7 @@ export const GroupLogo = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const DietLogo = styled.a.attrs({
-    href: '/diet'
-})`
+export const DietLogo = styled.div`
  width: 25px;
  height: 25px;
  background:url(${dietLogo});

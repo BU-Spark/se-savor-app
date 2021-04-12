@@ -3,50 +3,55 @@ import logoPic from '../../statics/savorLogo.png';
 import avatarPic from'../../statics/avatar.png';
 export const HeaderWrapper = styled.div`
  position: relative;
- height: 88px;
+ height: 75px;
  border-bottom: 1px solid #f0f0f0;
+ display: flex;
 `;
 
 export const Logo = styled.div`
- position: absolute;
- top:5px;
- left:20px;
- display:block;
  width: 75px;
  height: 75px;
+ margin-left: 20px;
  background:url(${logoPic});
  background-size: contain;
 `;
 
 export const Nav = styled.div`
- width: 1260px;
  height: 100%;
- margin: 0 auto;
-
+display: flex;
+align-items: center;
+@media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    justify-content: space-evenly;
+}
 `;
 
 export const NavItem = styled.div`
- line-height: 88px;
- padding: 0 19px;
- font-size: 19px;
+width: 145px;
+text-align:center;
+ font-size: 1.5rem;
  color: #757575;
- &.left{
-     float : left;
+ @media (max-width: 750px) {
+     font-size: 1rem;
  }
 `;
 
 export const Addition = styled.div`
- position: absolute;
- right: 0;
- top: 0;
- hegiht: 88px;
+ flex-grow: 1;
+ align-items: center;
+ justify-content:flex-end;
+ display: flex;
+ padding-right: 15px;
 `;
 
 export const Button = styled.div`
- float: right;
- margin-top: 18px;
- margin-right: 25px;
- line-height:44px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+height:50px;
  padding: 0 20px;
  &.sign{
     border-radius: 19px;
@@ -58,24 +63,23 @@ export const Button = styled.div`
     color:#EE7B22;
     cursor: pointer;
  }
- &. signed{
+ &.signed{
     color: #757575;
+    @media (max-width: 775px) {
+        display: none;
+    }
  }
 `;
 
 export const Ava = styled.img.attrs({
    src: avatarPic
 })`
- float: right;
- margin-top: 20px;
- margin-right: 25px;
- line-height:44px;
- padding: 0 20px;
-
- vertical-align: middle;
- width: 80px;
+ width: 60px;
  height: 40px;
  border-radius: 50%;
- }
 `;
 
+export const AvaBox = styled.div`
+display: flex;
+align-items: center;
+`;

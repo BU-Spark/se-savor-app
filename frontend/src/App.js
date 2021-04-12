@@ -11,6 +11,7 @@ import SignUp from "./pages/signup/Signup.js";
 import Footer from './common/footer/index.js';
 import MealPlan from './pages/mealplan/index.js';
 import Recommendations from './pages/recommendations/index.js';
+import Dashboard from './pages/dashboard/index.js';
 import GetUserProfile from './pages/getUserProfile/index.js';
 import PrivateRoute from './pages/login/PrivateRoute.js'
 
@@ -23,13 +24,14 @@ class App extends Component {
                 <BrowserRouter>
                     <div>
                     <Header />
-                        <PrivateRoute path='/' exact component={Home}></PrivateRoute>
+                        <Route path='/' exact component={Home}></Route>
                         <Route path='/login' exact component={Login}></Route>
                         <Route path='/signup' exact component={SignUp}></Route>
-                        <Route path='/detail' exact component={Detail}></Route>
+                        <Route path='/getUserProfile' exact component={GetUserProfile}></Route>
+                        <PrivateRoute path='/detail' exact component={Detail}></PrivateRoute>
                         <PrivateRoute path='/mealplan' exact component={MealPlan}></PrivateRoute>
                         <PrivateRoute path='/recommendations' exact component={Recommendations}></PrivateRoute>
-                        <Route path='/getUserProfile' exact component={GetUserProfile}></Route>
+                        <PrivateRoute path='/dashboard' exact component={Dashboard}></PrivateRoute>
                     </div>
                 </BrowserRouter>
                 </AuthProvider>

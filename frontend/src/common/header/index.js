@@ -10,7 +10,8 @@ import {
     NavItem,
     Addition,
     Button,
-    Ava
+    Ava,
+    AvaBox,
 } from './style';
 import { Form, Card, Alert,Row,Col,Image } from "react-bootstrap"
 import { auth } from '../../firebase';
@@ -35,21 +36,19 @@ class Header extends Component {
   </Row>
             <Addition>
                 {
-                    login ?
-                    <span>
-                     <Link to='/detail'><Ava className="signed"></Ava></Link>
-                    <Button className="signed">welcome back! </Button>
-                    </span> 
-                    :
-                    <Link to='/signup'><Button className="sign" >SIGN UP </Button></Link>
-                }
-               
-                {
                     login ? 
                     <Link to='/'><Button className="log" onClick={logout}>LOG OUT</Button></Link> : 
                     <Link to='/login'><Button className="log" >LOG IN</Button></Link>
                 }
-
+                {
+                    login ?
+                    <AvaBox>
+                        <Button className="signed">Welcome Back! </Button>
+                        <Link to='/detail'><Ava className="signed"></Ava></Link>
+                    </AvaBox> 
+                    :
+                    <Link to='/signup'><Button className="sign" >SIGN UP </Button></Link>
+                }
             </Addition>
 
 

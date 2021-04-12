@@ -85,7 +85,7 @@ function GetUserProfile() {
                 <Form.Label>Dietary Restrictions</Form.Label>
                 <Form.Control as="select" defaultValue="Choose..." ref={dietaryRef}>
                   <option>None</option>
-                  <option>Vegatarian</option>
+                  <option>Vegetarian</option>
                 </Form.Control  >
               </Form.Group>
               <Button variant="flat" disabled={loading} className="w-100" type="submit" style={{ backgroundColor: "#EE7B22", color: 'white' }}>

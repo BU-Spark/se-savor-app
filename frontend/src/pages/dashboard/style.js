@@ -88,11 +88,6 @@ color: #ED7D21;
 margin-bottom: 15px;
 `;
 
-export const CurrentDate = styled.div`
-font-size: 1.5rem;
-margin-bottom: 15px;
-`;
-
 export const MainDiv = styled.div`
 width: 60%;
 min-width: 350px;
@@ -101,45 +96,4 @@ align-self: center;
 margin: 15px;
 padding: 3rem;
 border-radius: 5px;
-`;
-
-export const ListTitle = styled.div`
-color: #757575;
-text-transform: uppercase;
-`;
-
-export const RecipeList = styled.div`
-display: flex;
-flex-wrap: wrap;
-margin: 5px 0px 20px;
-padding: 0 1rem;
-`;
-
-export const RecipeWrapper = styled.div`
-display: flex;
-margin: 1rem;
-height: 50px;
-width: 300px;
-`;
-
-export const RecipeImg = styled.img`
-width: 50px;
-min-width: 50px;
-height: 100%;
-border-radius: 10px;
-object-fit: cover;
-`;
-
-export const RecipeText = styled.div`
-margin-left: 10px;
-flex-grow: 1;
-color: #757575;
-font-size: 0.75rem;
-`;
-
-export const RecipeTitle = styled.div`
-color: #000000;
-font-size: 0.80rem;
-font-weight: bold;
-margin-bottom: 15px;
 `;

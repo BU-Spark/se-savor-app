@@ -12,20 +12,12 @@ import {
     DietLogo,
     PageTitle,
     MainDiv,
-    RecipeList,
-    RecipeWrapper,
-    RecipeImg,
-    RecipeText,
-    RecipeTitle,
-    Like,
-    Bookmark,
-    RecipeActionsBox,
-    DisplayActionsBox,
-    Button,
 } from './style';
 
-function Recommendations() {
+function Dashboard() {
     const [recipesList, setRecipesList] = useState();
+    let date = Date();
+    date = date.split(' ');
 
     const getData = async () => {
         // Get our dummy data from the public/api folder
@@ -60,29 +52,10 @@ function Recommendations() {
                 </PageNav>
             </PageInfo>
             <MainDiv>
-                <PageTitle>Recommendations</PageTitle>
-                <DisplayActionsBox>
-                    <Button>Filter</Button>
-                    <Button>Sort</Button>
-                </DisplayActionsBox>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(0,5).map((recipe) =>
-                    <RecipeWrapper>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            {recipe.instructions.slice(0,50)}
-                            <RecipeActionsBox>
-                                <Like/>
-                                <Bookmark/>
-                            </RecipeActionsBox>
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
+                <PageTitle>Dashboard</PageTitle>
             </MainDiv>
         </HomeWrapper>
     )
 }
 
-export default Recommendations;
+export default Dashboard;
