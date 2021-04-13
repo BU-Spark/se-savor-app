@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
 import {
     HomeWrapper,
     PageInfo,
@@ -19,12 +20,45 @@ import {
     RecipeText,
     RecipeTitle,
     CurrentDate,
+    ModalClose,
+    ModalTitle,
+    ModalImg,
+    ModalText,
+    ModalContent,
 } from './style';
+
+Modal.setAppElement("#root");
 
 function MealPlan() {
     const [recipesList, setRecipesList] = useState();
+    const [modalIsOpen,setIsOpen] = useState(false);
+    const [modalRecipe,setModalRecipe] = useState();
     let date = Date();
     date = date.split(' ');
+
+    const modalStyles = {
+        content : {
+          top                   : '50%',
+          left                  : '50%',
+          right                 : 'auto',
+          bottom                : 'auto',
+          marginRight           : '-50%',
+          transform             : 'translate(-50%, -50%)',
+          display               : 'flex',
+          flexDirection         : 'column',
+          alignItems: 'center',
+          width                 : '90%',
+        },
+      };
+
+    function openModal(recipe) {
+        setIsOpen(true);
+        setModalRecipe(recipe)
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
 
     const getData = async () => {
         // Get our dummy data from the public/api folder
@@ -48,6 +82,22 @@ function MealPlan() {
 
     return (
         <HomeWrapper>
+            <Modal
+            isOpen={modalIsOpen}
+            // onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            style={modalStyles}
+            contentLabel="Recipe Modal"
+            >
+                <ModalClose onClick={closeModal}>Close</ModalClose>
+                {modalRecipe ?
+                <ModalContent>
+                    <ModalTitle>{modalRecipe.recipeName}</ModalTitle>
+                    <ModalImg src={modalRecipe.imageLink} />
+                    <ModalText>{modalRecipe.instructions}</ModalText>
+                </ModalContent>
+                : <div></div>}
+            </Modal>
             <PageInfo>
                 <PageNav>
                     <Link to="/dashboard"><DashLogo /></Link>
@@ -65,7 +115,7 @@ function MealPlan() {
                 <RecipeList>
                     {recipesList && recipesList.length > 0 &&
                     recipesList.slice(0,5).map((recipe) =>
-                    <RecipeWrapper>
+                    <RecipeWrapper onClick={() => openModal(recipe)}>
                         <RecipeImg src={recipe.imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{recipe.recipeName}</RecipeTitle>
@@ -78,7 +128,7 @@ function MealPlan() {
                 <RecipeList>
                     {recipesList && recipesList.length > 0 &&
                     recipesList.slice(5,10).map((recipe) =>
-                    <RecipeWrapper>
+                    <RecipeWrapper onClick={() => openModal(recipe)}>
                         <RecipeImg src={recipe.imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{recipe.recipeName}</RecipeTitle>
@@ -91,7 +141,7 @@ function MealPlan() {
                 <RecipeList>
                     {recipesList && recipesList.length > 0 &&
                     recipesList.slice(10,15).map((recipe) =>
-                    <RecipeWrapper>
+                    <RecipeWrapper onClick={() => openModal(recipe)}>
                         <RecipeImg src={recipe.imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{recipe.recipeName}</RecipeTitle>

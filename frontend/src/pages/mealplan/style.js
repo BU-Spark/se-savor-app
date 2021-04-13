@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import backgroundPic from '../../statics/mealplanPage.png';
 import dashLogo from '../../statics/dashboardlogos/dashboard.png';
 import mealLogo from '../../statics/dashboardlogos/mealplan.png';
-import reccommendationLogo from '../../statics/dashboardlogos/recommendations.png';
+import recommendationLogo from '../../statics/dashboardlogos/recommendations.png';
 import budgetLogo from '../../statics/dashboardlogos/budget.png';
 import groupLogo from '../../statics/dashboardlogos/groupsize.png';
 import dietLogo from '../../statics/dashboardlogos/dietaryrestrictions.png';
@@ -53,7 +53,7 @@ export const MealLogo = styled.div`
 export const RecommendationLogo = styled.div`
  width: 25px;
  height: 25px;
- background:url(${reccommendationLogo});
+ background:url(${recommendationLogo});
  background-size: contain;
  background-repeat: no-repeat;
 `;
@@ -115,11 +115,15 @@ margin: 5px 0px 20px;
 padding: 0 1rem;
 `;
 
-export const RecipeWrapper = styled.div`
+export const RecipeWrapper = styled.button`
 display: flex;
 margin: 1rem;
 height: 50px;
 width: 300px;
+padding: 0;
+border: 0;
+background: #E5E5E5;
+text-align: left;
 `;
 
 export const RecipeImg = styled.img`
@@ -142,4 +146,37 @@ color: #000000;
 font-size: 0.80rem;
 font-weight: bold;
 margin-bottom: 15px;
+`;
+
+export const ModalClose = styled.button`
+background: #ED7D21;
+color: #ffffff;
+border: 0;
+border-radius: 10px;
+padding: 5px;
+margin-bottom: 1rem;
+width: 25%;
+align-self: flex-end;
+`;
+
+export const ModalContent = styled.div`
+display: flex;
+flex-direction: column;
+`
+
+export const ModalTitle = styled.div`
+font-size: 2rem;
+margin-bottom: 1rem;
+text-align: center;
+`;
+
+export const ModalImg = styled.img`
+height: 300px;
+max-width: 400px;
+margin-bottom: 1rem;
+align-self: center;
+border-radius: 10px;
+`;
+
+export const ModalText = styled.div`
 `;
