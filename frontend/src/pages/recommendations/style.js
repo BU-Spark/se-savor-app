@@ -151,9 +151,7 @@ display: flex;
 justify-content: space-between;
 `;
 
-export const Like = styled.a.attrs({
-    href: ''
-})`
+export const Like = styled.div`
  width: 20px;
  height: 20px;
  background:url(${thumbsUp});
@@ -161,9 +159,7 @@ export const Like = styled.a.attrs({
  background-repeat: no-repeat;
 `;
 
-export const Bookmark = styled.a.attrs({
-    href: ''
-})`
+export const Bookmark = styled.div`
  width: 20px;
  height: 20px;
  background:url(${bookmark});

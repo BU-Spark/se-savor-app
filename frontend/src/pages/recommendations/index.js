@@ -74,8 +74,8 @@ function Recommendations() {
                             <RecipeTitle>{recipe.recipeName}</RecipeTitle>
                             {recipe.instructions.slice(0,50)}
                             <RecipeActionsBox>
-                                <Like/>
-                                <Bookmark/>
+                                <Link to=""><Like /></Link>
+                                <Link to=""><Bookmark /></Link>
                             </RecipeActionsBox>
                         </RecipeText>
                     </RecipeWrapper>)}
