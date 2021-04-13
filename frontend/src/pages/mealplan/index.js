@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import { Link, useHistory } from 'react-router-dom';
 import Modal from 'react-modal';
 import {
     HomeWrapper,
@@ -33,6 +34,9 @@ function MealPlan() {
     const [recipesList, setRecipesList] = useState();
     const [modalIsOpen,setIsOpen] = useState(false);
     const [modalRecipe,setModalRecipe] = useState();
+    const loginStatus = useSelector(state => state.getIn(['login','login']));
+    const history = useHistory();
+
     let date = Date();
     date = date.split(' ');
 
@@ -46,14 +50,15 @@ function MealPlan() {
           transform             : 'translate(-50%, -50%)',
           display               : 'flex',
           flexDirection         : 'column',
-          alignItems: 'center',
+          alignItems            : 'center',
+          height                : '75%',
           width                 : '90%',
         },
       };
 
     function openModal(recipe) {
         setIsOpen(true);
-        setModalRecipe(recipe)
+        setModalRecipe(recipe);
     }
 
     function closeModal() {
@@ -77,6 +82,10 @@ function MealPlan() {
 
     // When the page is first loaded, this function will fire
     useEffect(() => {
+        if (!loginStatus) {
+            history.push("/login")
+            return
+        }
         getData();
     }, [])
 
@@ -84,7 +93,6 @@ function MealPlan() {
         <HomeWrapper>
             <Modal
             isOpen={modalIsOpen}
-            // onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
             style={modalStyles}
             contentLabel="Recipe Modal"

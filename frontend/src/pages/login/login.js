@@ -3,7 +3,7 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
-import { Link, Redirect, useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import { actionCreators} from './store';
 import { LoginWrapper, LoginBox} from './style';
 import { signInWithGoogle, uiConfig,firestore} from "../../firebase";
@@ -35,6 +35,7 @@ function Login() {
           }
           if (user.emailVerified){
             dispatch(actionCreators.changeLogin());
+            history.push("/dashboard")
           }
         }).catch((error) => {
           setError(error.message);
@@ -49,9 +50,7 @@ function Login() {
       <>
       
        <LoginWrapper>
-           {loginStatus ? <Redirect to="/dashboard" /> :
        <LoginBox>
-    
           <Card.Body>
             <h2 className="text-center mb-4">Log In</h2>
             {error && <Alert variant="danger">{error}</Alert>}
@@ -79,7 +78,6 @@ function Login() {
         </div>
 
         </LoginBox>
-    }
         </LoginWrapper>
       </>
     )

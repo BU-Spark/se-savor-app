@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import { Link, useHistory } from 'react-router-dom';
 import {
     HomeWrapper,
     PageInfo,
@@ -26,6 +27,8 @@ import {
 
 function Recommendations() {
     const [recipesList, setRecipesList] = useState();
+    const loginStatus = useSelector(state => state.getIn(['login','login']));
+    const history = useHistory();
 
     const getData = async () => {
         // Get our dummy data from the public/api folder
@@ -44,6 +47,10 @@ function Recommendations() {
 
     // When the page is first loaded, this function will fire
     useEffect(() => {
+        if (!loginStatus) {
+            history.push("/login")
+            return
+        }
         getData();
     }, [])
 

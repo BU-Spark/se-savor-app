@@ -29,13 +29,9 @@ align-items: center;
 `;
 
 export const NavItem = styled.div`
-width: 145px;
-text-align:center;
- font-size: 1.5rem;
+ width: 145px;
+ text-align: center;
  color: #757575;
- @media (max-width: 750px) {
-     font-size: 1rem;
- }
 `;
 
 export const Addition = styled.div`

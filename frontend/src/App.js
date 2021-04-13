@@ -28,10 +28,10 @@ class App extends Component {
                         <Route path='/login' exact component={Login}></Route>
                         <Route path='/signup' exact component={SignUp}></Route>
                         <Route path='/getUserProfile' exact component={GetUserProfile}></Route>
-                        <PrivateRoute path='/detail' exact component={Detail}></PrivateRoute>
-                        <PrivateRoute path='/mealplan' exact component={MealPlan}></PrivateRoute>
-                        <PrivateRoute path='/recommendations' exact component={Recommendations}></PrivateRoute>
-                        <PrivateRoute path='/dashboard' exact component={Dashboard}></PrivateRoute>
+                        <Route path='/dashboard' exact component={Dashboard}></Route>
+                        <Route path='/detail' exact component={Detail}></Route>
+                        <Route path='/mealplan' exact component={MealPlan}></Route>
+                        <Route path='/recommendations' exact component={Recommendations}></Route>
                     </div>
                 </BrowserRouter>
                 </AuthProvider>
