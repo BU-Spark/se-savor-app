@@ -30,11 +30,16 @@ import {
     DashboardDivTitle,
     DashboardSettings,
     SettingsDiv,
-    SettingsButton
+    SettingsButton,
+    Ingredient
 } from './style';
 
 function Dashboard() {
     const [recipesList, setRecipesList] = useState();
+    const [ingredientsList, setIngredientsList] = useState();
+    const [budget, setBudget] = useState();
+    const [groupSize, setGroupSize] = useState();
+    const [dietaryRestriction, setDietaryRestriction] = useState();
     const [modalIsOpen,setIsOpen] = useState(false);
     const [modalRecipe,setModalRecipe] = useState();
     const loginStatus = useSelector(state => state.getIn(['login','login']));
@@ -80,7 +85,18 @@ function Dashboard() {
         // Turn the response object back into json
         const dataJson = await data.json();
         setRecipesList(dataJson.recipes);
+        setIngredientsList(dataJson.grocery.items);
 
+        const userData = await fetch('./api/login.json',
+                                {
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        'Accept': 'application/json'
+                                }});
+        const userDataJson = await userData.json();
+        setBudget(userDataJson.budget)
+        setGroupSize(userDataJson.groupSize)
+        setDietaryRestriction(userDataJson.dietaryRestriction)
     }
 
     // When the page is first loaded, this function will fire
@@ -165,19 +181,22 @@ function Dashboard() {
                 </DashboardDiv>
                 <DashboardDiv>
                     <DashboardDivTitle>Ingredients</DashboardDivTitle>
+                    {ingredientsList && ingredientsList.length > 0 &&
+                    ingredientsList.map((ingredient) =>
+                    <Ingredient> {ingredient} </Ingredient>)}
                 </DashboardDiv>
                 <DashboardSettings>
                     <SettingsDiv>
                         <DashboardDivTitle>Budget</DashboardDivTitle>
-                        <SettingsButton>Current budget</SettingsButton>
+                        {budget && <SettingsButton>{budget}</SettingsButton>}
                     </SettingsDiv>
                     <SettingsDiv>
                         <DashboardDivTitle>Group Size</DashboardDivTitle>
-                        <SettingsButton>Current group size</SettingsButton>
+                        {groupSize && <SettingsButton>{groupSize}</SettingsButton>}
                     </SettingsDiv>
                     <SettingsDiv>
                         <DashboardDivTitle>Dietary Restrictions</DashboardDivTitle>
-                        <SettingsButton>Current dietary restrictions</SettingsButton>
+                        {dietaryRestriction && <SettingsButton>{dietaryRestriction}</SettingsButton>}
                     </SettingsDiv>
                 </DashboardSettings>
             </MainDiv>

@@ -241,3 +241,9 @@ border: none;
 border-radius: 5px;
 padding: 0.5rem 1rem;
 `;
+
+export const Ingredient = styled.div`
+margin: 0 0 1rem 0;
+color: #757575;
+font-size: 0.75rem;
+`;
