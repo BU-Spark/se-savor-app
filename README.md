@@ -1,11 +1,9 @@
 # Savor
 
-## Problem Statement
-
 ## Set up
 To run the React app, you'll need to connect to the project's Firestore. You should have been added as collaborators to the Firebase project by the client.
 
-### Getting your API keys
+#### Getting your API keys
 1. Navigate to Savor's Firebase console. In the project's settings, go to the General tab and find the "Your Apps" section.
 
 2. Click on "Add App" and the web app option.
@@ -14,7 +12,7 @@ To run the React app, you'll need to connect to the project's Firestore. You sho
 
 4. A code block will pop-up-- the keys of interest are in the `firebaseConfig` object. Copy these somewhere or keep the browser tab open as they'll be needed for the next step.
 
-### Adding the keys to the frontend
+#### Adding the keys to the frontend
 1. Create a `.env` file in the frontend folder. It should have these variables:<br/>
 `REACT_APP_FIREBASE_API_KEY=""`<br/>
 `REACT_APP_FIREBASE_AUTH_DOMAIN=""`<br/>
@@ -52,4 +50,20 @@ To delete old Docker images do<br/>
 Under the IMAGE ID column, find the one you want to remove and do<br/>
 `docker rmi IMAGE_ID_HERE`
 
-## Known Bugs
+## Known Bugs & Unimplemented Features
+#### General:
+    * Reloading the page logs the user out
+    * Links in main nav bar ("Our Menu", "Plans", "Our Vision") and links in the footer not yet implemented
+    * Budget, Group Size, and Dietary Restrictions buttons in the orange nav bar redirect to the home page as the client does not yet have wireframes for these pages
+#### Sign-up form:
+    * Birthday date selector doesn't work on Safari or IE, user is able to enter text in this field when using these browsers
+    * Non-numeric characters can be entered in the phone number field
+#### Dashboard page:
+    * Budget, Group Size, and Dietary Restrictions buttons do not yet allow the user to edit their settings
+    * Date selector for Meal Plan component shown in wireframe is not yet implemented
+#### Meal Plan page:
+    * Date selector shown in wireframe is not yet implemented
+#### Recommendations page:
+    * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
+#### Firebase:
+    * See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
