@@ -11,7 +11,7 @@ function Detail() {
             history.push("/login")
             return
         }
-    }, [])
+    }, [history, loginStatus])
 
     return (
         <div> Detail~</div>

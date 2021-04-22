@@ -3,11 +3,6 @@ import backgroundPic from '../../statics/loginPage.png';
 
 export const LoginWrapper = styled.div`
  z-index:0;
- position:aboslute;
-//  left:0;
-//  right: 0;
-//  bottom: 0;
-// top: 56px;
  padding-top:170px;
  min-height:calc(100vh - 368px);
  width: 100%;

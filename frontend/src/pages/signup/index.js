@@ -1,5 +1,5 @@
-import React, { PureComponent,useCallback,useContext } from 'react';
-import { withRouter,Redirect } from 'react-router-dom';
+import React, { PureComponent } from 'react';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 import { actionCreators} from './store';
@@ -9,7 +9,6 @@ import { actionCreators} from './store';
 class Login extends PureComponent {
     render() {
         const { loginStatus } = this.props;
-        //console.log(loginStatus);
         if(!loginStatus){
             return (
                 

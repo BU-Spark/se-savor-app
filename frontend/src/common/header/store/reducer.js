@@ -9,7 +9,7 @@ const defaultState = fromJS({
 	totalPage: 1
 });
 
-export default (state = defaultState, action) => {
+const func = (state = defaultState, action) => {
 	switch(action.type) {
 		case constants.SEARCH_FOCUS:
 			return state.set('focused', true);
@@ -30,3 +30,5 @@ export default (state = defaultState, action) => {
 			return state;
 	}
 }
+
+export default func;

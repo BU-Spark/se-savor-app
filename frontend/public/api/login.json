@@ -1,8 +1,4 @@
 {
-    "success": true,
-    "data": true,
-    "account" : "xiaoxin",
-    "password": 123,
     "budget": 1000,
     "groupSize": 2,
     "dietaryRestriction": "None"

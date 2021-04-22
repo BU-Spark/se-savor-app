@@ -106,7 +106,7 @@ function Dashboard() {
             return
         }
         getData();
-    }, [])
+    }, [history, loginStatus])
 
     return (
         <HomeWrapper>

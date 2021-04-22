@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import backgroundPic from '../../statics/mealplanPage.png';
 import dashLogo from '../../statics/dashboardlogos/dashboard.png';
 import mealLogo from '../../statics/dashboardlogos/mealplan.png';
-import reccommendationLogo from '../../statics/dashboardlogos/recommendations.png';
+import recommendationLogo from '../../statics/dashboardlogos/recommendations.png';
 import budgetLogo from '../../statics/dashboardlogos/budget.png';
 import groupLogo from '../../statics/dashboardlogos/groupsize.png';
 import dietLogo from '../../statics/dashboardlogos/dietaryrestrictions.png';
@@ -55,7 +55,7 @@ export const MealLogo = styled.div`
 export const RecommendationLogo = styled.div`
  width: 25px;
  height: 25px;
- background:url(${reccommendationLogo});
+ background:url(${recommendationLogo});
  background-size: contain;
  background-repeat: no-repeat;
 `;

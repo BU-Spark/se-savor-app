@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"
-import { auth,firestoredb } from "../firebase"
-import { reactReduxFirebase, getFirebase,getFirestore } from 'react-redux-firebase';
+import { auth } from "../firebase"
 import 'firebase/firestore';
 import firebase from 'firebase/app';
 const AuthContext = React.createContext()
@@ -27,16 +26,15 @@ export function AuthProvider({ children }) {
        })
   }
 
-  function userProfileRequest(firstname,lastname,brith,phone,budget,size,dietary){
+  function userProfileRequest(firstname,lastname,birth,phone,budget,size,dietary){
     const user = auth.currentUser;
-    //user.uid
+
     let db = firebase.firestore();
     let userID = user.uid;
     db.collection('Users').doc(userID).update({
-      //name: user.name,
       firstname:firstname,
       lastname:lastname,
-      birth:brith,
+      birth:birth,
       phone:phone,
       budget:budget,
       size:size,

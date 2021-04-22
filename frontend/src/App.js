@@ -13,7 +13,6 @@ import MealPlan from './pages/mealplan/index.js';
 import Recommendations from './pages/recommendations/index.js';
 import Dashboard from './pages/dashboard/index.js';
 import GetUserProfile from './pages/getUserProfile/index.js';
-import PrivateRoute from './pages/login/PrivateRoute.js'
 
 class App extends Component {
     render() {

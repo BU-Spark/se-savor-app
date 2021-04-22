@@ -1,10 +1,9 @@
-import React, { useRef, useState,Component } from "react"
+import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { connect } from 'react-redux';
-import { actionCreators} from './store';
-import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
+import { LoginWrapper, LoginBox } from './style';
 
 
     function Signup() {

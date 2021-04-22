@@ -1,4 +1,4 @@
-import React, { useRef, useState,Component } from "react"
+import React, { useRef, useState } from "react"
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import firebase from 'firebase';
 import { Form, Button, Card, Alert } from "react-bootstrap"
@@ -6,8 +6,8 @@ import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { actionCreators} from './store';
 import { LoginWrapper, LoginBox} from './style';
-import { signInWithGoogle, uiConfig,firestore} from "../../firebase";
-import { useDispatch, useSelector } from "react-redux";
+import { uiConfig } from "../../firebase";
+import { useDispatch } from "react-redux";
 
 
 
@@ -18,7 +18,6 @@ function Login() {
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
-    const loginStatus = useSelector(state => state.getIn(['login','login']));
     const dispatch = useDispatch();
 
  
@@ -83,15 +82,4 @@ function Login() {
     )
   }
 
-// const mapState = (state) =>({
-//   loginStatus: state.getIn(['login','login']),
-// })
-
-// const mapDispatch = (dispatch) => ({
-//   logined(){
-//     dispatch(actionCreators.logined());
-// }
-// })
-
 export default Login;
-//export default connect(mapState,mapDispatch)(Login);

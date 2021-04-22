@@ -1,11 +1,8 @@
-import React, { useRef, useState, Component } from "react"
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebase from 'firebase';
-import { Form, Button, Card, Alert, Col,InputGroup } from "react-bootstrap"
+import React, { useRef, useState } from "react"
+import { Form, Button, Card, Col,InputGroup } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext.js"
-import { Link, useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { LoginWrapper, LoginBox } from './style';
-import { signInWithGoogle, uiConfig, firestore } from "../../firebase";
 
 
 

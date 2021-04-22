@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from "react-redux";
 import { Link, useHistory } from 'react-router-dom';
 import Modal from 'react-modal';
@@ -87,7 +87,7 @@ function MealPlan() {
             return
         }
         getData();
-    }, [])
+    }, [history, loginStatus])
 
     return (
         <HomeWrapper>

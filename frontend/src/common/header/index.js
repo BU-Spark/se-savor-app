@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { actionCreators } from './store';
 import { actionCreators as loginActionCreators } from '../../pages/signup/store'
 import {
     HeaderWrapper,
@@ -13,8 +12,7 @@ import {
     Ava,
     AvaBox,
 } from './style';
-import { Form, Card, Alert,Row,Col,Image } from "react-bootstrap"
-import { auth } from '../../firebase';
+import { Row,Col,Image } from "react-bootstrap"
 
 
 class Header extends Component {

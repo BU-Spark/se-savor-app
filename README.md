@@ -52,18 +52,23 @@ Under the IMAGE ID column, find the one you want to remove and do<br/>
 
 ## Known Bugs & Unimplemented Features
 #### General:
-    * Reloading the page logs the user out
-    * Links in main nav bar ("Our Menu", "Plans", "Our Vision") and links in the footer not yet implemented
-    * Budget, Group Size, and Dietary Restrictions buttons in the orange nav bar redirect to the home page as the client does not yet have wireframes for these pages
+* Reloading the page logs the user out
+* Links in main nav bar ("Our Menu", "Plans", "Our Vision") and links in the footer not yet implemented
+* Budget, Group Size, and Dietary Restrictions buttons in the orange nav bar redirect to the home page as the client does not yet have wireframes for these pages
+* If a non-logged in user tries to visit a page that requires them to be logged in, it will redirect to /login, BUT the original page they were trying to visit does display on the screen for <1sec
+* User profile page (/detail) is not complete but can be visited by logged in users; currently, it just says "Detail"
 #### Sign-up form:
-    * Birthday date selector doesn't work on Safari or IE, user is able to enter text in this field when using these browsers
-    * Non-numeric characters can be entered in the phone number field
+* Birthday date selector doesn't work on Safari or IE, user is able to enter text in this field when using these browsers
+* Non-numeric characters can be entered in the phone number field
+#### Log-in form:
+* Facebook and Twitter sign-in not yet implemented
+* Forgot password not yet implemented
 #### Dashboard page:
-    * Budget, Group Size, and Dietary Restrictions buttons do not yet allow the user to edit their settings
-    * Date selector for Meal Plan component shown in wireframe is not yet implemented
+* Budget, Group Size, and Dietary Restrictions buttons do not yet allow the user to edit their settings
+* Date selector for Meal Plan component shown in wireframe is not yet implemented
 #### Meal Plan page:
-    * Date selector shown in wireframe is not yet implemented
+* Date selector shown in wireframe is not yet implemented
 #### Recommendations page:
-    * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
+* Like and bookmark buttons are not yet implemented, they currently redirect to the home page
 #### Firebase:
-    * See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
+* See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
