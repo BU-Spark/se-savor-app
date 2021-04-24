@@ -19,7 +19,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-    font-style: san-serif;
+    font-family: sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -33,7 +33,7 @@ html{
 
 body {
 	line-height: 1;
-	min-heigh: 100vh;
+	min-height: 100vh;
 	display:flex;
 	flex-direction:column;
 }

@@ -29,21 +29,7 @@ function Recommendations() {
     const [recipesList, setRecipesList] = useState();
     const loginStatus = useSelector(state => state.getIn(['login','login']));
     const history = useHistory();
-
-    const getData = async () => {
-        // Get our dummy data from the public/api folder
-        const data = await fetch('./api/dummy.json',
-                                {
-                                    headers: {
-                                        'Content-Type': 'application/json',
-                                        'Accept': 'application/json'
-                                }});
-
-        // Turn the response object back into json
-        const dataJson = await data.json();
-        setRecipesList(dataJson.recipes);
-
-    }
+    const data = useSelector(state => state.getIn(['login','data']));
 
     // When the page is first loaded, this function will fire
     useEffect(() => {
@@ -51,8 +37,8 @@ function Recommendations() {
             history.push("/login")
             return
         }
-        getData();
-    }, [history, loginStatus])
+        setRecipesList(data.breakfast);
+    }, [history, loginStatus, data])
 
     return (
         <HomeWrapper>

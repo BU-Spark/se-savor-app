@@ -3,20 +3,20 @@ import * as constants from './constants';
 
 const defaultState = fromJS({
     login: false,
-    username:''
+    data: {},
 });
 
-const func = ( state = defaultState,action) => {
+const reducerFunc = ( state = defaultState,action) => {
     switch(action.type){
         case constants.CHANGE_LOGIN:
             return state.set('login', action.value);
         case constants.LOGOUT:
-            return state.set('login',action.value);
-        case constants.GETDATA:
-            return state.set('username',action.username);
+            return state.set('login', action.value);
+        case constants.SETDATA:
+            return state.set('data', action.value);
         default:
             return state;
     }
 };
 
-export default func;
+export default reducerFunc;

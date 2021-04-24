@@ -1,5 +1,5 @@
 import * as constants from './constants';
-import { auth } from "../../../firebase"
+import { auth } from "../../../firebase";
 import 'firebase/firestore';
 
 export const changeLogin = () => ({
@@ -7,10 +7,19 @@ export const changeLogin = () => ({
     value: true
 });
 
-export const getData =(name) =>({
-    type: constants.GETDATA,
-    username: name,
-})
+export const setData = (breakfast, lunch, dinner, budget, groupSize, dietary) => {
+    return {
+        type: constants.SETDATA,
+        value: {
+            breakfast,
+            lunch,
+            dinner,
+            budget,
+            groupSize,
+            dietary,
+        },
+    }
+};
 
 export const changeLogout = () => ({
     type: constants.LOGOUT,

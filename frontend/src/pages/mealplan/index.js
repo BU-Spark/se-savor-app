@@ -31,10 +31,13 @@ import {
 Modal.setAppElement("#root");
 
 function MealPlan() {
-    const [recipesList, setRecipesList] = useState();
+    const [breakfastRecipes, setBreakfastRecipes] = useState();
+    const [lunchRecipes, setLunchRecipes] = useState();
+    const [dinnerRecipes, setDinnerRecipes] = useState();
     const [modalIsOpen,setIsOpen] = useState(false);
     const [modalRecipe,setModalRecipe] = useState();
     const loginStatus = useSelector(state => state.getIn(['login','login']));
+    const data = useSelector(state => state.getIn(['login','data']));
     const history = useHistory();
 
     let date = Date();
@@ -65,29 +68,16 @@ function MealPlan() {
         setIsOpen(false);
     }
 
-    const getData = async () => {
-        // Get our dummy data from the public/api folder
-        const data = await fetch('./api/dummy.json',
-                                {
-                                    headers: {
-                                        'Content-Type': 'application/json',
-                                        'Accept': 'application/json'
-                                }});
-
-        // Turn the response object back into json
-        const dataJson = await data.json();
-        setRecipesList(dataJson.recipes);
-
-    }
-
     // When the page is first loaded, this function will fire
     useEffect(() => {
         if (!loginStatus) {
             history.push("/login")
             return
         }
-        getData();
-    }, [history, loginStatus])
+        setBreakfastRecipes(data.breakfast);
+        setLunchRecipes(data.lunch);
+        setDinnerRecipes(data.dinner);
+    }, [history, loginStatus, data])
 
     return (
         <HomeWrapper>
@@ -102,7 +92,10 @@ function MealPlan() {
                 <ModalContent>
                     <ModalTitle>{modalRecipe.recipeName}</ModalTitle>
                     <ModalImg src={modalRecipe.imageLink} />
-                    <ModalText>{modalRecipe.instructions}</ModalText>
+                    <ModalText>
+                        <strong>Instructions:</strong>{modalRecipe.instructions} <br/>
+                        <strong>Ingredients:</strong>{modalRecipe.ingredients}
+                    </ModalText>
                 </ModalContent>
                 : <div></div>}
             </Modal>
@@ -120,43 +113,43 @@ function MealPlan() {
                 <PageTitle>Meal Plan</PageTitle>
                 <CurrentDate>{date[0]}, {date[2]} {date[1]}</CurrentDate>
                 <ListTitle>Breakfast</ListTitle>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(0,5).map((recipe) =>
-                    <RecipeWrapper onClick={() => openModal(recipe)}>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
+                    <RecipeList>
+                        {breakfastRecipes && breakfastRecipes.length > 0 &&
+                        breakfastRecipes.map((recipe) =>
+                        <RecipeWrapper onClick={() => openModal(recipe)}>
+                            <RecipeImg src={recipe.imageLink}/>
+                            <RecipeText>
+                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
+                                Servings {recipe.estimatedServings}
+                            </RecipeText>
+                        </RecipeWrapper>)}
+                    </RecipeList>
 
-                <ListTitle>Lunch</ListTitle>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(5,10).map((recipe) =>
-                    <RecipeWrapper onClick={() => openModal(recipe)}>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
-                
-                <ListTitle>Dinner</ListTitle>
-                <RecipeList>
-                    {recipesList && recipesList.length > 0 &&
-                    recipesList.slice(10,15).map((recipe) =>
-                    <RecipeWrapper onClick={() => openModal(recipe)}>
-                        <RecipeImg src={recipe.imageLink}/>
-                        <RecipeText>
-                            <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                            Servings {recipe.estimatedServings}
-                        </RecipeText>
-                    </RecipeWrapper>)}
-                </RecipeList>
+                    <ListTitle>Lunch</ListTitle>
+                    <RecipeList>
+                        {lunchRecipes && lunchRecipes.length > 0 &&
+                        lunchRecipes.map((recipe) =>
+                        <RecipeWrapper onClick={() => openModal(recipe)}>
+                            <RecipeImg src={recipe.imageLink}/>
+                            <RecipeText>
+                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
+                                Servings {recipe.estimatedServings}
+                            </RecipeText>
+                        </RecipeWrapper>)}
+                    </RecipeList>
+
+                    <ListTitle>Dinner</ListTitle>
+                    <RecipeList>
+                        {dinnerRecipes && dinnerRecipes.length > 0 &&
+                        dinnerRecipes.map((recipe) =>
+                        <RecipeWrapper onClick={() => openModal(recipe)}>
+                            <RecipeImg src={recipe.imageLink}/>
+                            <RecipeText>
+                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
+                                Servings {recipe.estimatedServings}
+                            </RecipeText>
+                        </RecipeWrapper>)}
+                    </RecipeList>
             </MainDiv>
         </HomeWrapper>
     )

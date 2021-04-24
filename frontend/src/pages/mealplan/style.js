@@ -96,11 +96,13 @@ margin-bottom: 15px;
 export const MainDiv = styled.div`
 width: 60%;
 min-width: 350px;
+max-height: 500px;
 background: #E5E5E5;
 align-self: center;
 margin: 15px;
 padding: 3rem;
 border-radius: 5px;
+overflow: auto;
 `;
 
 export const ListTitle = styled.div`

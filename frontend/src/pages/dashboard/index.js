@@ -1,6 +1,8 @@
-import React, { useEffect, useState,  } from 'react';
-import { useSelector } from "react-redux";
+import React, { useEffect, useState, useCallback  } from 'react';
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from 'react-router-dom';
+import { auth, firestoredb } from '../../firebase'
+import { actionCreators} from '../login/store';
 import Modal from 'react-modal';
 import {
     HomeWrapper,
@@ -35,7 +37,9 @@ import {
 } from './style';
 
 function Dashboard() {
-    const [recipesList, setRecipesList] = useState();
+    const [breakfastRecipes, setBreakfastRecipes] = useState();
+    const [lunchRecipes, setLunchRecipes] = useState();
+    const [dinnerRecipes, setDinnerRecipes] = useState();
     const [ingredientsList, setIngredientsList] = useState();
     const [budget, setBudget] = useState();
     const [groupSize, setGroupSize] = useState();
@@ -43,7 +47,8 @@ function Dashboard() {
     const [modalIsOpen,setIsOpen] = useState(false);
     const [modalRecipe,setModalRecipe] = useState();
     const loginStatus = useSelector(state => state.getIn(['login','login']));
-    const history = useHistory()
+    const history = useHistory();
+    const dispatch = useDispatch();
 
     let date = Date();
     date = date.split(' ');
@@ -73,31 +78,67 @@ function Dashboard() {
         setIsOpen(false);
     }
 
-    const getData = async () => {
-        // Get our dummy data from the public/api folder
+    // Memoize function to avoid doing multiple fetches for the data
+    const getData = useCallback(async () => {
+        // Get the recipes from Firestore
+        const recipesRef = await firestoredb.collection("Recipes");
+        const recipes = await recipesRef.get();
+        const breakfast = [];
+        const lunch = [];
+        const dinner = [];
+        recipes.forEach(doc => {
+            let data = doc.data()
+            let type = data.recipeCategory;
+            switch (type) {
+                case "Breakfast":
+                    breakfast.push(data);
+                    break;
+                case "Lunch":
+                    lunch.push(data);
+                    break;
+                case "Dinner":
+                    dinner.push(data);
+                    break;
+                default:
+                    break;
+            }
+        });
+        setBreakfastRecipes(breakfast);
+        setLunchRecipes(lunch);
+        setDinnerRecipes(dinner);
+
+        // Get this user's info from Firestore and the update state variables
+        const docRef = await firestoredb.collection("Users").doc(auth.currentUser.uid);
+        const doc = await docRef.get()
+        if (doc.exists) {
+            setBudget(doc.data().budget)
+            setGroupSize(doc.data().size)
+            setDietaryRestriction(doc.data().dietary)
+        }
+
+        // At the moment, the app is using dummy data for the ingredients list.
         const data = await fetch('./api/dummy.json',
                                 {
                                     headers: {
                                         'Content-Type': 'application/json',
                                         'Accept': 'application/json'
                                 }});
-
-        // Turn the response object back into json
         const dataJson = await data.json();
-        setRecipesList(dataJson.recipes);
         setIngredientsList(dataJson.grocery.items);
+        
+        // Store fetched data so other components can use it
+        dispatch(actionCreators.setData(breakfastRecipes, lunchRecipes, dinnerRecipes, budget, groupSize, dietaryRestriction))
 
-        const userData = await fetch('./api/login.json',
-                                {
-                                    headers: {
-                                        'Content-Type': 'application/json',
-                                        'Accept': 'application/json'
-                                }});
-        const userDataJson = await userData.json();
-        setBudget(userDataJson.budget)
-        setGroupSize(userDataJson.groupSize)
-        setDietaryRestriction(userDataJson.dietaryRestriction)
-    }
+    // Don't put breakfastRecipes or any of the other lists in the dependencies!
+    // I'm not sure why but it'll make getData reload and do unnecessary fetches.
+    // Currently, with just budget in the dependencies this is what happens:
+    // page loads -> useEffect fires for the first time -> getData is called ->
+    // recipe and user data are fetched -> recipe and user state variables are updated ->
+    // since budget is updated, getData is updated ->
+    // useEffect fires again because getData is a dependency ->
+    // memoized getData is called since budget has not changed since it was first updated
+    // eslint-disable-next-line
+    }, [budget])
 
     // When the page is first loaded, this function will fire
     useEffect(() => {
@@ -106,7 +147,7 @@ function Dashboard() {
             return
         }
         getData();
-    }, [history, loginStatus])
+    }, [history, loginStatus, getData])
 
     return (
         <HomeWrapper>
@@ -121,7 +162,10 @@ function Dashboard() {
                 <ModalContent>
                     <ModalTitle>{modalRecipe.recipeName}</ModalTitle>
                     <ModalImg src={modalRecipe.imageLink} />
-                    <ModalText>{modalRecipe.instructions}</ModalText>
+                    <ModalText>
+                        <strong>Instructions:</strong>{modalRecipe.instructions} <br/>
+                        <strong>Ingredients:</strong>{modalRecipe.ingredients}
+                    </ModalText>
                 </ModalContent>
                 : <div></div>}
             </Modal>
@@ -142,8 +186,8 @@ function Dashboard() {
                     <CurrentDate>{date[0]}, {date[2]} {date[1]}</CurrentDate>
                     <ListTitle>Breakfast</ListTitle>
                     <RecipeList>
-                        {recipesList && recipesList.length > 0 &&
-                        recipesList.slice(0,5).map((recipe) =>
+                        {breakfastRecipes && breakfastRecipes.length > 0 &&
+                        breakfastRecipes.map((recipe) =>
                         <RecipeWrapper onClick={() => openModal(recipe)}>
                             <RecipeImg src={recipe.imageLink}/>
                             <RecipeText>
@@ -155,8 +199,8 @@ function Dashboard() {
 
                     <ListTitle>Lunch</ListTitle>
                     <RecipeList>
-                        {recipesList && recipesList.length > 0 &&
-                        recipesList.slice(5,10).map((recipe) =>
+                        {lunchRecipes && lunchRecipes.length > 0 &&
+                        lunchRecipes.map((recipe) =>
                         <RecipeWrapper onClick={() => openModal(recipe)}>
                             <RecipeImg src={recipe.imageLink}/>
                             <RecipeText>
@@ -168,8 +212,8 @@ function Dashboard() {
                     
                     <ListTitle>Dinner</ListTitle>
                     <RecipeList>
-                        {recipesList && recipesList.length > 0 &&
-                        recipesList.slice(10,15).map((recipe) =>
+                        {dinnerRecipes && dinnerRecipes.length > 0 &&
+                        dinnerRecipes.map((recipe) =>
                         <RecipeWrapper onClick={() => openModal(recipe)}>
                             <RecipeImg src={recipe.imageLink}/>
                             <RecipeText>

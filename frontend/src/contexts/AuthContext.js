@@ -9,13 +9,12 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
-  const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
 
   function signup(email, password) {
       let auth =firebase.auth();
        return auth.createUserWithEmailAndPassword(email, password).catch(function(error){
-         console.log(error);
+        //  console.log(error);
        }).then(userCredential => {
         let user = userCredential.user;
         let userID = user.uid;
@@ -63,17 +62,16 @@ export function AuthProvider({ children }) {
   }
 
   function updateEmail(email) {
-    return currentUser.updateEmail(email)
+      return auth.currentUser.updateEmail(email)
   }
 
   function updatePassword(password) {
-    return currentUser.updatePassword(password)
+      return auth.currentUser.updatePassword(password)
   }
 
   
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
-      setCurrentUser(user)
       setLoading(false)
     })
 
@@ -81,7 +79,6 @@ export function AuthProvider({ children }) {
   }, [])
 
   const value = {
-    currentUser,
     login,
     signup,
     logout,
