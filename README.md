@@ -1,4 +1,4 @@
-# Savor
+
 
 ## Set up
 To run the React app, you'll need to connect to the project's Firestore. You should have been added as collaborators to the Firebase project by the client.
@@ -74,6 +74,8 @@ These keys are not meant to be guarded, as stated in the `A note about Firebase 
 * Non-numeric characters can be entered in the phone number field
 * Non-alpha characters can be entered in the name fields
 * The "get user profile" form only shows up during sign-up process. If a user registered their email but didn't fill out the form, they could still verify their email and log-on to the site. This means that in our Users data collection, we wouldn't have their budget, group size, or dietary restrictions-- which would be necessary for recommending them meals.
+* User will be unable to verify account if they do not use the original verification link within the expiration timeframe. Currently, we do not send them a 2nd link and their new account will be locked.
+* Single Sign On (SSO) doesn't take you to the next page to the sign up/enter details page or to the dashboard page.
 * There's a "Can't perform a React state update on an unmounted component" warning in the console when this page is loaded
 #### Log-in form:
 * Facebook and Twitter sign-in not yet implemented
