@@ -32,7 +32,7 @@ class Login extends PureComponent {
                 </LoginWrapper>
             )
         }else{
-            return <Redirect to='/'/>
+            return <Redirect to='/dashboard'/>
         }
         
     }

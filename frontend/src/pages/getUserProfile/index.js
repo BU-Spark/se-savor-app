@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Col,InputGroup } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext.js"
-import { useHistory } from "react-router-dom"
+import { Redirect } from "react-router-dom"
 import { LoginWrapper, LoginBox } from './style';
 
 
@@ -17,7 +17,7 @@ function GetUserProfile() {
   const { userProfileRequest } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
-  const history = useHistory()
+  const [done, setDone] = useState(false)
 
 
 
@@ -33,13 +33,14 @@ function GetUserProfile() {
         BudgetRef.current.value,
         sizeRef.current.value,
         dietaryRef.current.value);
-      history.push('./')
     } catch {
       setError('something went wrong');
     }
     setLoading(false)
+    setDone(true)
   }
 
+  if (!done) {
   return (
     <>
       <LoginWrapper>
@@ -96,7 +97,9 @@ function GetUserProfile() {
         </LoginBox>
       </LoginWrapper>
     </>
-  )
+  )} else {
+      return <Redirect to="/login"/>
+  }
 }
 
 
