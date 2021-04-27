@@ -31,6 +31,8 @@ However, because our team is not currently working in a production environment, 
 If future teams want to deploy to production, they should ensure that the [security rules](https://firebase.google.com/docs/rules) they have for the Firestore are up to par. Perhaps they could create separate databases for deployment and production as well.
 
 ## Running the app
+0. Please make sure you have the `.env` file set up correctly and have placed it in the frontend folder before building with Docker! Otherwise, the app will build but when you run it and visit localhost, there will only be a blank page displayed.
+
 1. Install Docker on your machine. See [Get Docker](https://docs.docker.com/get-docker/) for help. If you're on macOS and have [Homebrew](https://brew.sh/) installed you can do<br/>
 `brew install --cask docker`<br/>
 You have to open up the desktop app before you can use the `docker` command in your shell.
