@@ -48,7 +48,9 @@ To verify it was created, use<br/>
 `docker run -p 5000:5000 savor`<br/>
 This forwards requests made to `localhost:5000` to port 5000 of the container.
 
-5. Bonus: To delete old Docker containers do<br/>
+5. Visit `localhost:5000` in your browser to test the app. Please use Chrome or Firefox because there are some bugs with Safari and IE, as noted in the `Known Bugs & Unimplemented Features` section.
+
+6. Bonus: To delete old Docker containers do<br/>
 `docker ps -a`<br/>
 Under the NAMES column, find the one you want to remove and do<br/>
 `docker rm CONTAINER_NAME_HERE`<br/>
