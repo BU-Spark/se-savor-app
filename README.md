@@ -93,3 +93,13 @@ These keys are not meant to be guarded, as stated in the `A note about Firebase 
 * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
 #### Firebase:
 * See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
+#### OWASP Zap Security Alerts:
+* Application Error Disclosure
+* CSP: Wildcard Directive (5)
+* X-Frame-Options Header Not Set (2)
+* Absence of Anti-CSRF Tokens (24)
+* Private IP Disclosure
+* Server Leads Information via "X-Powered-By" HTTP Response
+* X-Content-Type-Options Header Missing (12)
+* Information Disclosure - Suspicious Comments (22)
+* Timestamp Disclosure - Unix (85)
