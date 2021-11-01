@@ -13,6 +13,7 @@ import MealPlan from './pages/mealplan/index.js';
 import Recommendations from './pages/recommendations/index.js';
 import Dashboard from './pages/dashboard/index.js';
 import GetUserProfile from './pages/getUserProfile/index.js';
+import SideBar from "./common/sidebar/index.js"
 
 class App extends Component {
     render() {
@@ -23,6 +24,7 @@ class App extends Component {
                 <BrowserRouter>
                     <div>
                     <Header />
+                    <SideBar />
                         <Route path='/' exact component={Home}></Route>
                         <Route path='/login' exact component={Login}></Route>
                         <Route path='/signup' exact component={SignUp}></Route>
