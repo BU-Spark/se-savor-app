@@ -4,18 +4,10 @@ import { Link, useHistory } from 'react-router-dom';
 import Modal from 'react-modal';
 import {
     HomeWrapper,
-    PageInfo,
-    PageNav,
-    DashLogo,
-    MealLogo,
-    RecommendationLogo,
-    BudgetLogo,
-    GroupLogo,
-    DietLogo,
     PageTitle,
     MainDiv,
-    ListTitle,
-    RecipeList,
+    MealType,
+    Meal,
     RecipeWrapper,
     RecipeImg,
     RecipeText,
@@ -26,6 +18,7 @@ import {
     ModalImg,
     ModalText,
     ModalContent,
+    ThumbsUpLogo,
 } from './style';
 
 Modal.setAppElement("#root");
@@ -99,57 +92,111 @@ function MealPlan() {
                 </ModalContent>
                 : <div></div>}
             </Modal>
-            <PageInfo>
-                <PageNav>
-                    <Link to="/dashboard"><DashLogo /></Link>
-                    <Link to="/mealplan"><MealLogo /></Link>
-                    <Link to="/recommendations"><RecommendationLogo /></Link>
-                    <Link to=""><BudgetLogo /></Link>
-                    <Link to=""><GroupLogo /></Link>
-                    <Link to=""><DietLogo /></Link>
-                </PageNav>
-            </PageInfo>
             <MainDiv>
                 <PageTitle>Meal Plan</PageTitle>
-                <CurrentDate>{date[0]}, {date[2]} {date[1]}</CurrentDate>
-                <ListTitle>Breakfast</ListTitle>
-                    <RecipeList>
-                        {breakfastRecipes && breakfastRecipes.length > 0 &&
-                        breakfastRecipes.map((recipe) =>
-                        <RecipeWrapper onClick={() => openModal(recipe)}>
-                            <RecipeImg src={recipe.imageLink}/>
-                            <RecipeText>
-                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                                Servings {recipe.estimatedServings}
-                            </RecipeText>
-                        </RecipeWrapper>)}
-                    </RecipeList>
+                <CurrentDate>Tuesday</CurrentDate>
+                <Meal>
+                    <MealType>Breakfast</MealType>
+                    {breakfastRecipes && breakfastRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(breakfastRecipes[0])}>
+                        <RecipeImg src={breakfastRecipes[0].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{breakfastRecipes[0].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
 
-                    <ListTitle>Lunch</ListTitle>
-                    <RecipeList>
-                        {lunchRecipes && lunchRecipes.length > 0 &&
-                        lunchRecipes.map((recipe) =>
-                        <RecipeWrapper onClick={() => openModal(recipe)}>
-                            <RecipeImg src={recipe.imageLink}/>
-                            <RecipeText>
-                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                                Servings {recipe.estimatedServings}
-                            </RecipeText>
-                        </RecipeWrapper>)}
-                    </RecipeList>
+                <Meal>
+                    <MealType>Lunch</MealType>
+                    {lunchRecipes && lunchRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(lunchRecipes[0])}>
+                        <RecipeImg src={lunchRecipes[0].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{lunchRecipes[0].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
 
-                    <ListTitle>Dinner</ListTitle>
-                    <RecipeList>
-                        {dinnerRecipes && dinnerRecipes.length > 0 &&
-                        dinnerRecipes.map((recipe) =>
-                        <RecipeWrapper onClick={() => openModal(recipe)}>
-                            <RecipeImg src={recipe.imageLink}/>
-                            <RecipeText>
-                                <RecipeTitle>{recipe.recipeName}</RecipeTitle>
-                                Servings {recipe.estimatedServings}
-                            </RecipeText>
-                        </RecipeWrapper>)}
-                    </RecipeList>
+                <Meal>
+                    <MealType>Dinner</MealType>
+                    {dinnerRecipes && dinnerRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(dinnerRecipes[0])}>
+                        <RecipeImg src={dinnerRecipes[0].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{dinnerRecipes[0].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <CurrentDate>Wednesday</CurrentDate>
+                <Meal>
+                    <MealType>Breakfast</MealType>
+                    {breakfastRecipes && breakfastRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(breakfastRecipes[1])}>
+                        <RecipeImg src={breakfastRecipes[1].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{breakfastRecipes[1].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <Meal>
+                    <MealType>Lunch</MealType>
+                    {lunchRecipes && lunchRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(lunchRecipes[1])}>
+                        <RecipeImg src={lunchRecipes[1].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{lunchRecipes[1].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <Meal>
+                    <MealType>Dinner</MealType>
+                    {dinnerRecipes && dinnerRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(dinnerRecipes[1])}>
+                        <RecipeImg src={dinnerRecipes[1].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{dinnerRecipes[1].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <CurrentDate>Thursday</CurrentDate>
+                <Meal>
+                    <MealType>Breakfast</MealType>
+                    {breakfastRecipes && breakfastRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(breakfastRecipes[2])}>
+                        <RecipeImg src={breakfastRecipes[2].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{breakfastRecipes[2].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <Meal>
+                    <MealType>Lunch</MealType>
+                    {lunchRecipes && lunchRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(lunchRecipes[2])}>
+                        <RecipeImg src={lunchRecipes[2].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{lunchRecipes[2].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+
+                <Meal>
+                    <MealType>Dinner</MealType>
+                    {dinnerRecipes && dinnerRecipes.length > 0 &&
+                    <RecipeWrapper onClick={() => openModal(dinnerRecipes[2])}>
+                        <RecipeImg src={dinnerRecipes[2].imageLink}/>
+                        <RecipeText>
+                            <RecipeTitle>{dinnerRecipes[2].recipeName}</RecipeTitle>
+                        </RecipeText>
+                    </RecipeWrapper>}
+                </Meal>
+                    
             </MainDiv>
         </HomeWrapper>
     )
