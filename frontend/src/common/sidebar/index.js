@@ -4,11 +4,10 @@ import './style.css';
 import logo from "../../statics/savorLogo.png";
 import SidebarItem from "./sidebarItem";
 
-{/* <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet"></link> */}
-
 
 function SideBar(props) {
 
+    // register login status of users, only display sidebar when logged in
     const loginStatus = useSelector(state => state.getIn(['login','login']));
 
 
