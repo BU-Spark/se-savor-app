@@ -14,11 +14,13 @@ import Recommendations from './pages/recommendations/index.js';
 import Dashboard from './pages/dashboard/index.js';
 import GetUserProfile from './pages/getUserProfile/index.js';
 import SideBar from "./common/sidebar/index.js"
+import GlobalFonts from './fonts/fonts';
 
 class App extends Component {
     render() {
         return (
             <Fragment>
+                <GlobalFonts />
                 <Provider store = {store}>
                 <AuthProvider>
                 <BrowserRouter>

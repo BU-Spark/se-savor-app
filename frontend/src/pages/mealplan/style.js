@@ -78,7 +78,7 @@ export const PageTitle = styled.div`
 font-family: Avenir LT Std;
 font-style: normal;
 font-weight: 750;
-font-size: 48px;
+font-size: 45px;
 line-height: 58px;
 
 color: #000000;
@@ -89,10 +89,11 @@ margin-bottom: 20px;
 `;
 
 export const CurrentDate = styled.div`
+color: #635E5A;
 font-family: Avenir LT Std;
 font-weight: 750;
 font-style: normal;
-font-size: 36px;
+font-size: 32px;
 line-height: 43.2px;
 margin-bottom: 10px;
 width: 100%;
@@ -136,6 +137,7 @@ width: 300px;
 padding: 0;
 border: 0;
 text-align: left;
+background-color: transparent;
 `;
 
 export const RecipeImg = styled.img`

@@ -21,7 +21,7 @@ function SideBar(props) {
             <div className="menu-section">
                 <div className="sidebar-sec-label">Menu</div>
                 <SidebarItem name="Cooking" iconClassName="fa fa-cookie-bite"></SidebarItem>
-                <SidebarItem name="Meal Plan" iconClassName="far fa-newspaper"></SidebarItem>
+                <SidebarItem name="Meal Plan" iconClassName="far fa-newspaper" to="/mealplan"></SidebarItem>
                 <SidebarItem name="Groceries" iconClassName="fas fa-shopping-cart"></SidebarItem>
             </div>
             <div className="about-section">
