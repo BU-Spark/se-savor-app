@@ -6,6 +6,7 @@ import budgetLogo from '../../statics/dashboardlogos/budget.png';
 import groupLogo from '../../statics/dashboardlogos/groupsize.png';
 import dietLogo from '../../statics/dashboardlogos/dietaryrestrictions.png';
 import thumbsUpLogo from '../../statics/thumbsUp.png';
+import editLogo from '../../statics/editLogo.png';
 
 export const HomeWrapper = styled.div`
 width: 100%;
@@ -83,7 +84,7 @@ line-height: 58px;
 
 color: #000000;
 
-width: 100%;
+width: 79%;
 height: 5%;
 margin-bottom: 20px;
 `;
@@ -208,8 +209,40 @@ margin-bottom: 20px;
 `;
 
 export const ThumbsUpLogo = styled.div`
- width: 15px;
- height: 15px;
- background:url(${thumbsUpLogo});
- background-repeat: no-repeat;
+width: 15px;
+height: 15px;
+background:url(${thumbsUpLogo});
+background-repeat: no-repeat;
 `;
+
+export const EditMealPlan = styled.button`
+width: 21%;
+height: 25px;
+border-top: 20px;
+border-right: 10px;
+background: #FF7613;
+border-radius: 22px;
+display: flex;
+flex-direction: row;
+`;
+
+export const EditLogo = styled.img`
+width: 18%;
+height 100%;
+background: url(${editLogo});
+background-repeat: no-repeat;
+vertical-align: middle;
+object-fit: contain;
+`;
+
+export const EditMealPlanText = styled.div`
+width: 80%;
+height: 100%
+font-family: Avenir LT Std;
+font-style: normal;
+font-weight: 750;
+font-size: 85%;
+color: #FFFFFF;
+padding-top: 3px;
+`;
+

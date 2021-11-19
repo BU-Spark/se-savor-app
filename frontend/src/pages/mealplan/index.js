@@ -19,6 +19,9 @@ import {
     ModalText,
     ModalContent,
     ThumbsUpLogo,
+    EditMealPlan,
+    EditLogo,
+    EditMealPlanText,
 } from './style';
 
 Modal.setAppElement("#root");
@@ -94,6 +97,10 @@ function MealPlan() {
             </Modal>
             <MainDiv>
                 <PageTitle>Meal Plan</PageTitle>
+                <EditMealPlan>
+                    <EditLogo/>
+                    <EditMealPlanText>Edit/Change Meal Plan</EditMealPlanText>
+                </EditMealPlan>
                 <CurrentDate>Tuesday</CurrentDate>
                 <Meal>
                     <MealType>Breakfast</MealType>
