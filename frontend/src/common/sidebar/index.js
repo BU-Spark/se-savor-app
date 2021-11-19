@@ -1,5 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
-import React, { Component } from 'react';
+import { useSelector } from "react-redux";
 import './style.css';
 import logo from "../../statics/savorLogo.png";
 import SidebarItem from "./sidebarItem";
@@ -15,12 +14,12 @@ function SideBar(props) {
         
         <div className={`sidebar ${loginStatus ? "" : "inactive"}`}>
             
-            <img src={logo} className="logo-section"></img>
+            <img src={logo} className="logo-section" alt="logo"></img>
             
             <div className="menu-section">
                 <div className="sidebar-sec-label">Menu</div>
                 <SidebarItem name="Cooking" iconClassName="fa fa-cookie-bite"></SidebarItem>
-                <SidebarItem name="Meal Plan" iconClassName="far fa-newspaper"></SidebarItem>
+                <SidebarItem name="Meal Plan" iconClassName="far fa-newspaper" to="/mealplan"></SidebarItem>
                 <SidebarItem name="Groceries" iconClassName="fas fa-shopping-cart"></SidebarItem>
             </div>
             <div className="about-section">
