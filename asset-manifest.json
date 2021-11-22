@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/se-savor-app/static/css/main.1a8c77c6.chunk.css",
-    "main.js": "/se-savor-app/static/js/main.48d488a9.chunk.js",
-    "main.js.map": "/se-savor-app/static/js/main.48d488a9.chunk.js.map",
+    "main.js": "/se-savor-app/static/js/main.20fe5978.chunk.js",
+    "main.js.map": "/se-savor-app/static/js/main.20fe5978.chunk.js.map",
     "runtime-main.js": "/se-savor-app/static/js/runtime-main.801e5c14.js",
     "runtime-main.js.map": "/se-savor-app/static/js/runtime-main.801e5c14.js.map",
     "static/css/2.61ff5c38.chunk.css": "/se-savor-app/static/css/2.61ff5c38.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.61ff5c38.chunk.css",
     "static/js/2.30052046.chunk.js",
     "static/css/main.1a8c77c6.chunk.css",
-    "static/js/main.48d488a9.chunk.js"
+    "static/js/main.20fe5978.chunk.js"
   ]
 }
