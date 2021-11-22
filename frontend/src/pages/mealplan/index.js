@@ -121,6 +121,7 @@ function MealPlan() {
                         <RecipeImg src={lunchRecipes[0].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{lunchRecipes[0].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -132,6 +133,7 @@ function MealPlan() {
                         <RecipeImg src={dinnerRecipes[0].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{dinnerRecipes[0].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -144,6 +146,7 @@ function MealPlan() {
                         <RecipeImg src={breakfastRecipes[1].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{breakfastRecipes[1].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -155,6 +158,7 @@ function MealPlan() {
                         <RecipeImg src={lunchRecipes[1].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{lunchRecipes[1].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -166,6 +170,7 @@ function MealPlan() {
                         <RecipeImg src={dinnerRecipes[1].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{dinnerRecipes[1].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -178,6 +183,7 @@ function MealPlan() {
                         <RecipeImg src={breakfastRecipes[2].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{breakfastRecipes[2].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -189,6 +195,7 @@ function MealPlan() {
                         <RecipeImg src={lunchRecipes[2].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{lunchRecipes[2].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
@@ -200,6 +207,7 @@ function MealPlan() {
                         <RecipeImg src={dinnerRecipes[2].imageLink}/>
                         <RecipeText>
                             <RecipeTitle>{dinnerRecipes[2].recipeName}</RecipeTitle>
+                            <ThumbsUpLogo></ThumbsUpLogo>
                         </RecipeText>
                     </RecipeWrapper>}
                 </Meal>
