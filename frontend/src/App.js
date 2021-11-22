@@ -20,7 +20,7 @@ class App extends Component {
             <Fragment>
                 <Provider store = {store}>
                 <AuthProvider>
-                <BrowserRouter>
+                <BrowserRouter basename="/se-savor-app">
                     <div>
                     <Header />
                         <Route path='/' exact component={Home}></Route>
