@@ -107,6 +107,7 @@ background: #F8F7F7;
 margin-left: 17%;
 margin-right: 18%;
 padding: 1rem;
+padding-left: 2rem;
 border-radius: 5px;
 display: flex;
 flex-direction: row;
@@ -218,7 +219,7 @@ background-repeat: no-repeat;
 export const EditMealPlan = styled.button`
 width: 21%;
 height: 25px;
-border-top: 20px;
+margin-top: 20px;
 border-right: 10px;
 background: #FF7613;
 border-radius: 22px;
@@ -231,7 +232,6 @@ width: 18%;
 height 100%;
 background: url(${editLogo});
 background-repeat: no-repeat;
-vertical-align: middle;
 object-fit: contain;
 `;
 
