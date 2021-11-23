@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/se-savor-app/static/css/main.1e69a439.chunk.css",
-    "main.js": "/se-savor-app/static/js/main.b8f97ab7.chunk.js",
-    "main.js.map": "/se-savor-app/static/js/main.b8f97ab7.chunk.js.map",
+    "main.js": "/se-savor-app/static/js/main.1f3616aa.chunk.js",
+    "main.js.map": "/se-savor-app/static/js/main.1f3616aa.chunk.js.map",
     "runtime-main.js": "/se-savor-app/static/js/runtime-main.801e5c14.js",
     "runtime-main.js.map": "/se-savor-app/static/js/runtime-main.801e5c14.js.map",
-    "static/css/2.61ff5c38.chunk.css": "/se-savor-app/static/css/2.61ff5c38.chunk.css",
-    "static/js/2.3c1127f5.chunk.js": "/se-savor-app/static/js/2.3c1127f5.chunk.js",
-    "static/js/2.3c1127f5.chunk.js.map": "/se-savor-app/static/js/2.3c1127f5.chunk.js.map",
+    "static/css/2.06d85d98.chunk.css": "/se-savor-app/static/css/2.06d85d98.chunk.css",
+    "static/js/2.d9af88a9.chunk.js": "/se-savor-app/static/js/2.d9af88a9.chunk.js",
+    "static/js/2.d9af88a9.chunk.js.map": "/se-savor-app/static/js/2.d9af88a9.chunk.js.map",
     "index.html": "/se-savor-app/index.html",
-    "static/css/2.61ff5c38.chunk.css.map": "/se-savor-app/static/css/2.61ff5c38.chunk.css.map",
+    "static/css/2.06d85d98.chunk.css.map": "/se-savor-app/static/css/2.06d85d98.chunk.css.map",
     "static/css/main.1e69a439.chunk.css.map": "/se-savor-app/static/css/main.1e69a439.chunk.css.map",
-    "static/js/2.3c1127f5.chunk.js.LICENSE.txt": "/se-savor-app/static/js/2.3c1127f5.chunk.js.LICENSE.txt",
-    "static/media/mdb.css": "/se-savor-app/static/media/arrow_right.0897f985.svg",
+    "static/js/2.d9af88a9.chunk.js.LICENSE.txt": "/se-savor-app/static/js/2.d9af88a9.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/se-savor-app/static/media/arrow_right.f7c6ac6d.svg",
     "static/media/all.min.css": "/se-savor-app/static/media/fa-solid-900.efbd5d20.eot",
     "static/media/homePage.e77d7d4c.png": "/se-savor-app/static/media/homePage.e77d7d4c.png",
     "static/media/loginPage.aa67de45.png": "/se-savor-app/static/media/loginPage.aa67de45.png",
@@ -21,9 +21,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.801e5c14.js",
-    "static/css/2.61ff5c38.chunk.css",
-    "static/js/2.3c1127f5.chunk.js",
+    "static/css/2.06d85d98.chunk.css",
+    "static/js/2.d9af88a9.chunk.js",
     "static/css/main.1e69a439.chunk.css",
-    "static/js/main.b8f97ab7.chunk.js"
+    "static/js/main.1f3616aa.chunk.js"
   ]
 }
