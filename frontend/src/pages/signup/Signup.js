@@ -4,6 +4,8 @@ import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import { connect } from 'react-redux';
 import { LoginWrapper, LoginBox } from './style';
+import Footer from '../../common/footer/index.js';
+
 
 
     function Signup() {
@@ -63,6 +65,9 @@ import { LoginWrapper, LoginBox } from './style';
                     </div>
                 </LoginBox>
             </LoginWrapper>
+            <footer>
+                <Footer />
+            </footer>
         </>
     )
 }
