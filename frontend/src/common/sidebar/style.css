@@ -1,0 +1,100 @@
+@import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+.sidebar{
+    width: 17.5%;
+    height: 100%;
+    position:absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+}
+
+.sidebar.inactive{
+    display: none;
+}
+
+.logo-section{
+    height: 7.4%;
+    width: 24%;
+    left: 16.7%;
+    top: 50%;
+    border-radius: 0px;
+    animation-timing-function: cubic-bezier(0.7, -0.4, 0.4, 1.4);
+    animation-duration: 300ms;
+
+    margin-top: 10%;
+    margin-left: 16.7%;
+
+}
+
+.sidebar-icon {
+    font-size: 15px;
+    display: inline-block;
+
+}
+
+.sidebar-item{
+
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #97918C;
+
+}
+
+.sidebar-item:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FF7613;
+}
+
+.menu-label{
+    margin-left: 17.5px;
+    font-family: Avenir LT Std;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.sidebar-sec-label{
+
+    border-radius: nullpx;
+
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #97918C;
+    margin-bottom: 10%;
+
+}
+
+.menu-section{
+    margin-top: 10%;
+    margin-left: 19%;
+}
+
+.about-section{
+    margin-top: 10%;
+    margin-left: 19%;
+}
+
+.general-section{
+    margin-top: 10%;
+    margin-left: 19%;
+}
+
+.sidebar-li{
+    list-style: none;
+    line-height: 20%;
+    margin-bottom: 20%;
+}
