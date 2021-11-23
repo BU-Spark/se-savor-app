@@ -18,20 +18,20 @@ function SideBar(props) {
             
             <div className="menu-section">
                 <div className="sidebar-sec-label">Menu</div>
-                <SidebarItem name="Cooking" iconClassName="fa fa-cookie-bite"></SidebarItem>
-                <SidebarItem name="Meal Plan" iconClassName="far fa-newspaper" to="/mealplan"></SidebarItem>
-                <SidebarItem name="Groceries" iconClassName="fas fa-shopping-cart"></SidebarItem>
+                <SidebarItem to="#" name="Cooking" iconClassName="fa fa-cookie-bite"></SidebarItem>
+                <SidebarItem to="mealplan" name="Meal Plan" iconClassName="far fa-newspaper"></SidebarItem>
+                <SidebarItem to="#" name="Groceries" iconClassName="fas fa-shopping-cart"></SidebarItem>
             </div>
             <div className="about-section">
                 <div className="sidebar-sec-label">About us</div>
-                <SidebarItem name="Our recipes" iconClassName="fas fa-utensils"></SidebarItem>
-                <SidebarItem name="Plans" iconClassName="fas fa-map"></SidebarItem>
-                <SidebarItem name="Our vision" iconClassName="far fa-lightbulb"></SidebarItem>
+                <SidebarItem to="#" name="Our recipes" iconClassName="fas fa-utensils"></SidebarItem>
+                <SidebarItem to="#" name="Plans" iconClassName="fas fa-map"></SidebarItem>
+                <SidebarItem to="#" name="Our vision" iconClassName="far fa-lightbulb"></SidebarItem>
             </div>
             <div className="general-section">
                 <div className="sidebar-sec-label">General</div>
-                <SidebarItem name="Settings" iconClassName="fas fa-cog"></SidebarItem>
-                <SidebarItem name="Log out" iconClassName="fas fa-sign-out-alt"></SidebarItem>
+                <SidebarItem to="#" name="Settings" iconClassName="fas fa-cog"></SidebarItem>
+                <SidebarItem to="#" name="Log out" iconClassName="fas fa-sign-out-alt"></SidebarItem>
             </div>
         </div>
     )
