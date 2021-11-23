@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { LoginWrapper, LoginBox, Input, Button2, Text, Nav, NavItem, NavCheckbox } from './style';
 import { actionCreators} from './store';
+import Footer from '../../common/footer/index.js';
 
 
 
@@ -11,7 +12,6 @@ class Login extends PureComponent {
         const { loginStatus } = this.props;
         if(!loginStatus){
             return (
-                
                 <LoginWrapper>
                     
                     <LoginBox>

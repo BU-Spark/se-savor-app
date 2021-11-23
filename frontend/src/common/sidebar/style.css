@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
 .sidebar{
-    width: 336px;
-    height: 1080px;
+    width: 17.5%;
+    height: 100%;
     position:absolute;
     left: 0%;
     right: 0%;
@@ -15,16 +15,16 @@
 }
 
 .logo-section{
-    height: 80px;
-    width: 80px;
-    left: 56px;
-    top: 40px;
+    height: 7.4%;
+    width: 24%;
+    left: 16.7%;
+    top: 50%;
     border-radius: 0px;
     animation-timing-function: cubic-bezier(0.7, -0.4, 0.4, 1.4);
     animation-duration: 300ms;
 
-    margin-top: 40px;
-    margin-left: 56px;
+    margin-top: 10%;
+    margin-left: 16.7%;
 
 }
 
@@ -74,25 +74,27 @@
     font-size: 14px;
     line-height: 17px;
     color: #97918C;
+    margin-bottom: 10%;
 
 }
 
 .menu-section{
-    margin-top: 28px;
-    margin-left: 64px;
+    margin-top: 10%;
+    margin-left: 19%;
 }
 
 .about-section{
-    margin-top: 28px;
-    margin-left: 64px;
+    margin-top: 10%;
+    margin-left: 19%;
 }
 
 .general-section{
-    margin-top: 28px;
-    margin-left: 64px;
+    margin-top: 10%;
+    margin-left: 19%;
 }
 
-li{
+.sidebar-li{
     list-style: none;
-    line-height: 60px;
+    line-height: 20%;
+    margin-bottom: 20%;
 }

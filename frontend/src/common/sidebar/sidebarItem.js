@@ -1,12 +1,12 @@
-import React, { useRef, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SidebarItem = (props) => {
   const { name, iconClassName, onClick, to} = props;
   const [selected, setSelected] = useState(false);
 
   return (
-    <li onClick={props.onClick}>
+    <li className="sidebar-li" onClick={props.onClick}>
       <Link
         exact="true"
         to={to}

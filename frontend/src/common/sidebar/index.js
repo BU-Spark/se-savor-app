@@ -1,14 +1,12 @@
-import { useDispatch, useSelector } from "react-redux";
-import React, { Component } from 'react';
+import { useSelector } from "react-redux";
 import './style.css';
 import logo from "../../statics/savorLogo.png";
 import SidebarItem from "./sidebarItem";
 
-{/* <link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet"></link> */}
-
 
 function SideBar(props) {
 
+    // register login status of users, only display sidebar when logged in
     const loginStatus = useSelector(state => state.getIn(['login','login']));
 
 
@@ -16,7 +14,7 @@ function SideBar(props) {
         
         <div className={`sidebar ${loginStatus ? "" : "inactive"}`}>
             
-            <img src={logo} className="logo-section"></img>
+            <img src={logo} className="logo-section" alt="logo"></img>
             
             <div className="menu-section">
                 <div className="sidebar-sec-label">Menu</div>
