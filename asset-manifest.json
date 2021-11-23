@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/se-savor-app/static/css/main.1e69a439.chunk.css",
-    "main.js": "/se-savor-app/static/js/main.770beebc.chunk.js",
-    "main.js.map": "/se-savor-app/static/js/main.770beebc.chunk.js.map",
+    "main.js": "/se-savor-app/static/js/main.fa272c90.chunk.js",
+    "main.js.map": "/se-savor-app/static/js/main.fa272c90.chunk.js.map",
     "runtime-main.js": "/se-savor-app/static/js/runtime-main.801e5c14.js",
     "runtime-main.js.map": "/se-savor-app/static/js/runtime-main.801e5c14.js.map",
     "static/css/2.06d85d98.chunk.css": "/se-savor-app/static/css/2.06d85d98.chunk.css",
@@ -17,6 +17,7 @@
     "static/media/homePage.e77d7d4c.png": "/se-savor-app/static/media/homePage.e77d7d4c.png",
     "static/media/loginPage.aa67de45.png": "/se-savor-app/static/media/loginPage.aa67de45.png",
     "static/media/mealplanPage.f19c8fda.png": "/se-savor-app/static/media/mealplanPage.f19c8fda.png",
+    "static/media/pasta.fa347b38.png": "/se-savor-app/static/media/pasta.fa347b38.png",
     "static/media/savorLogo.a69ed2ae.png": "/se-savor-app/static/media/savorLogo.a69ed2ae.png"
   },
   "entrypoints": [
@@ -24,6 +25,6 @@
     "static/css/2.06d85d98.chunk.css",
     "static/js/2.d9af88a9.chunk.js",
     "static/css/main.1e69a439.chunk.css",
-    "static/js/main.770beebc.chunk.js"
+    "static/js/main.fa272c90.chunk.js"
   ]
 }
