@@ -8,6 +8,7 @@ import { actionCreators} from './store';
 import { LoginWrapper, LoginBox} from './style';
 import { uiConfig } from "../../firebase";
 import { useDispatch } from "react-redux";
+import Footer from '../../common/footer/index.js';
 
 
 
@@ -78,6 +79,9 @@ function Login() {
 
         </LoginBox>
         </LoginWrapper>
+        <footer>
+          <Footer />
+        </footer>
       </>
     )
   }

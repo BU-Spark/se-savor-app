@@ -5,10 +5,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import Home from './pages/home/index.js';
 import Detail from './pages/detail/index.js';
-import Header from './common/header/index.js';
 import Login from './pages/login/login.js';
 import SignUp from "./pages/signup/Signup.js";
-import Footer from './common/footer/index.js';
 import MealPlan from './pages/mealplan/index.js';
 import Recommendations from './pages/recommendations/index.js';
 import Dashboard from './pages/dashboard/index.js';
@@ -25,7 +23,6 @@ class App extends Component {
                 <AuthProvider>
                 <BrowserRouter>
                     <div>
-                    <Header />
                     <SideBar />
                         <Route path='/' exact component={Home}></Route>
                         <Route path='/login' exact component={Login}></Route>
@@ -38,9 +35,6 @@ class App extends Component {
                     </div>
                 </BrowserRouter>
                 </AuthProvider>
-                <footer>
-                   <Footer />
-                </footer>
                 </Provider>
             </Fragment>
         )
