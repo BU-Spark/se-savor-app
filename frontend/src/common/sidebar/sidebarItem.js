@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const SidebarItem = (props) => {
-  const { name, iconClassName, onClick, to} = props;
+  const { name, iconClassName, onClick, to, implemented} = props;
   const [selected, setSelected] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ const SidebarItem = (props) => {
         exact="true"
         to={to}
         onClick={() => {
-          setSelected((e) => !e);
+          if (!implemented) {alert("not yet implemented");}
         }}
         className={`sidebar-item`}
       >
