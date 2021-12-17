@@ -8,6 +8,9 @@ function SideBar(props) {
 
     // register login status of users, only display sidebar when logged in
     const loginStatus = useSelector(state => state.getIn(['login','login']));
+    function notImplemented() {
+        alert("not yet implemented");
+    }
 
 
     return (

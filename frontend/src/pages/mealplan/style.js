@@ -102,6 +102,7 @@ width: 100%;
 
 export const MainDiv = styled.div`
 width: 65%;
+height: 100%;
 min-width: 350px;
 background: #F8F7F7;
 margin-left: 17%;
