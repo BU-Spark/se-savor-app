@@ -8,7 +8,7 @@ const SidebarItem = (props) => {
   return (
     <li className="sidebar-li" onClick={props.onClick}>
       <Link
-        exact
+        exact="true"
         to={to}
         onClick={() => {
           setSelected((e) => !e);
@@ -16,7 +16,7 @@ const SidebarItem = (props) => {
         className={`sidebar-item`}
       >
         <div className="sidebar-icon">
-          <i class={iconClassName}></i>
+          <i className={iconClassName}></i>
         </div>
         <span className="menu-label">{name}</span>
       </Link>

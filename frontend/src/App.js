@@ -9,6 +9,7 @@ import Login from './pages/login/login.js';
 import SignUp from "./pages/signup/Signup.js";
 import MealPlan from './pages/mealplan/index.js';
 import Recommendations from './pages/recommendations/index.js';
+import Cooking from './pages/cooking/index.js';
 import Dashboard from './pages/dashboard/index.js';
 import GetUserProfile from './pages/getUserProfile/index.js';
 import SideBar from "./common/sidebar/index.js"
@@ -32,6 +33,7 @@ class App extends Component {
                         <Route path='/detail' exact component={Detail}></Route>
                         <Route path='/mealplan' exact component={MealPlan}></Route>
                         <Route path='/recommendations' exact component={Recommendations}></Route>
+                        <Route path='/cooking' exact component={Cooking}></Route>
                     </div>
                 </HashRouter>
                 </AuthProvider>
