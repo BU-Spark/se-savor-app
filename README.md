@@ -98,7 +98,7 @@ These keys are not meant to be guarded, as stated in the `A note about Firebase 
 * Date selector for Meal Plan component shown in wireframe is not yet implemented
 #### Meal Plan page:
 * Date selector shown in wireframe is not yet implemented
-* Edit button on the meal plan page has some display errors.
+* Edit button on the meal plan page has some display errors, and functionality is not implemented
 #### Recommendations page:
 * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
 #### Sidebar Component:
