@@ -1,4 +1,5 @@
-
+## Background
+There is approximately 133 billion pounds of food waste and 45 trillion gallons of water waste every year along with the land used to grow food and produce meat which contributes to the largest part of global warming. Savor is aimed to solve this problem by generating meal plan for users so that the food waste from grocery shopping is minimized. Savor is trying to generate a personalized meal plan based on user's preference, and than give user recommendation on what to buy and what amount to buy during grocery shopping. With Savor, users can gain sustainability and finantial stability.
 
 ## Set up
 To run the React app, you'll need to connect to the project's Firestore. You should have been added as collaborators to the Firebase project by the client.
