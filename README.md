@@ -91,14 +91,22 @@ These keys are not meant to be guarded, as stated in the `A note about Firebase 
 * There's a "Can't perform a React state update on an unmounted component" warning in the console when this page is loaded
 #### Log-in form:
 * Facebook and Twitter sign-in not yet implemented
+* Google sign-in not working anymore
 * Forgot password not yet implemented
 #### Dashboard page:
 * Budget, Group Size, and Dietary Restrictions buttons do not yet allow the user to edit their settings
 * Date selector for Meal Plan component shown in wireframe is not yet implemented
 #### Meal Plan page:
 * Date selector shown in wireframe is not yet implemented
+* Edit button on the meal plan page has some display errors.
 #### Recommendations page:
 * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
+#### Sidebar Component:
+* The Savor logo on the sidebar cannot redirect to the dashboard page
+* Logout on the sidebar is not implemented
+#### Cooking Page:
+* Cooking page has some display issues, cooking page is cut off by sidebar component
+* Cooking page needs to connect to the firestore in order to render dynamically
 #### Firebase:
 * See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
 #### OWASP Zap Security Alerts:
