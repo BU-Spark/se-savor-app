@@ -24,6 +24,7 @@ function GetUserProfile() {
   async function handleSubmit(e) {
     e.preventDefault()
     try {
+      console.log("test!! yes")
       setError("")
       setLoading(true)
       await userProfileRequest(firstnameRef.current.value,
