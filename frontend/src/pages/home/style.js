@@ -13,7 +13,6 @@ background-position: center;
 export const TextWrapper = styled.div`
 text-align:center;
 padding-top:150px;
-
 `
 export const BodyText = styled.div`
 font-size: 55px;

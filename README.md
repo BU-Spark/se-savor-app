@@ -1,4 +1,8 @@
+## Background
+There is approximately 133 billion pounds of food waste and 45 trillion gallons of water waste every year along with the land used to grow food and produce meat which contributes to the largest part of global warming. Savor is aimed to solve this problem by generating meal plan for users so that the food waste from grocery shopping is minimized. Savor is trying to generate a personalized meal plan based on user's preference, and than give user recommendation on what to buy and what amount to buy during grocery shopping. With Savor, users can gain sustainability and finantial stability.
 
+## Technical architecture
+Database for this project is hosted on firestore. The frontend uses firebase api to fetch data from backend and store them in redux store. Major pages in the frontend includes the dashboard, mealplan page, cooking page, grocery page and user profile page. The dashboard serves as the home page after the user logs in. The mealplan page displays the generated mealplans for the user. The cooking page shows detailed instruction for a certain recipe. The grocery page is the corresponding shopping list for the user's mealplan. In addition, we have a sidebar component for navigation and a searchbar component for looking up recipes. Frontend is deployed on github pages. 
 
 ## Set up
 To run the React app, you'll need to connect to the project's Firestore. You should have been added as collaborators to the Firebase project by the client.
@@ -59,6 +63,10 @@ To delete old Docker images do<br/>
 Under the IMAGE ID column, find the one you want to remove and do<br/>
 `docker rmi IMAGE_ID_HERE`
 
+## Deployment 
+To deploy a newer version of the project, navigate to the frontend directory and run `npm run deploy`, which will build and deploy the code to gh-pages branch.<br/>
+The app should be available at https://bu-spark.github.io/se-savor-app/ after deployment.
+
 ## Known Bugs & Unimplemented Features
 #### General:
 * Reloading the page logs the user out
@@ -83,14 +91,22 @@ These keys are not meant to be guarded, as stated in the `A note about Firebase 
 * There's a "Can't perform a React state update on an unmounted component" warning in the console when this page is loaded
 #### Log-in form:
 * Facebook and Twitter sign-in not yet implemented
+* Google sign-in not working anymore
 * Forgot password not yet implemented
 #### Dashboard page:
 * Budget, Group Size, and Dietary Restrictions buttons do not yet allow the user to edit their settings
 * Date selector for Meal Plan component shown in wireframe is not yet implemented
 #### Meal Plan page:
 * Date selector shown in wireframe is not yet implemented
+* Edit button on the meal plan page has some display errors, and functionality is not implemented
 #### Recommendations page:
 * Like and bookmark buttons are not yet implemented, they currently redirect to the home page
+#### Sidebar Component:
+* The Savor logo on the sidebar cannot redirect to the dashboard page
+* Logout on the sidebar is not implemented
+#### Cooking Page:
+* Cooking page has some display issues, cooking page is cut off by sidebar component
+* Cooking page needs to connect to the firestore in order to render dynamically
 #### Firebase:
 * See `databaseNotes.md` in the top-level directory (should be the same directory this `README` is in)
 #### OWASP Zap Security Alerts:
